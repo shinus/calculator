@@ -1,7 +1,7 @@
 {
-    "H1": "weight percentile calculator online",
+    "H1": "FEurea calculator online",
     "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "child weight percentile - By using this tool to manage your body weight",
+    "TITLE": "Furea calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -67,42 +67,52 @@
     "FAQ": [],
     "jscdns": [
         "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-      ],
+    ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/Percentile-category/child-weight-percentile.js"
+        "/js/urology-nephrology/feurea.js"
     ],
     "calculatorData": {
         "calculatorRow": [
             {
-                "labelName": "Age",
-                "labelId": "Age__id",
+                "labelName": "Serum creatinine",
+                "labelId": "Serum creatinine__id",
                 "inputBox": "text",
-                "inputId": "inputAge",
-                "dropDown": "mos",
-                "dropDownId": "dd_age",
+                "inputId": "creatinine_input_Id",
+                "dropDown": "mg/dL",
+                "dropDownId": "creatinine_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "Is it a boy or a girl?",
-                "labelId": "Is it a boy or a girl?__id",
-                "inputId": "Is it a boy or a girl?_input_Id",
-                "dropDown": "Girl ♀️",
-                "dropDownId": "girl_dd_Id",
+                "labelName": "Serum urea / blood urea nitrogen",
+                "labelId": "Serum urea / blood urea nitrogen__id",
+                "inputBox": "text",
+                "inputId": "nitrogen_input_Id",
+                "dropDown": "mg/dL",
+                "dropDownId": "nitrogen_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "Weight",
-                "labelId": "Weight__id",
+                "labelName": "Urine creatinine",
+                "labelId": "Urine creatinine__id",
                 "inputBox": "text",
-                "inputId": "Weight_input_Id",
-                "dropDown": "lb",
-                "dropDownId": "Weight_dd_Id",
+                "inputId": "Urine_input_Id",
+                "dropDown": "mg/dL",
+                "dropDownId": "Urine_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Urine urea",
+                "labelId": "Urine urea__id",
+                "inputBox": "text",
+                "inputId": "urea_input_Id",
+                "dropDown": "mg/dL",
+                "dropDownId": "urea_dd_Id",
                 "dateTimePicker": false
             }
         ],
         "ButtonValue": "Calculate",
-        "ButtonId": "calc-Btn",
+        "ButtonId": "calculate_btn",
         "ButtonType": "submit",
         "resultDiv": "true",
         "resultDisplay": "none"

@@ -29,8 +29,18 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
-# Build settings
-theme: "appscms-tools-theme"
+permalink: /blog/:title
+paginate: "12"
+paginate_path: "/blog/page:num/"
+
+
+theme: appscms-tools-theme
+markdown: kramdown
+production_google_analytics: "UA-198209937-30"
+development_google_analytics: "Your_GA_ID"
+
+
+
 plugins:
   - jekyll-feed
 

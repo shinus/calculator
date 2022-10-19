@@ -67,42 +67,78 @@
     "FAQ": [],
     "jscdns": [
         "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-      ],
+    ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/Percentile-category/child-weight-percentile.js"
+        "/js/Percentile-category/fetal-weight-percentile.js"
     ],
     "calculatorData": {
         "calculatorRow": [
             {
-                "labelName": "Age",
-                "labelId": "Age__id",
-                "inputBox": "text",
-                "inputId": "inputAge",
-                "dropDown": "mos",
-                "dropDownId": "dd_age",
+                "labelName": "Sex",
+                "labelId": "Sex__id",
+                "inputId": "Sex_input_Id",
+                "dropDown": "Unknown",
+                "dropDownId": "Sex_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "Is it a boy or a girl?",
-                "labelId": "Is it a boy or a girl?__id",
-                "inputId": "Is it a boy or a girl?_input_Id",
-                "dropDown": "Girl ♀️",
-                "dropDownId": "girl_dd_Id",
+                "labelName": "Gestational age",
+                "labelId": "Gestational age__id",
+                "inputBox": "text",
+                "inputId": "Gage_input_Id",
+                "dropDown": "wks",
+                "dropDownId": "Gage_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "Weight",
-                "labelId": "Weight__id",
+                "labelName": "Abdominal Circumference",
+                "labelId": "Abdominal Circumference__id",
                 "inputBox": "text",
-                "inputId": "Weight_input_Id",
-                "dropDown": "lb",
-                "dropDownId": "Weight_dd_Id",
+                "inputId": "aCircumference_input_Id",
+                "dropDown": "mm",
+                "dropDownId": "aCircumference_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Head Circumference",
+                "labelId": "Head Circumference__id",
+                "inputBox": "text",
+                "inputId": "hCircumference_input_Id",
+                "dropDown": "mm",
+                "dropDownId": "hCircumference_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Biparietal Diameter",
+                "labelId": "Biparietal Diameter__id",
+                "inputBox": "text",
+                "inputId": "Diameter_input_Id",
+                "dropDown": "mm",
+                "dropDownId": "Diameter_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Femur Length",
+                "labelId": "Femur Length__id",
+                "inputBox": "text",
+                "inputId": "Length_input_Id",
+                "dropDown": "mm",
+                "dropDownId": "Length_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Estimated fetal weight",
+                "labelId": "Estimated fetal weight__id",
+                "inputBox": "text",
+                "inputId": "weight_input_Id",
+                "dropDown": "g",
+                "dropDownId": "weight_dd_Id",
                 "dateTimePicker": false
             }
         ],
         "ButtonValue": "Calculate",
-        "ButtonId": "calc-Btn",
+        "ButtonId": "calculate_btn",
         "ButtonType": "submit",
         "resultDiv": "true",
         "resultDisplay": "none"

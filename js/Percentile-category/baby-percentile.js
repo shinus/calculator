@@ -8,34 +8,32 @@ var dd_height = getElement("Height_dd_Id");
 var head = getElement("Head_input_Id");
 var dd_head = getElement("Head_dd_Id");
 
-
-
-omni.onInit(function (ctx) {
+function showChart(ctx) {
     //ctx.setDefault('weight', 10.5);
     //ctx.setDefault('height', 66)
     //ctx.setDefault('age', 15);
     //ctx.setDefault('headCircumference', 43);
     ctx.setDefault('showLines', 5);
     ctx.setDefault('whichChart', 1);
-});
+};
 
-var sex = omni.createValueSelect({
+var sex = createValueSelect({
     girl: { name: 'girl', value: 1 },
     boy: { name: 'boy', value: 2 },
 });
 
-var whichOne = omni.createValueSelect({
+var whichOne =createValueSelect({
     weight: { name: 'weight chart', value: 1 },
     height: { name: 'height chart', value: 2 },
     head: { name: 'head circumference chart', value: 3 }
 });
 
-omni.onInit(function (ctx) {
+function chartResult(ctx) {
     ctx.bindValueSelect(whichOne, 'whichChart');
     ctx.setDefault('whichChart', 1);
     ctx.bindValueSelect(sex, 'sex');
     ctx.setDefault('sex', 1);
-});
+};
 
 var months = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
 
@@ -310,21 +308,27 @@ for (var i = 0; i < months.length; i++) {
         ;
 }
 
-omni.onResult(['age', 'sex', 'whichChart'], function (ctx, age, sex, whichChart) {
-    var weight = mathjs.round(ctx.getNumberValue('weight') || 0, 2);
-    var height = mathjs.round(ctx.getNumberValue('height') || 0, 2);
-    var headCircumference = mathjs.round(ctx.getNumberValue('headCircumference') || 0, 2);
-    age = mathjs.round(ctx.getNumberValue('age') || 0, 1);
-    sex = sex.toNumber();
-    whichChart = whichChart.toNumber();
-    var showLines = ctx.getNumberValue('showLines') + 1;
+var dd_baby = getElement("baby_dd_Id");
+var age_input = getElement("Age_input_Id");
+var dd_age = getElement("Age_dd_Id");
+var weight = getElement("Weight_input_Id");
+var dd_weight = getElement("Weight_dd_Id");
+var height = getElement("Height_input_Id");
+var dd_height = getElement("Height_dd_Id");
+var head = getElement("Head_input_Id");
+var dd_head = getElement("Head_dd_Id");
+function getResult() {
+    var weight = weight.value
+    var height = height.value;
+    var headCircumference = head.value;
+   var  age = age_input.value;
+   var sex = getSelectedValue(dd_baby)
+   
+   
     var multiplier = 10;
     var units_multiplier = 1;
     var units = '';
-    ctx.hideVariables('hidden', 'showLines', 'height_units_vs', 'weight_units_vs');
 
-    var chartTitle = '';
-    var chartData;
     var text_weight = '', text_height = '', text_headCircumference = '';
 
     if (sex === 1) {
@@ -476,7 +480,7 @@ omni.onResult(['age', 'sex', 'whichChart'], function (ctx, age, sex, whichChart)
             alwaysShown: true
         });
     }
-});
+};
 
 
 //////

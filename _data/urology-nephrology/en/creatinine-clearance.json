@@ -1,7 +1,7 @@
 {
-    "H1": "weight percentile calculator online",
+    "H1": "creatinie clearance calculator online",
     "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "child weight percentile - By using this tool to manage your body weight",
+    "TITLE": "creatinie clearance calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -67,10 +67,10 @@
     "FAQ": [],
     "jscdns": [
         "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-      ],
+    ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/Percentile-category/child-weight-percentile.js"
+        "/js/urology-nephrology/creatinine-clearance.js"
     ],
     "calculatorData": {
         "calculatorRow": [
@@ -78,17 +78,18 @@
                 "labelName": "Age",
                 "labelId": "Age__id",
                 "inputBox": "text",
-                "inputId": "inputAge",
-                "dropDown": "mos",
-                "dropDownId": "dd_age",
+                "inputId": "Age_input_Id",
+                
+               
                 "dateTimePicker": false
             },
             {
-                "labelName": "Is it a boy or a girl?",
-                "labelId": "Is it a boy or a girl?__id",
-                "inputId": "Is it a boy or a girl?_input_Id",
-                "dropDown": "Girl ♀️",
-                "dropDownId": "girl_dd_Id",
+                "labelName": "Sex",
+                "labelId": "Sex__id",
+         
+                
+                "dropDown": "Male",
+                "dropDownId": "Sex_dd_Id",
                 "dateTimePicker": false
             },
             {
@@ -96,13 +97,31 @@
                 "labelId": "Weight__id",
                 "inputBox": "text",
                 "inputId": "Weight_input_Id",
-                "dropDown": "lb",
+                "dropDown": "kg",
                 "dropDownId": "Weight_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Height",
+                "labelId": "Height__id",
+                "inputBox": "text",
+                "inputId": "Height_input_Id",
+                "dropDown": "cm",
+                "dropDownId": "Height_dd_Id",
+                "dateTimePicker": false
+            },
+            { 
+                "labelName": "serum creatinie",
+                "labelId": "serum__id",
+                "inputBox": "text",
+                "inputId": "serum_input_Id",
+                "dropDown": "mol/l",
+                "dropDownId": "serum_dd_Id",
                 "dateTimePicker": false
             }
         ],
         "ButtonValue": "Calculate",
-        "ButtonId": "calc-Btn",
+        "ButtonId": "calculate_btn",
         "ButtonType": "submit",
         "resultDiv": "true",
         "resultDisplay": "none"

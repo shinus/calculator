@@ -47,6 +47,7 @@ var unitsForLength = [
   { name: "cm", value: "cm" },
   { name: "feet", value: "ft" },
   { name: "m", value: "m" },
+  { name: "mm", value: "mm" },
 ];
 
 var genderVS = [
@@ -124,6 +125,11 @@ function getWeightInKg(unit, value) {
 
 function getHeightInInches(unit, value) {
   let exp = value + " " + unit + " " + "to" + " " + "inch";
+  var nValue = math.evaluate(exp).toString();
+  return parseFloat(nValue);
+}
+function getHeightInMM(unit, value) {
+  let exp = value + " " + unit + " " + "to" + " " + "mm";
   var nValue = math.evaluate(exp).toString();
   return parseFloat(nValue);
 }
@@ -281,6 +287,20 @@ function showInfo(parentElement, info, id) {
   div.innerHTML = info;
   parentElement.after(div);
 }
+function showInfoBefore(parentElement, info, id) {
+  var infoElement = getElement(id);
+  var div;
+  if (infoElement != null) {
+    div = infoElement;
+  } else {
+    div = document.createElement("div");
+    div.id = id;
+  }
+
+  div.innerHTML = "";
+  div.innerHTML = info;
+  parentElement.before(div);
+}
 
 function calcBmi(heightValue, weightValue) {
   let nHeight = Number(Math.pow(heightValue, 2));
@@ -317,4 +337,83 @@ function addChart(chartType, labels, data, name) {
     },
   });
   return ctx;
+}
+
+function resultPage(queryParams) {
+  var newUrl = window.location.href;
+  if (!newUrl.includes("?")) {
+    setQueryParams(queryParams);
+  } else {
+    setQueryParams(queryParams);
+    gtag("event", "page_view", {
+      page_location: window.location.pathname + location.search,
+    });
+  }
+}
+
+function setQueryParams(queryParams) {
+  let url =
+    window.location.protocol +
+    "//" +
+    window.location.host +
+    "/" +
+    permaLink +
+    "?";
+  for (queryP of queryParams) {
+    if (history.pushState) {
+      var str = "&" + queryP.name + "=" + queryP.values;
+      url = url + str;
+      console.log(url);
+    }
+  }
+  window.history.pushState({ path: url }, "", url);
+}
+
+function resultPage2(queryParams) {
+  var newUrl = window.location.href;
+  if (!newUrl.includes("?")) {
+    setParams(queryParams);
+  } else {
+    setParams(queryParams);
+    gtag("event", "page_view", {
+      page_location: window.location.pathname + location.search,
+    });
+  }
+}
+
+function setParams(queryParams) {
+  let url =
+    window.location.protocol +
+    "//" +
+    window.location.host +
+    "/" +
+    permaLink +
+    "?";
+  for (queryP of queryParams) {
+    var value;
+
+    if (queryP.values.tagName == "INPUT") {
+      value = queryP.values.value;
+    } else if (queryP.values.tagName == "SELECT") {
+      value = queryP.values.selectedIndex;
+    }
+
+    if (history.pushState) {
+      var str = "&" + queryP.name + "=" + value;
+      url = url + str;
+    }
+  }
+  window.history.pushState({ path: url }, "", url);
+}
+
+function setParamValues(queryParams) {
+  const params = new URLSearchParams(window.location.search);
+  for (queryP of queryParams) {
+    var parameter_value = params.get(queryP.name);
+    if (queryP.values.tagName == "INPUT") {
+      queryP.values.value = parameter_value;
+    } else if (queryP.values.tagName == "SELECT") {
+      queryP.values.selectedIndex = parameter_value;
+    }
+  }
 }

@@ -65,17 +65,20 @@
         "steps": []
     },
     "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/Percentile-category/child-weight-percentile.js"
+        "/js/Percentile-category/birthweight-percentile.js"
     ],
     "calculatorData": {
         "calculatorRow": [
         {
             "labelName": "Gestational age",
             "labelId": "Gestational age__id",
-            "inputBox": "text",
-            "inputId": "age_input_Id",
+            "inputBox":"text",
+            "inputId": "age_input_dd",
             "dropDown": "wks",
             "dropDownId": "age_dd_Id",
             "dateTimePicker": false
@@ -84,14 +87,14 @@
             "labelName": "Weight",
             "labelId": "Weight__id",
             "inputBox": "text",
-            "inputId": "Weight_input_Id",
+            "inputId": "weight_input_Id",
             "dropDown": "lb",
-            "dropDownId": "Weight_dd_Id",
+            "dropDownId": "weight_dd_Id",
             "dateTimePicker": false
         }
     ],
     "ButtonValue": "Calculate",
-    "ButtonId": "calculate_btn",
+    "ButtonId": "calcBtn",
     "ButtonType": "submit",
     "resultDiv": "true",
     "resultDisplay": "none"
