@@ -21,9 +21,13 @@ var dd_age = getElement("Age_dd_Id");
 var gender = getElement("gender_dd_Id");
 var dd_bmi = getElement("bmi_dd_Id");
 var bmi_in = getElement("bmi_input_Id");
+var height = getElement("height_input");
+var height_dd = getElement("Height_dd");
+var weight = getElement("weight_input_Id");
+var weight_dd = getElement("weight_dd_Id");
 var calcBtn = getElement("calculate_btn");
-
-
+var hiegtContainer = getElement("calculator-row-4");
+var weightContainer = getElement("calculator-row-5");
 const getScript = document.currentScript;
 const permaLink = getScript.dataset.permalink;
 
@@ -33,7 +37,13 @@ var queryParams = [
   { name: "sex", values: gender },
   { name: "bmiUnit", values: dd_bmi },
   { name: "bmi", values: bmi_in },
+  { name: "height", values: height },
+  { name: "heightUnit", values: height_dd },
+  { name: "weight", values: weight },
+  { name: "weightUnit", values: weight_dd },
 ];
+
+
 
 var yearVS = [
   {
@@ -66,20 +76,63 @@ var sex_VS = [
 var condition = [
   {
     name: "yes",
-    value: 0,
-  },
-  {
-    name: "no",
     value: 1,
   },
+  {
+    name: "no, i want to calculate",
+    value: 0,
+  },
+];
+var unitsForLength = [
+  { name: "cm", value: 0 },
+  { name: "inch", value: 1 },
+  { name: "feet", value: 2 },
+  { name: "m", value: 3 },
+];
+
+var unitsForWeight = [
+  { name: "kilogram (kg)", value: 0 },
+  { name: "grams (g)", value: 1 },
+  { name: "pounds (lb)", value: 2 },
+  { name: "Stones (stone)", value: 3 },
 ];
 
 function init() {
   createDropDown(yearVS, dd_age);
   createDropDown(sex_VS, gender);
   createDropDown(condition, dd_bmi);
+  var url = window.location.href;
+  const params = new URLSearchParams(window.location.search);
+  console.log(params.get('bmiUnit'));
+  let weif = params.get('weight')
+  let heif = params.get('height')
+
+  if (params.get('bmiUnit') == 1) {
+    hiegtContainer.style.display = 'block'
+    weightContainer.style.display = 'block'
+    weightContainer.value = weif
+    hiegtContainer.value = heif
+  } else {
+    hiegtContainer.style.display = 'none'
+    weightContainer.style.display = 'none'
+  }
+
 }
 
+dd_bmi.addEventListener('change', (e) => {
+
+  if (e.target.value == 1) {
+    hiegtContainer.style.display = 'none'
+    weightContainer.style.display = 'none'
+  } else {
+    console.log('should create');
+    hiegtContainer.style.display = 'block'
+    createDropDown(unitsForLength, height_dd);
+    createDropDown(unitsForWeight, weight_dd);
+    weightContainer.style.display = 'block'
+
+  }
+})
 init();
 
 
@@ -165,11 +218,25 @@ function getPercentile() {
 
 
 function getExact() {
+  var aheight = Number(height.value);
+  var aweight = Number(weight.value);
+  const params = new URLSearchParams(window.location.search);
+  console.log(params.get('bmiUnit'));
+  if (params.get('bmiUnit') == 1) {
+    const te = (((aweight * 1000) / (aheight * aheight) * 0.01) * 1000)
+    bmi_in.value = te.toFixed(3);
+    
+  }
+
   var sex = Number(getSelectedValue(gender));
   var age = Number(nAge.value);
   var bmi = Number(bmi_in.value);
 
+
+
   var i, j, result = 0, take_row = [];
+
+
 
   if (sex === 0) //jeżeli dziewczynki 
   {
@@ -247,11 +314,10 @@ function getExact() {
 function showResult() {
   resultPage2(queryParams);
 
-
   var result = Number(getExact());
 
 
- 
+
 
   var div1 = document.createElement("div");
   var div2 = document.createElement("div");
@@ -265,86 +331,117 @@ function showResult() {
     "percentile";
 
   var percentile = result;
-  if (percentile < 3) {
-    div2.innerHTML =
+  if (percentile == 0.1) {
+    div2.innerHTML = 'The result is below <b> 0.1 percentile </b><br />' +
+      'It seems that your child\'s BMI may be too low. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' + '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd1.JPG style="width:100%" alt="Growth chart">';
+  } else if (percentile == 1) {
+    div2.innerHTML = 'Between <b>0.1</b> and <b>1st percentile</b><br />' +
+      'It seems that your child\'s BMI may be too low. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' + '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd1.JPG style="width:100%" alt="Growth chart">';
+
+  } else if (percentile < 3) {
+    div2.innerHTML = 'Between <b>1st</b> and <b>3rd percentile</b><br />'+
+    'It seems that your child\'s BMI may be too low. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd1.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 3) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>1st</b> and <b>3rd percentile</b><br />'+
+    'It seems that your child\'s BMI may be too low. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd2.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 4) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>3rd</b> and <b>5th percentile</b>'+
+    'It seems that your child\'s BMI may be too low. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd3.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 5) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>3rd</b> and <b>5th percentile</b>'+
+    'It seems that your child\'s BMI may be too low. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd4.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 5) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>3rd</b> and <b>5th percentile</b>'+
+    'It seems that your child\'s BMI may be too low. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd5.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 10) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>5th</b> and <b>10th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd6.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 15) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>10th</b> and <b>15th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd7.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 15) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>10th</b> and <b>15th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd8.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 20) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>15th</b> and <b>25th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd9.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 25) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>15th</b> and <b>25th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd10.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 25) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>15th</b> and <b>25th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd11.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 37) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>25th</b> and <b>50th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd12.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 50) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>25th</b> and <b>50th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd13.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 50) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>25th</b> and <b>50th percentile</b>'+
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd14.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 63) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>50th</b> and <b>75th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd15.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 75) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>50th</b> and <b>75th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd16.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 75) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>50th</b> and <b>75th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd17.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 80) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>75th</b> and <b>85th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd18.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 85) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>75th</b> and <b>85th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd19.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 85) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>75th</b> and <b>85th percentile</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd20.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 90) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>85th</b> and <b>90th percentile</b><br\>'+
+    'It seems that your child\'s BMI may be too high. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd21.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 95) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>90th</b> and <b>95th percentile</b><br\>'+
+    'It seems that your child\'s BMI may be too high. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd22.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 95) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>90th</b> and <b>95th percentile</b><br\>'+
+    'It seems that your child\'s BMI may be too high. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd23.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 96) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>95th</b> and <b>97th percentile</b><br\>'+
+    'It seems that your child\'s BMI may be too high. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd24.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 97) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>95th</b> and <b>97th percentile</b><br\>'+
+    'It seems that your child\'s BMI may be too high. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd25.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 97) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>95th</b> and <b>97th percentile</b><br\>'+
+    'It seems that your child\'s BMI may be too high. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd26.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile > 97) {
-    div2.innerHTML =
+    div2.innerHTML = 'Between <b>97th</b> and <b>99th percentile</b><br />'+
+    'It seems that your child\'s BMI may be too high. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' + 
+      '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd27.JPG style="width:100%" alt="Growth chart">';
+  } else if (percentile == 99 ) {
+    div2.innerHTML = 'Between <b>97th</b> and <b>99th percentile</b><br />'+
+    'It seems that your child\'s BMI may be too high. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' + 
+      '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd27.JPG style="width:100%" alt="Growth chart">';
+  } else if (percentile == 99.9 ) {
+    div2.innerHTML = 'Between <b>97th</b> and <b>99th percentile</b><br />'+
+    'It seems that your child\'s BMI may be too high. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' + 
+      '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd27.JPG style="width:100%" alt="Growth chart">';
+  } else if (percentile == 100 ) {
+    div2.innerHTML = 'Between <b>97th</b> and <b>99th percentile</b><br />'+
+    'It seems that your child\'s BMI may be too high. Check if they have always been in those ranges. <b>If they have entered these ranges recently, consult a doctor.</b>' + 
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd27.JPG style="width:100%" alt="Growth chart">';
   }
   output.append(div1);
@@ -420,7 +517,7 @@ window.onload = function () {
   if (url.includes("?")) {
 
     setParamValues(queryParams);
-    
+
     showResult();
   }
 };

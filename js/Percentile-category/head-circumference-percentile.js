@@ -4083,13 +4083,13 @@ function getHeightInCm(unit, value) {
 function getyear(unit, value) {
   switch (unit) {
     case 'months':
-      return (value * 30) 
+      return (value * 30)
       break;
     case 'years':
       return (value * 365)
       break;
     case 'weeks':
-      return (value * 7) 
+      return (value * 7)
     default:
       return value
       break;
@@ -4103,7 +4103,7 @@ function getExact() {
   var cUnit = getSelectedValue(circumUnit);
 
   circumference = getHeightInCm(cUnit, circumference);
-  
+
   var i,
     j,
     result = 0,
@@ -4177,7 +4177,7 @@ function getExact() {
   } else if (circumference <= take_row.P1) {
     result =
       ((circumference - take_row.P01) / (take_row.P1 - take_row.P01)) *
-        (1 - 0.1) +
+      (1 - 0.1) +
       0.1;
   } else if (circumference <= take_row.P3) {
     result =
@@ -4247,135 +4247,122 @@ function showResult() {
     result.toFixed(2) +
     "<sup>th</sup>" +
     "percentile";
-  if (result == 0.1) {
-    div2.innerHTML =
-      "The result is below the <b> 0.1 percentile </b><br />" +
-      "Check if your baby has always been in this percentile range. If not, consider consulting a physician.";
-  } else if (result == 1) {
-    div2.innerHTML =
-      "Between the <b>0.1</b> and <b>1st percentile</b><br />" +
-      "Check if your baby has always been in this percentile range. If not, consider consulting a physician.";
-  } else if (result == 3) {
-    div2.innerHTML =
-      "Between the <b>1st</b> and <b>3rd percentile</b><br />" +
-      "Check if your baby has always been in this percentile range. If not, consider consulting a physician.";
-  } else if (result == 5) {
-    div2.innerHTML = "Between the <b>3rd</b> and <b>5th percentile</b>.";
-  } else if (result == 10) {
-    div2.innerHTML = "Between the <b>5th</b> and <b>10th percentile</b>.";
-  } else if (result == 15) {
-    div2.innerHTML = "Between the <b>10th</b> and <b>15th percentile</b>.";
-  } else if (result == 25) {
-    div2.innerHTML = "Between <b>15th</b> and <b>25th percentile</b>.";
-  } else if (result == 50) {
-    div2.innerHTML = "Between the <b>25th</b> and <b>50th percentile</b>.";
-  } else if (result == 75) {
-    div2.innerHTML = "Between the <b>50th</b> and <b>75th percentile</b>.";
-  } else if (result == 85) {
-    div2.innerHTML = "Between the <b>75th</b> and <b>85th percentile</b>.";
-  } else if (result == 90) {
-    div2.innerHTML = "Between the <b>85th</b> and <b>90th percentile</b>.";
-  } else if (result == 95) {
-    div2.innerHTML = "Between the <b>90th</b> and <b>95th percentile</b>.";
-  } else if (result == 97) {
-    div2.innerHTML =
-      "Between the<b>95th</b> and <b>97th percentile</b><br />" +
-      "Check if your baby has always been in this percentile range. If not, consider consulting a physician.";
-  } else if (result == 99) {
-    div2.innerHTML =
-      "Between the <b>97th</b> and <b>99th percentile</b><br />" +
-      "Check if your baby has always been in this percentile range. If not, consider consulting a physician.";
-  } else if (result == 99.9) {
-    div2.innerHTML =
-      "Between the <b> 99th</b> and <b>99.9th percentile</b><br />" +
-      "Check if your baby has always been in this percentile range. If not, consider consulting a physician.";
-  } else if (result == 100) {
-    div2.innerHTML =
-      "The result is above <b>99.9th percentile</b><br />" +
-      "Check if your baby has always been in this percentile range. If not, consider consulting a physician.";
-  }
+
 
   var percentile = result;
-  if (percentile < 3) {
+  if (result === 0) {
     div2.innerHTML =
+      "The result is below the <b> 0.1 percentile </b><br />" +
+      "Check if your baby has always been in this percentile range. If not, consider consulting a physician." +
+      '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd1.JPG style="width:100%" alt="Growth chart">' ;
+  }
+  else if (result < 1) {
+    div2.innerHTML =
+      "Between the <b>0.1</b> and <b>1st percentile</b><br />" +
+      "Check if your baby has always been in this percentile range. If not, consider consulting a physician." +
+      '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd1.JPG style="width:100%" alt="Growth chart">';
+  }
+  else if (percentile < 3) {
+    div2.innerHTML = "Between the <b>1st</b> and <b>3rd percentile</b><br />" +
+      "Check if your baby has always been in this percentile range. If not, consider consulting a physician." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd1.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 3) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>1st</b> and <b>3rd percentile</b><br />" +
+      "Check if your baby has always been in this percentile range. If not, consider consulting a physician." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd2.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 4) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>3rd</b> and <b>5th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd3.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 5) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>3rd</b> and <b>5th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd4.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 5) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>3rd</b> and <b>5th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd5.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 10) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>5th</b> and <b>10th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd6.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 15) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>10th</b> and <b>15th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd7.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 15) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>10th</b> and <b>15th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd8.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 20) {
-    div2.innerHTML =
+    div2.innerHTML = "Between <b>15th</b> and <b>25th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd9.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 25) {
-    div2.innerHTML =
+    div2.innerHTML = "Between <b>15th</b> and <b>25th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd10.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 25) {
-    div2.innerHTML =
+    div2.innerHTML = "Between <b>15th</b> and <b>25th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd11.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 37) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>25th</b> and <b>50th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd12.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 50) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>25th</b> and <b>50th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd13.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 50) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>25th</b> and <b>50th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd14.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 63) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>50th</b> and <b>75th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd15.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 75) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>50th</b> and <b>75th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd16.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 75) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>50th</b> and <b>75th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd17.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 80) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>75th</b> and <b>85th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd18.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 85) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>75th</b> and <b>85th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd19.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 85) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>75th</b> and <b>85th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd20.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 90) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>85th</b> and <b>90th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd21.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 95) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>90th</b> and <b>95th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd22.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 95) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the <b>90th</b> and <b>95th percentile</b>." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd23.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 96) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the<b>95th</b> and <b>97th percentile</b><br />" +
+      "Check if your baby has always been in this percentile range. If not, consider consulting a physician." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd24.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile < 97) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the<b>95th</b> and <b>97th percentile</b><br />" +
+      "Check if your baby has always been in this percentile range. If not, consider consulting a physician." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd25.JPG style="width:100%" alt="Growth chart">';
   } else if (percentile === 97) {
-    div2.innerHTML =
+    div2.innerHTML = "Between the<b>95th</b> and <b>97th percentile</b><br />" +
+      "Check if your baby has always been in this percentile range. If not, consider consulting a physician." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd26.JPG style="width:100%" alt="Growth chart">';
-  } else if (percentile > 97) {
+  } else if (percentile < 97) {
+    div2.innerHTML = "Between the <b>97th</b> and <b>99th percentile</b><br />" +
+      "Check if your baby has always been in this percentile range. If not, consider consulting a physician." +
+      '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd27.JPG style="width:100%" alt="Growth chart">';
+  } else if (percentile < 100) {
     div2.innerHTML =
+      "Between the <b>97th</b> and <b>99th percentile</b><br />" +
+      "Check if your baby has always been in this percentile range. If not, consider consulting a physician." +
+      '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd27.JPG style="width:100%" alt="Growth chart">';
+  } else if (percentile === 100) {
+    div2.innerHTML =
+      "Between the <b> 99th</b> and <b>99.9th percentile</b><br />" +
+      "Check if your baby has always been in this percentile range. If not, consider consulting a physician." +
+      '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd27.JPG style="width:100%" alt="Growth chart">';
+  } else if  (percentile > 100) {
+    div2.innerHTML =
+      "The result is above <b>99.9th percentile</b><br />" +
+      "Check if your baby has always been in this percentile range. If not, consider consulting a physician." +
       '<img src=https://uploads-cdn.omnicalculator.com/images/percentile_bmi/Slajd27.JPG style="width:100%" alt="Growth chart">';
   }
   output.append(div1);

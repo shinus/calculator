@@ -99,6 +99,25 @@
                 "dropDownId": "bmi_dd_Id",
                 "dateTimePicker": false
             },
+           
+            {
+                "labelName": "Height/Length",
+                "labelId": "Height__id",
+                "inputBox": "text",
+                "inputId": "height_input",
+                "dropDown": "cm",
+                "dropDownId": "Height_dd",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Weight",
+                "labelId": "Weight__id",
+                "inputBox": "text",
+                "inputId": "weight_input_Id",
+                "dropDown": "kg",
+                "dropDownId": "weight_dd_Id",
+                "dateTimePicker": false
+            },
             {
                 "labelName": "BMI",
                 "labelId": "BMI__id",
