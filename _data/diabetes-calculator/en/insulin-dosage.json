@@ -1,0 +1,159 @@
+{
+    "H1": "insulin dosage calculator online",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "insulin dosage calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/diabetes-calculator/insulin-dosage.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Do you know your total daily insulin dose?",
+                "labelId": "Do you know your total daily insulin dose?__id",
+                "inputId": "Do you know your total daily insulin dose?_input_Id",
+                "dropDown": "No",
+                "dropDownId": "dose_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Carbohydrate content",
+                "labelId": "Carbohydrate content__id",
+                "inputBox": "text",
+                "inputId": "content_input_Id",
+                "dropDownId": "Carbohydrate content_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Carbohydrate ratio",
+                "labelId": "Carbohydrate ratio__id",
+                "inputBox": "text",
+                "inputId": "ratio_input_Id",
+                "dropDownId": "Carbohydrate ratio_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Insulin dose to cover carbohydrates",
+                "labelId": "Insulin dose to cover carbohydrates__id",
+                "inputBox": "text",
+                "inputId": "carbohydrates_input_Id",
+                "dropDownId": "Insulin dose to cover carbohydrates_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Current blood glucose",
+                "labelId": "Current blood glucose__id",
+                "inputBox": "text",
+                "inputId": "glucose_input_Id",
+                "dropDown": "mg/dL",
+                "dropDownId": "glucose_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Target blood glucose",
+                "labelId": "Target blood glucose__id",
+                "inputBox": "text",
+                "inputId": "Target_input_Id",
+                "dropDown": "mg/dL",
+                "dropDownId": "Target_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Insulin sensitivity factor",
+                "labelId": "Insulin sensitivity factor__id",
+                "inputBox": "text",
+                "inputId": "factor_input_Id",
+                "dropDown": "mg/dL",
+                "dropDownId": "factor_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Insulin dose to correct blood glucose",
+                "labelId": "Insulin dose to correct blood glucose__id",
+                "inputBox": "text",
+                "inputId": "Inglucose_input_Id",
+                "dropDownId": "Inglucose_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "",
+                "labelId": "__id",
+                "inputBox": "text",
+                "inputId": "abc_input_Id",
+                "dropDownId": "_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

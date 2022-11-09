@@ -63,19 +63,24 @@ var unitsForCm = [
   
   };
   
+  
   function showResult() {
     resultPage2(queryParams)
     var result = Number(getExact());
+   
+    
     
   
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
   
     output.innerHTML = "volume " + "  "  + result.toFixed(0) + "ml";
+    // if(result1 >= 0.1){
     div1.innerHTML =
-      "<b>The actual volume may vary by ± "+ 1607.34 +"cm³ ("+ 98.05 + "in³) </b>";
-  
+      "<b>The actual volume may vary by ± "+  +"cm³ ("+  + "in³) </b>";
+    // }
       var percentile = result;
+
     
     output.append(div1);
     output.append(div2);

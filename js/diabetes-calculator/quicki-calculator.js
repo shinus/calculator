@@ -35,11 +35,14 @@ function getExact() {
     var glu = Number(glucose.value)
 
     var result = 0;
+let ainsulinf = parseFloat((Math.log(glu) / Math.log(10)).toFixed(3))
+let glus = parseFloat((Math.log(ain) / Math.log(10)).toFixed(3))
 
-    result = (1 / Math.log(ain)) + Math.log(glu);
-    console.log(Math.log(ain));
+    result = 1 / (ainsulinf + glus);
+  console.log(ainsulinf,   "ss");
+  console.log(glus,   "as");
 
-    console.log(result);
+    console.log(result, 'result');
     return math.bignumber(result)
 }
 

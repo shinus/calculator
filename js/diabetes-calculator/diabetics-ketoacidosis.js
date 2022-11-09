@@ -1,0 +1,10 @@
+var cal = getElement("calculate_dd_Id")
+var glucose_dd = getElement("Glucose_dd_Id")
+var serum_dd = getElement("bicarbonate_dd_Id")
+var anion_dd = getElement("gap_dd_Id")
+var arterial_dd = getElement("Arterial_dd_Id")
+var state_dd = getElement("state_dd_Id")
+var ketone_dd = getElement("Serum_dd_Id")
+var urine_dd = getElement("Urine_dd_Id")
+var calcBtn = getElement("calculate_btn")
+
