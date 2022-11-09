@@ -8,6 +8,20 @@ var dimension3_dd = getElement("3_dd_Id");
 var calcBtn = getElement("calculate_btn");
 var output = getElement("result-section");
 
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
+
+var queryParams = [
+  { name: "shape", values: shape },
+  { name: "dimension1", values: dimension },
+  { name: "dimension1Unit", values: dimension_dd },
+  { name: "dimension2", values: dimension2 },
+  { name: "dimenssion2Unit", values: dimension2_dd },
+  { name: "dimenssion3", values: dimension3 },
+  { name: "dimenssion3Unit", values: dimension3_dd },
+
+]
+
 var unitsForCm = [
     { name: "cm", value: 1 },
     { name: "inches", value: 2.54 },
@@ -50,16 +64,16 @@ var unitsForCm = [
   };
   
   function showResult() {
+    resultPage2(queryParams)
     var result = Number(getExact());
+    
   
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
   
-    output.innerHTML = "";
+    output.innerHTML = "volume " + "  "  + result.toFixed(0) + "ml";
     div1.innerHTML =
-      "<b>The actual volume may vary by ± </b> :" +
-      " " +
-      result.toFixed(2) ;
+      "<b>The actual volume may vary by ± "+ 1607.34 +"cm³ ("+ 98.05 + "in³) </b>";
   
       var percentile = result;
     
@@ -68,3 +82,12 @@ var unitsForCm = [
   };
   
   calcBtn.addEventListener("click", showResult);
+
+  
+window.onload = function () {
+  var url = window.location.href;
+  if (url.includes("?")) {
+    setParamValues(queryParams);
+    showResult();
+  }
+};

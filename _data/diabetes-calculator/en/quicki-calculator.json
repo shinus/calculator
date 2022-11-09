@@ -1,7 +1,7 @@
 {
-    "H1": "adrenal washout calculator online",
-    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "adrenal washout calculator - By using this tool to manage your body weight",
+    "H1": "QUICKI Calculator online",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "QUICKI Calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -14,12 +14,12 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "baby-percentile ",
-                        "url": "/baby-percentile",
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile",
+                        "name": "birthweight percentile calculator",
                         "url": "/birthweight-percentile-calculator",
                         "hover": "blue"
                     }
@@ -70,40 +70,32 @@
     ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/urology-nephrology/adrenal-washout.js"
+        "/js/diabetes-calculator/quicki-calculator.js"
     ],
     "calculatorData": {
-        "calculatorRow": [
-            {
-                "labelName": "Pre-contrast",
-                "labelId": "Pre-contrast__id",
-                "inputBox": "text",
-                "inputId": "pre_input_Id",
-                "dropDownId": "Pre-contrast_dd_Id",
-                "dateTimePicker": false
-            },
-            {
-                "labelName": "60-75 sec post-contrast",
-                "labelId": "60-75 sec post-contrast__id",
-                "inputBox": "text",
-                "inputId": "post_input_Id",
-                "dropDownId": "60-75 sec post-contrast_dd_Id",
-                "dateTimePicker": false
-            },
-            {
-                "labelName": "15 min delayed",
-                "labelId": "15 min delayed__id",
-                "inputBox": "text",
-                "inputId": "delayed_input_Id",
-                "dropDownId": "15 min delayed_dd_Id",
-                "dateTimePicker": false
-            }
-          
-        ],
-        "ButtonValue": "Calculate",
-        "ButtonId": "calculate_btn",
-        "ButtonType": "submit",
-        "resultDiv": "true",
-        "resultDisplay": "none"
-    }
+    "calculatorRow": [
+        {
+            "labelName": "Fasting insulin",
+            "labelId": "Fasting insulin__id",
+            "inputBox": "text",
+            "inputId": "insulin_input_Id",
+            "dropDownId": "Fasting insulin_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Fasting glucose",
+            "labelId": "Fasting glucose__id",
+            "inputBox": "text",
+            "inputId": "glucose_input_Id",
+            "dropDown": "mg/dL",
+            "dropDownId": "glucose_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
 }

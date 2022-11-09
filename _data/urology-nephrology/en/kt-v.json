@@ -1,7 +1,7 @@
 {
-    "H1": "adrenal washout calculator online",
+    "H1": "kt-v calculator online",
     "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "adrenal washout calculator - By using this tool to manage your body weight",
+    "TITLE": "kt-v calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -70,40 +70,60 @@
     ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/urology-nephrology/adrenal-washout.js"
+        "/js/urology-nephrology/kt-v.js"
     ],
     "calculatorData": {
-        "calculatorRow": [
-            {
-                "labelName": "Pre-contrast",
-                "labelId": "Pre-contrast__id",
-                "inputBox": "text",
-                "inputId": "pre_input_Id",
-                "dropDownId": "Pre-contrast_dd_Id",
-                "dateTimePicker": false
-            },
-            {
-                "labelName": "60-75 sec post-contrast",
-                "labelId": "60-75 sec post-contrast__id",
-                "inputBox": "text",
-                "inputId": "post_input_Id",
-                "dropDownId": "60-75 sec post-contrast_dd_Id",
-                "dateTimePicker": false
-            },
-            {
-                "labelName": "15 min delayed",
-                "labelId": "15 min delayed__id",
-                "inputBox": "text",
-                "inputId": "delayed_input_Id",
-                "dropDownId": "15 min delayed_dd_Id",
-                "dateTimePicker": false
-            }
-          
-        ],
-        "ButtonValue": "Calculate",
-        "ButtonId": "calculate_btn",
-        "ButtonType": "submit",
-        "resultDiv": "true",
-        "resultDisplay": "none"
-    }
+    "calculatorRow": [
+        {
+            "labelName": "Pre-dialysis BUN",
+            "labelId": "Pre-dialysis BUN__id",
+            "inputBox": "text",
+            "inputId": "PreBUN_input_Id",
+            "dropDown": "mg/dl",
+            "dropDownId": "PreBUN_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Post-dialysis BUN",
+            "labelId": "Post-dialysis BUN__id",
+            "inputBox": "text",
+            "inputId": "PostBUN_input_Id",
+            "dropDown": "mg/dl",
+            "dropDownId": "PostBUN_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Duration of dialysis",
+            "labelId": "Duration of dialysis__id",
+            "inputBox": "text",
+            "inputId": "dialysis_input_Id",
+            "dropDown": "hrs",
+            "dropDownId": "dialysis_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Volume of removed ultrafiltrate ",
+            "labelId": "Volume of removed ultrafiltrate __id",
+            "inputBox": "text",
+            "inputId": "ultrafiltrate_input_Id",
+            "dropDown": "liters",
+            "dropDownId": "ultrafiltrate_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Post-dialysis weight",
+            "labelId": "Post-dialysis weight__id",
+            "inputBox": "text",
+            "inputId": "weight_input_Id",
+            "dropDown": "lb",
+            "dropDownId": "weight_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
 }

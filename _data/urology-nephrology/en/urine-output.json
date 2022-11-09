@@ -1,7 +1,7 @@
 {
-    "H1": "adrenal washout calculator online",
+    "H1": "urine output calculator online",
     "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "adrenal washout calculator - By using this tool to manage your body weight",
+    "TITLE": "urine output calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -70,35 +70,54 @@
     ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/urology-nephrology/adrenal-washout.js"
+        "/js/urology-nephrology/urine-output.js"
     ],
     "calculatorData": {
         "calculatorRow": [
             {
-                "labelName": "Pre-contrast",
-                "labelId": "Pre-contrast__id",
-                "inputBox": "text",
-                "inputId": "pre_input_Id",
-                "dropDownId": "Pre-contrast_dd_Id",
+                "labelName": "Your patient's age:",
+                "labelId": "Your patient's age:__id",
+                "inputId": "Your patient's age:_input_Id",
+                "dropDown": "≥18 years",
+                "dropDownId": "age_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "60-75 sec post-contrast",
-                "labelId": "60-75 sec post-contrast__id",
+                "labelName": "Weight",
+                "labelId": "Weight__id",
                 "inputBox": "text",
-                "inputId": "post_input_Id",
-                "dropDownId": "60-75 sec post-contrast_dd_Id",
+                "inputId": "Weight_input_Id",
+                "dropDown": "lb",
+                "dropDownId": "Weight_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "15 min delayed",
-                "labelId": "15 min delayed__id",
+                "labelName": "Time",
+                "labelId": "Time__id",
                 "inputBox": "text",
-                "inputId": "delayed_input_Id",
-                "dropDownId": "15 min delayed_dd_Id",
+                "inputId": "Time_input_Id",
+                "dropDown": "hrs",
+                "dropDownId": "Time_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Urine volume",
+                "labelId": "Urine volume__id",
+                "inputBox": "text",
+                "inputId": "volume_input_Id",
+                "dropDown": "ml",
+                "dropDownId": "volume_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Fluid intake",
+                "labelId": "Fluid intake__id",
+                "inputBox": "text",
+                "inputId": "intake_input_Id",
+                "dropDown": "ml",
+                "dropDownId": "intake_dd_Id",
                 "dateTimePicker": false
             }
-          
         ],
         "ButtonValue": "Calculate",
         "ButtonId": "calculate_btn",

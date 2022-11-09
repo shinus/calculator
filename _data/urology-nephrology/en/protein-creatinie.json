@@ -90,14 +90,6 @@
                 "dropDown": "mg/dL",
                 "dropDownId": "creatinine_dd_Id",
                 "dateTimePicker": false
-            },
-            {
-                "labelName": "Protein  creatinine ratio",
-                "labelId": "Protein  creatinine ratio__id",
-                "inputBox": "text",
-                "inputId": "ratio_input_Id",
-                "dropDownId": "Protein  creatinine ratio_dd_Id",
-                "dateTimePicker": false
             }
         ],
         "ButtonValue": "Calculate",

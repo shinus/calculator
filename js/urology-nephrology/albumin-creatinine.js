@@ -4,6 +4,19 @@ var creatinine_dd = getElement("creatinine_dd_Id");
 var output = getElement("result-section");
 var calcBtn = getElement("calculate_btn");
 
+
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
+
+var queryParams = [
+  { name: "albumin", values: albumin },
+  { name: "creatinine", values: creatinine },
+  { name: "creatinineUnit", values: creatinine_dd }
+//   { name: "circumference", values: nCircumference },
+//   { name: "circumUnit", values: circumUnit },
+
+]
+
 var coef = [
     { name: "mg/dl", value: 0 },
     { name: "mm/mol", value: 1 }
@@ -54,6 +67,7 @@ function getExact() {
 };
 
 function showResult() {
+    resultPage2(queryParams);
     var result = Number(getExact());
     var test = document.createElement("div")
     var div1 = document.createElement("div");
@@ -72,3 +86,11 @@ function showResult() {
 };
 
 calcBtn.addEventListener("click", showResult);
+
+window.onload = function () {
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
+  };

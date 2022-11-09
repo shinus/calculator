@@ -5,6 +5,16 @@ var usodium = getElement("Usodium_input_Id");
 var output = getElement("result-section");
 var calcBtn = getElement("calculate_btn");
 
+const getScript = document.currentScript;
+const permaLink = getScript.dataset.permalink;
+
+var queryParams = [
+  { name: "creatinine", values: creatinine },
+  { name: "sodium", values: Sodium },
+  { name: "urine-creatinine", values: urine },
+  { name: "urine-sodium", values: usodium },
+];
+
 
 
 function getExact() {
@@ -24,6 +34,7 @@ function getExact() {
 };
 
 function showResult() {
+  resultPage2(queryParams);
     var result = Number(getExact());
 
     var div1 = document.createElement("div");
@@ -31,7 +42,7 @@ function showResult() {
 
     output.innerHTML = "";
     div1.innerHTML = "FENA" + 
-     "  " + "  " + "      " +
+     "  " + "  " + "    " +
        
         
       result.toFixed(2) +
@@ -44,3 +55,11 @@ function showResult() {
 };
 
 calcBtn.addEventListener("click", showResult);
+
+window.onload = function () {
+  var url = window.location.href;
+  if (url.includes("?")) {
+    setParamValues(queryParams);
+    showResult();
+  }
+};

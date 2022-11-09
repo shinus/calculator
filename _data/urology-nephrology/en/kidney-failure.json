@@ -1,7 +1,7 @@
 {
-    "H1": "adrenal washout calculator online",
+    "H1": "kidnry failure calculator online",
     "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "adrenal washout calculator - By using this tool to manage your body weight",
+    "TITLE": "kidney failure calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -70,35 +70,77 @@
     ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/urology-nephrology/adrenal-washout.js"
+        "/js/urology-nephrology/kidney-failure.js"
     ],
     "calculatorData": {
         "calculatorRow": [
             {
-                "labelName": "Pre-contrast",
-                "labelId": "Pre-contrast__id",
+                "labelName": "Age",
+                "labelId": "Age__id",
                 "inputBox": "text",
-                "inputId": "pre_input_Id",
-                "dropDownId": "Pre-contrast_dd_Id",
+                "inputId": "Age_input_Id",
+                "dropDownId": "Age_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "60-75 sec post-contrast",
-                "labelId": "60-75 sec post-contrast__id",
-                "inputBox": "text",
-                "inputId": "post_input_Id",
-                "dropDownId": "60-75 sec post-contrast_dd_Id",
+                "labelName": "Sex",
+                "labelId": "Sex__id",
+                "inputId": "Sex_input_Id",
+                "dropDown": "Female",
+                "dropDownId": "Sex_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "15 min delayed",
-                "labelId": "15 min delayed__id",
+                "labelName": "Albumin-to-creatinine ratio",
+                "labelId": "Albumin-to-creatinine ratio__id",
+                "inputId": "Albumin-to-creatinine ratio_input_Id",
+                "dropDown": "<30 mg/g",
+                "dropDownId": "ratio_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "eGFR",
+                "labelId": "eGFR__id",
                 "inputBox": "text",
-                "inputId": "delayed_input_Id",
-                "dropDownId": "15 min delayed_dd_Id",
+                "inputId": "eGFR_input_Id",
+                "dropDownId": "eGFR_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Albumin",
+                "labelId": "Albumin__id",
+                "inputBox": "text",
+                "inputId": "Albumin_input_Id",
+                "dropDown": "g/dL",
+                "dropDownId": "Albumin_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Bicarbonate",
+                "labelId": "Bicarbonate__id",
+                "inputBox": "text",
+                "inputId": "Bicarbonate_input_Id",
+                "dropDown": "mEq/L",
+                "dropDownId": "Bicarbonate_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Calcium",
+                "labelId": "Calcium__id",
+                "inputBox": "text",
+                "inputId": "Calcium_input_Id",
+                "dropDown": "mg/dL",
+                "dropDownId": "Calcium_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Phosphorus",
+                "labelId": "Phosphorus__id",
+                "inputBox": "text",
+                "inputId": "Phosphorus_input_Id",
+                "dropDownId": "Phosphorus_dd_Id",
                 "dateTimePicker": false
             }
-          
         ],
         "ButtonValue": "Calculate",
         "ButtonId": "calculate_btn",

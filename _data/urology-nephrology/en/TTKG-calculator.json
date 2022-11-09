@@ -1,7 +1,7 @@
 {
-    "H1": "adrenal washout calculator online",
+    "H1": "TTKG calculator online",
     "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "adrenal washout calculator - By using this tool to manage your body weight",
+    "TITLE": "TTKG calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -70,35 +70,42 @@
     ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/urology-nephrology/adrenal-washout.js"
+        "/js/urology-nephrology/TTKG-calculator.js"
     ],
     "calculatorData": {
         "calculatorRow": [
             {
-                "labelName": "Pre-contrast",
-                "labelId": "Pre-contrast__id",
+                "labelName": "Serum potassium",
+                "labelId": "Serum potassium__id",
                 "inputBox": "text",
-                "inputId": "pre_input_Id",
-                "dropDownId": "Pre-contrast_dd_Id",
+                "inputId": "serum_input_Id",
+                "dropDownId": "Serum potassium_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "60-75 sec post-contrast",
-                "labelId": "60-75 sec post-contrast__id",
+                "labelName": "Urine potassium",
+                "labelId": "Urine potassium__id",
                 "inputBox": "text",
-                "inputId": "post_input_Id",
-                "dropDownId": "60-75 sec post-contrast_dd_Id",
+                "inputId": "urine_input_Id",
+                "dropDownId": "Urine potassium_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "15 min delayed",
-                "labelId": "15 min delayed__id",
+                "labelName": "Serum osmolality",
+                "labelId": "Serum osmolality__id",
                 "inputBox": "text",
-                "inputId": "delayed_input_Id",
-                "dropDownId": "15 min delayed_dd_Id",
+                "inputId": "sosmolality_input_Id",
+                "dropDownId": "Serum osmolality_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Urine osmolality",
+                "labelId": "Urine osmolality__id",
+                "inputBox": "text",
+                "inputId": "uosmolality_input_Id",
+                "dropDownId": "Urine osmolality_dd_Id",
                 "dateTimePicker": false
             }
-          
         ],
         "ButtonValue": "Calculate",
         "ButtonId": "calculate_btn",

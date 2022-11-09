@@ -1,7 +1,7 @@
 {
-    "H1": "adrenal washout calculator online",
+    "H1": "kidnry stone calculator online",
     "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "adrenal washout calculator - By using this tool to manage your body weight",
+    "TITLE": "kidney stone calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -70,35 +70,50 @@
     ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/urology-nephrology/adrenal-washout.js"
+        "/js/urology-nephrology/kidney-stone.js"
     ],
     "calculatorData": {
         "calculatorRow": [
             {
-                "labelName": "Pre-contrast",
-                "labelId": "Pre-contrast__id",
-                "inputBox": "text",
-                "inputId": "pre_input_Id",
-                "dropDownId": "Pre-contrast_dd_Id",
+                "labelName": "Stone Size",
+                "labelId": "Stine__id",
+                "dropDown": "0-399",
+                "dropDownId": "stone_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "60-75 sec post-contrast",
-                "labelId": "60-75 sec post-contrast__id",
-                "inputBox": "text",
-                "inputId": "post_input_Id",
-                "dropDownId": "60-75 sec post-contrast_dd_Id",
+                "labelName": "Tract length",
+                "labelId": "Tract__id",
+                "inputId": "Sex_input_Id",
+                "dropDown": "<100mm",
+                "dropDownId": "tarct_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "15 min delayed",
-                "labelId": "15 min delayed__id",
-                "inputBox": "text",
-                "inputId": "delayed_input_Id",
-                "dropDownId": "15 min delayed_dd_Id",
+                "labelName": "Obstruction (hydronephrosis)",
+                "labelId": "Obstruction (hydronephrosis)__id",
+                "inputId": "Albumin-to-creatinine ratio_input_Id",
+                "dropDown": "No/mild hydronephrosis",
+                "dropDownId": "Obstruction_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Number of calcyces with calculi",
+                "labelId": "Number of calcyces with calculi__id",
+                "inputId": "eGFR_input_Id",
+                "dropDown": "1-2",
+                "dropDownId": "cycle_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Stone density",
+                "labelId": "Stone density__id",
+                "inputId": "Albumin_input_Id",
+                "dropDown": "⩽950 HU",
+                "dropDownId": "density_dd_Id",
                 "dateTimePicker": false
             }
-          
+            
         ],
         "ButtonValue": "Calculate",
         "ButtonId": "calculate_btn",

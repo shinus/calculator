@@ -1,7 +1,7 @@
 {
-    "H1": "adrenal washout calculator online",
+    "H1": "matastatic prostate calculator online",
     "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "adrenal washout calculator - By using this tool to manage your body weight",
+    "TITLE": "metastatic prostate calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -70,35 +70,68 @@
     ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/urology-nephrology/adrenal-washout.js"
+        "/js/urology-nephrology/metastatic-prostate.js"
     ],
     "calculatorData": {
         "calculatorRow": [
             {
-                "labelName": "Pre-contrast",
-                "labelId": "Pre-contrast__id",
+                "labelName": "Age",
+                "labelId": "Age__id",
                 "inputBox": "text",
-                "inputId": "pre_input_Id",
-                "dropDownId": "Pre-contrast_dd_Id",
+                "inputId": "Age_input_Id",
+                "dropDownId": "Age_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "60-75 sec post-contrast",
-                "labelId": "60-75 sec post-contrast__id",
+                "labelName": "Height",
+                "labelId": "Height__id",
                 "inputBox": "text",
-                "inputId": "post_input_Id",
-                "dropDownId": "60-75 sec post-contrast_dd_Id",
+                "inputId": "Height_input_Id",
+                "dropDown": "in",
+                "dropDownId": "Height_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "15 min delayed",
-                "labelId": "15 min delayed__id",
+                "labelName": "Weight",
+                "labelId": "Weight__id",
                 "inputBox": "text",
-                "inputId": "delayed_input_Id",
-                "dropDownId": "15 min delayed_dd_Id",
+                "inputId": "Weight_input_Id",
+                "dropDown": "lb",
+                "dropDownId": "Weight_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Gleason score",
+                "labelId": "Gleason score__id",
+                "inputId": "score_input_Id",
+                "dropDown": "2-4",
+                "dropDownId": "score_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Distant metastases?",
+                "labelId": "Distant metastases?__id",
+                "inputId": "Distant metastases?_input_Id",
+                "dropDown": "No",
+                "dropDownId": "metastases_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Health level",
+                "labelId": "Health level__id",
+                "inputId": "Health level_input_Id",
+                "dropDown": "Moderate (25-75%)",
+                "dropDownId": "level_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Are you a smoker?",
+                "labelId": "Are you a smoker?__id",
+                "inputId": "Are you a smoker?_input_Id",
+                "dropDown": "No",
+                "dropDownId": "smoker_dd_Id",
                 "dateTimePicker": false
             }
-          
         ],
         "ButtonValue": "Calculate",
         "ButtonId": "calculate_btn",

@@ -1,7 +1,7 @@
 {
-    "H1": "adrenal washout calculator online",
-    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "adrenal washout calculator - By using this tool to manage your body weight",
+    "H1": "Glycemic index calculator online",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Glycemic index calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -14,12 +14,12 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "baby-percentile ",
-                        "url": "/baby-percentile",
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile",
+                        "name": "birthweight percentile calculator",
                         "url": "/birthweight-percentile-calculator",
                         "hover": "blue"
                     }
@@ -70,35 +70,52 @@
     ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/urology-nephrology/adrenal-washout.js"
+        "/js/diabetes-calculator/glycemic-index.js"
     ],
     "calculatorData": {
         "calculatorRow": [
             {
-                "labelName": "Pre-contrast",
-                "labelId": "Pre-contrast__id",
-                "inputBox": "text",
-                "inputId": "pre_input_Id",
-                "dropDownId": "Pre-contrast_dd_Id",
+                "labelName": "Sweet treats and snacks 🍪 🍿 🍦",
+                "labelId": "sweet index__id",
+                "dropDown": "Banana cake with sugar",
+                "dropDownId": "banana_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "60-75 sec post-contrast",
-                "labelId": "60-75 sec post-contrast__id",
-                "inputBox": "text",
-                "inputId": "post_input_Id",
-                "dropDownId": "60-75 sec post-contrast_dd_Id",
+                "labelName": "Dairy and alternatives 🥛 🍼 🧀",
+                "labelId": "diary index__id",
+                "dropDown": "Chocolate pudding",
+                "dropDownId": "choco_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "15 min delayed",
-                "labelId": "15 min delayed__id",
-                "inputBox": "text",
-                "inputId": "delayed_input_Id",
-                "dropDownId": "15 min delayed_dd_Id",
+                "labelName": "Fruits (and preserves) 🍓 🍍 🍏",
+                "labelId": "fruits index__id",
+                "dropDown": "Apple, raw",
+                "dropDownId": "apple_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Cereal products 🍞 🍚 🥯",
+                "labelId": "cereal index__id",
+                "dropDown": "Bagel, white",
+                "dropDownId": "bagel_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Vegetables (and preserves) 🥔 🥕 🌽",
+                "labelId": "veg index__id",
+                "dropDown": "Baked beans",
+                "dropDownId": "baked_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Beverages 🥤 🍺 🧃",
+                "labelId": "beverages index__id",
+                "dropDown": "Apple juice",
+                "dropDownId": "juice_dd_Id",
                 "dateTimePicker": false
             }
-          
         ],
         "ButtonValue": "Calculate",
         "ButtonId": "calculate_btn",

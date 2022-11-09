@@ -1,0 +1,48 @@
+{
+    "calculatorRow": [
+        {
+            "labelName": "Date",
+            "labelId": "Date__id",
+            "inputId": "Date_input_Id",
+            "dropDownId": "Date_dd_Id",
+            "dateTimePicker": true
+        },
+        {
+            "labelName": "PSA level",
+            "labelId": "PSA level__id",
+            "inputBox": "text",
+            "inputId": "PSA level_input_Id",
+            "dropDownId": "PSA level_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Date",
+            "labelId": "Date__id",
+            "inputId": "Date_input_Id",
+            "dropDownId": "Date_dd_Id",
+            "dateTimePicker": true
+        },
+        {
+            "labelName": "PSA level",
+            "labelId": "PSA level__id",
+            "inputBox": "text",
+            "inputId": "PSA level_input_Id",
+            "dropDownId": "PSA level_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Doubling time:",
+            "labelId": "Doubling time:__id",
+            "inputBox": "text",
+            "inputId": "Doubling time:_input_Id",
+            "dropDown": "mos",
+            "dropDownId": "Doubling time:_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}

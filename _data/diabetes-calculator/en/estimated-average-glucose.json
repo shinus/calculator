@@ -1,7 +1,7 @@
 {
-    "H1": "adrenal washout calculator online",
-    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "adrenal washout calculator - By using this tool to manage your body weight",
+    "H1": "Estimated Average Glucose calculator online",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Estimated Average Glucose calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -14,12 +14,12 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "baby-percentile ",
-                        "url": "/baby-percentile",
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile",
+                        "name": "birthweight percentile calculator",
                         "url": "/birthweight-percentile-calculator",
                         "hover": "blue"
                     }
@@ -70,35 +70,26 @@
     ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/urology-nephrology/adrenal-washout.js"
+        "/js/diabetes-calculator/estimated-average-glucose.js"
     ],
     "calculatorData": {
         "calculatorRow": [
             {
-                "labelName": "Pre-contrast",
-                "labelId": "Pre-contrast__id",
-                "inputBox": "text",
-                "inputId": "pre_input_Id",
-                "dropDownId": "Pre-contrast_dd_Id",
+                "labelName": "Do you suffer from diabetes?",
+                "labelId": "Do you suffer from diabetes?__id",
+                "inputId": "Do you suffer from diabetes?_input_Id",
+                "dropDown": "No",
+                "dropDownId": "diabetes_dd_Id",
                 "dateTimePicker": false
             },
             {
-                "labelName": "60-75 sec post-contrast",
-                "labelId": "60-75 sec post-contrast__id",
+                "labelName": "HbA1c",
+                "labelId": "HbA1c__id",
                 "inputBox": "text",
-                "inputId": "post_input_Id",
-                "dropDownId": "60-75 sec post-contrast_dd_Id",
-                "dateTimePicker": false
-            },
-            {
-                "labelName": "15 min delayed",
-                "labelId": "15 min delayed__id",
-                "inputBox": "text",
-                "inputId": "delayed_input_Id",
-                "dropDownId": "15 min delayed_dd_Id",
+                "inputId": "HbA1c_input_Id",
+                "dropDownId": "HbA1c_dd_Id",
                 "dateTimePicker": false
             }
-          
         ],
         "ButtonValue": "Calculate",
         "ButtonId": "calculate_btn",
