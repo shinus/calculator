@@ -33,6 +33,23 @@ function getExact() {
 
 };
 
+function validateAge() {
+
+  var uos = Number(uosmolality.value);
+  var msg;
+  var parentId = "calculator-row-4";
+  var elementName = "osmaError";
+
+  if (uos < 300) {
+    msg =
+      "The formula only applies when urine osmolality is at least 300.";
+    showError(parentId, elementName, msg);
+  } else {
+    removeError(elementName);
+  }
+}
+
+
 function showResult() {
   resultPage2(queryParams);
   var result = Number(getExact());
@@ -41,18 +58,43 @@ function showResult() {
   var div2 = document.createElement("div");
 
   output.innerHTML = "";
-  div1.innerHTML = "";
+  // div1.innerHTML = "";
 
 
-  div2.innerHTML = "Transtubular potassium gradient" + "\xa0" + math.ceil(result);
+  div1.innerHTML = "Transtubular potassium gradient" + "\xa0" + math.ceil(result);
 
 
   var percentile = result;
 
-  // output.append(div1);
+  if (percentile > 7 && percentile < 10) {
+    div2.innerHTML = 'If the patient has a normal diet, this value is <b>normal</b>.';
+  }
+
+  else if (percentile < 8) {
+    div2.innerHTML = 'TTKG result is low. It may require further diagnosis.';
+  }
+
+  else if (percentile > 9) {
+    div2.innerHTML = 'TTKG result is high for this serum potassium concentration. It may require further diagnosis.';
+  }
+
+  if (percentile > 6) { // hyperkalemia and OK
+    div2.innerHTML = 'The transtubular potassium gradient for the given serum potassium value is <b>normal</b>. Altough <b>optimally it should be over 10</b>.';
+  } else if (percentile < 7) { // hyperkalemia not OK
+    div2.innerHTML = 'The result is <b>too low</b> for the given serum potassium concentration (hyperkalemia). It suggests <b>hypoaldosteronism</b>.';
+  }
+
+  if (percentile < 4) { // hypokalemia OK
+    div2.innerHTML = 'The transtubular potassium gradient is <b>normal</b> for the given serum potassium concentration.';
+  } else if (percentile > 3) { // hypokalemia not OK
+    div2.innerHTML = 'The result is <b>too big</b> for the given serum potassium concentration (hypokalemia). It suggests <b>renal potassium wasting</b>.';
+  }
+
+  output.append(div1);
   output.append(div2);
 };
 
+uosmolality.addEventListener('input', validateAge)
 calcBtn.addEventListener("click", showResult);
 
 window.onload = function () {

@@ -545,10 +545,14 @@ function getExact() {
     var Vegetable = (getSelectedValue(baked))
     var ju = (getSelectedValue(juice))
 
-    var result = 0;
+    var low, mid, high = 0;
+
+    if (low <= 55 ) {
+        
+    }
 
 
-    
+
     
 
     console.log(result);

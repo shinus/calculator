@@ -91,14 +91,6 @@
                 "dropDown": "mg/dL",
                 "dropDownId": "Postlevel_dd_Id",
                 "dateTimePicker": false
-            },
-            {
-                "labelName": "Urea reduction ratio (URR)",
-                "labelId": "Urea reduction ratio (URR)__id",
-                "inputBox": "text",
-                "inputId": "Urea_input_Id",
-                "dropDownId": "Urea reduction ratio (URR)_dd_Id",
-                "dateTimePicker": false
             }
         ],
         "ButtonValue": "Calculate",

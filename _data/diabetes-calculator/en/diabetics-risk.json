@@ -1,0 +1,160 @@
+{
+    "H1": "Diabetes Risk calculator online",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Diabetes Risk calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/diabetes-calculator/diabetics-risk.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "sex",
+                "labelId": "sex__id",
+                "inputId": "I want to calculate..._input_Id",
+                "dropDown": "male",
+                "dropDownId": "gender_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Age",
+                "labelId": "Age__id",
+                "inputBox": "text",
+                "inputId": "age_input_Id",
+                "dropDownId": "Glucose_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Height",
+                "labelId": "Height__id",
+                "inputBox": "text",
+                "inputId": "height_input_Id",
+                "dropDown": "cm",
+                "dropDownId": "height_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Weight",
+                "labelId": "weight__id",
+                "inputBox": "text",
+                "inputId": "weight_input_Id",
+                "dropDown": "kg",
+                "dropDownId": "weight_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Family history",
+                "labelId": "Family history__id",
+                "inputId": "history_input_Id",
+                "dropDown": "No family history of diabetes",
+                "dropDownId": "history_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Ethnicity",
+                "labelId": "Ethnicity__id",
+                "inputId": "eth_input_Id",
+                "dropDown": "Non-Hispanic white",
+                "dropDownId": "eth_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Fasting glucose",
+                "labelId": "Fasting glucose__id",
+                "inputBox": "text",
+                "inputId": "glucose_input_Id",
+                "dropDown": "mg/dL",
+                "dropDownId": "glucose_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Systolic Blood Pressure",
+                "labelId": "Systolic Blood Pressure__id",
+                "inputBox": "text",
+                "inputId": "blood_input_Id",
+                "dropDownId": "Urine_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "HDL cholesterol",
+                "labelId": "HDL cholesterol__id",
+                "inputBox": "text",
+                "inputId": "hdl_input_Id",
+                "dropDown": "mg/dL",
+                "dropDownId": "hdl_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

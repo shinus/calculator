@@ -41,11 +41,11 @@ var pbun = [
 
 var timeUnit = [
     {
-        name: "min",
+        name: "hrs",
         value: 0,
     },
     {
-        name: "hrs",
+        name: "min",
         value: 1,
     },
 ];
@@ -116,31 +116,70 @@ function getExact() {
 
     var result = 0;
 
-    result = ((-0.693147) * ((post_dial/pre_dial)- (0.008 * adial)) + (4 - 3.5 * (post_dial/pre_dial)) * (aultra/aweight))
+    result = ((0.693147) * ((post_dial/pre_dial)- (0.008 * adial)) + (4 - 3.5 * (post_dial/pre_dial)) * (aultra/aweight))
 
     console.log(result, 'wroked');
     return math.bignumber(result)
 }
 
+function getExact2() {
+    var pre_dial = Number(prebun.value)
+    var post_dial = Number(postbun.value)
+
+    var result2 = 0
+
+    result2 = ([ ( pre_dial - post_dial ) / pre_dial ] * 100) 
+
+    console.log(result2, 'wroked');
+    return math.bignumber(result2)
+}
+
+function validateAge() {
+    var poss = Number(postbun.value)
+    var pres = Number(prebun.value);
+    var msg;
+    var parentId = "calculator-row-2";
+    var elementName = "bunError";
+   
+    if (poss > pres ) {
+      msg =
+        "Post-dialysis BUN should be less than or equal to pre-dialysis BUN.";
+      showError(parentId, elementName, msg);
+    } else {
+      removeError(elementName);
+    }
+  }
+  
+
 function showResult() {
     resultPage2(queryParams);
 
     var result = Number(getExact())
+    var result2 = Number(getExact2())
 
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
 
     output.innerHTML = "";
 
     div1.innerHTML = "Kt/V" + "   " + result.toFixed(4) ;
 
-    div2.innerHTML = "'✅ The dialysis was <b>efficient</b> - the proccess exceeded the minimal value of Kt/V ≥ 1.2).'"
+    div2.innerHTML = "URR" + "  " + result2.toFixed(2) + "%";
 
+    var percentile = result;
+    if (percentile >= 1.2) {
+        div3.innerHTML =  '✅ The dialysis was <b>efficient</b> - the proccess exceeded the minimal value of Kt/V ≥ 1.2';
+      } else if (percentile < 1.2) {
+        div3.innerHTML = '❌ The dialysis was <b>not efficient</b> (Kt/V is < 1.2).';
+      }
 
     output.append(div1);
     output.append(div2);
+    output.append(div3);
 }
 
+postbun.addEventListener('input', validateAge)
 calcBtn.addEventListener('click', showResult);
 
 window.onload = function () {

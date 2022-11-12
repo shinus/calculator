@@ -17,20 +17,17 @@ const getScript = document.currentScript;
 const permaLink = getScript.dataset.permalink;
 
 var queryParams = [
-  { name: "ageUnit", values: nAge },
-  { name: "weight", values: weight },
-  { name: "weightUnit", values: weight_dd },
-  { name: "time", values: time },
-  { name: "timeUnit", values: time_dd },
-  { name: "urineVolume", values: volume },
-  { name: "urineVolumeUnit", values: volume_dd },
-  { name: "fluidIntake", values: intake },
-  { name: "fluidIntakeUnit", values: intake_dd },
-  { name: "outputrate", values: rate },
-  { name: "outputrateUnit", values: rate_dd },
-  { name: "fluidbal", values: balance },
-  { name: "fluidbalUnit", values: balance_dd },
+    { name: "age", values: nAge },
+    { name: "weight", values: weight },
+    { name: "weightdd", values: weight_dd },
+    { name: "time", values: time },
+    { name: "timedd", values: time_dd },
+    { name: "urine", values: volume },
+    { name: "urinedd", values: volume_dd },
+    { name: "fluid", values: intake },
+    { name: "fluidUnit", values: intake_dd },
 ];
+
 
 var ageUnit = [
     {
@@ -44,10 +41,10 @@ var ageUnit = [
 ];
 
 var unitsForWeight = [
-    { name: "kilogram (kg)", value: "kg" },
-    { name: "grams (g)", value: "g" },
-    { name: "pounds (lb)", value: "lb" },
-    { name: "Stones (stone)", value: "stone" },
+    { name: "kilogram (kg)", value: 0 },
+    { name: "grams (g)", value: 1 },
+    { name: "pounds (lb)", value: 2 },
+    { name: "Stones (stone)", value: 3 },
 ];
 
 var timeUnit = [
@@ -132,10 +129,10 @@ var intakeUnits = [
 ];
 
 var rateUnits = [
-    { name: "kilogram (kg)", value: "kg" },
-    { name: "decagram (g)", value: "g" },
-    { name: "pounds (lb)", value: "lb" },
-    { name: "Stones (stone)", value: "stone" },
+    { name: "kilogram (kg)", value: 0 },
+    { name: "decagram (g)", value: 1 },
+    { name: "pounds (lb)", value: 2 },
+    { name: "Stones (stone)", value: 3 },
 ];
 
 
@@ -145,76 +142,108 @@ function init() {
     createDropDown(timeUnit, time_dd);
     createDropDown(volumeUnit, volume_dd);
     createDropDown(intakeUnits, intake_dd);
-   
-  
 }
 
 
 init();
 
 
-  
+
 function getExact() {
     var avol = Number(volume.value)
     var atime = Number(time.value);
     var aweight = Number(weight.value);
-    // var height = Number(bheight.value)
-    // var dserum = Number(serum.value)
-  
-    var result = 0;
-  
-   result =  avol / (aweight * atime);
-   
-
-    // result = (140 - age) * weight * sex / (72 * dserum)
-  
- 
-  console.log(result);
-    return math.bignumber(result);
-  
-  };
-  
-  function getres() {
-    var avol = Number(volume.value)
     var into = Number(intake.value)
+
+    var result = 0;
+
+    result = avol / (aweight * atime);
 
     var result2 = 0;
 
-    result2 = into - avol ;
+    result2 = into - avol;
+    // result = (140 - age) * weight * sex / (72 * dserum)
+
 
     console.log(result2);
-    return math.bignumber(result2);
-  }
+    return [result, result2]
+
+};
 
 
-  function showResult() {
+
+function showResult() {
     resultPage2(queryParams);
-    var result = Number(getExact());
-    var result2 = Number(getres());
-  
+    var choice = Number(getSelectedValue(nAge))
+    var [result, result2] = getExact();
+
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
-  
+    var div3 = document.createElement("div");
+    var div4 = document.createElement("div");
+
     output.innerHTML = "Results";
     div1.innerHTML =
-    //   "<b>The actual volume may vary by ± </b> :" +
-    //   " " 
-      result.toFixed(2) + "ml/kg/hr";
+        //   "<b>The actual volume may vary by ± </b> :" +
+        //   " " 
+        result.toFixed(2) + "ml/kg/hr";
 
-      div2.innerHTML  = result2.toFixed(2) + "cm³";
-  
-      var percentile = result;
-    
+    div3.innerHTML = result2.toFixed(2) + "cm³";
+
+    var percentile = result;
+    if (choice == 1) {
+        if (percentile >= 1 && percentile < 3) {
+            div2.innerHTML = '✅ Urine output is within the normal range';
+        }
+        if (percentile < 1) {
+            div2.innerHTML = '❌ Urine output is low - a sign of <b>oligouria</b>. ';
+        }
+        if (percentile < 0.5) {
+            div2.innerHTML = 'This result might be indicative of <b>acute kindey injury</b>! ';
+        }
+        if (percentile > 3) {
+            div2.innerHTML = '❌ Urine output is high - a sign of <b>polyuria</b>.';
+        }
+    }
+
+
+    //adults
+    if (choice == 0) {
+        if (percentile >= 0.5 && percentile < 5) {
+            div2.innerHTML = '✅ Urine output is within normal range';
+        } else if (percentile < 0.5) {
+            div2.innerHTML = '❌ Urine output is low - a sign of <b>oligouria</b>. ';
+        } if (percentile < 0.5) {
+            div2.innerHTML = 'This result might be indicative of <b>acute kindey injury</b>! ';
+        } else if (percentile > 5) {
+            div2.innerHTML = '❌ Urine output is high - a sign of <b>polyuria</b>.';
+        }
+    };
+
+    var percentile2 = result2;
+    var fivePercentBodyWeight = -(weight*50);
+
+    if (percentile2 > 0) {
+        div4.innerHTML = 'Your patient\'s fluid balance is <b>positive</b>.  ';
+    } else if (percentile2 < 0) {
+        div4.innerHTML = 'Your patient\'s fluid balance is <b>negative</b>.  ';
+        if (percentile2 < fivePercentBodyWeight) {
+            div4.innerHTML = '🔺 <b>Your patient might be dehydrated!</b> Fluid loss exceeded 5% of their body weight.';
+        }
+    }
+
     output.append(div1);
     output.append(div2);
-  };
-  
-  calcBtn.addEventListener("click", showResult);
+    output.append(div3);
+    output.append(div4);
+};
 
-  window.onload = function () {
+calcBtn.addEventListener("click", showResult);
+
+window.onload = function () {
     var url = window.location.href;
     if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
+        setParamValues(queryParams);
+        showResult();
     }
-  };
+};

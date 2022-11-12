@@ -9,25 +9,27 @@ const getScript = document.currentScript;
 const permaLink = getScript.dataset.permalink;
 
 var queryParams = [
-  { name: "stone", values: stone },
-  { name: "tract", values: tract },
-  { name: "obstruct", values: obstruct },
-  { name: "cycle", values: cycle },
-  { name: "density", values: density },
+    { name: "stone", values: stone },
+    { name: "tract", values: tract },
+    { name: "obstruct", values: obstruct },
+    { name: "cycle", values: cycle },
+    { name: "density", values: density },
 ];
 
-var sotnevs = [
+
+
+var stoneUnit = [
     {
         name: "0-399",
-        Value: 1,
+        value: 1,
     },
     {
         name: "400-799",
-        Value: 2,
+        value: 2,
     },
     {
         name: "800-1599",
-        Value: 3,
+        value: 3,
     },
     {
         name: "⩾1600",
@@ -84,7 +86,7 @@ var densityvs = [
 ]
 
 function init() {
-    createDropDown(sotnevs, stone)
+    createDropDown(stoneUnit, stone)
     createDropDown(tractvs, tract)
     createDropDown(obstructvs, obstruct)
     createDropDown(calculivs, cycle)
@@ -94,15 +96,18 @@ function init() {
 init()
 
 function getExact() {
-    var st = 2
-    var tr = 5
-    var ob =4
-    var ca = 3
-    var de = 4
+    var st = Number(getSelectedValue(stone))
+    var tr = Number(getSelectedValue(tract))
+    var ob = Number(getSelectedValue(obstruct))
+    var ca = Number(getSelectedValue(cycle))
+    var de = Number(getSelectedValue(density))
 
     var result = 0;
 
     result = (st + tr + ob + ca + de);
+    console.log(typeof st);
+    console.log(st, tr, ob, "ss");
+    console.log(ca, de, "sh");
 
     console.log(result);
     return math.bignumber(result);
@@ -120,8 +125,28 @@ function showResult() {
 
 
 
-    div1.innerHTML = result ;
-    div2.innerHTML = "There is approximately 27% chance of a stone free outcome after the first percutaneous nephrolithotomy."
+    div1.innerHTML = result;
+
+    var percentile = result;
+    if( percentile == 5){
+    div2.innerHTML = "There is approximately <b>94% chance</b> of a stone free outcome after the first percutaneous nephrolithotomy."
+    } else if(percentile == 6){
+        div2.innerHTML = "There is approximately <b>92% chance</b> of a stone free outcome after the first percutaneous nephrolithotomy"
+    } else if (percentile == 7){
+        div2.innerHTML = "There is approximately <b>88% chance</b> of a stone free outcome after the first percutaneous nephrolithotomy."
+    } else if(percentile == 8) {
+        div2.innerHTML =  "There is approximately <b>83% chance</b> of a stone free outcome after the first percutaneous nephrolithotomy."
+    } else if(percentile == 9){
+        div2.innerHTML =  "There is approximately <b>64% chance</b> of a stone free outcome after the first percutaneous nephrolithotomy."
+    } else if(percentile == 10){
+        div2.innerHTML =  "There is approximately <b>42% chance</b> of a stone free outcome after the first percutaneous nephrolithotomy."
+    } else if(percentile == 11){
+        div2.innerHTML =  "There is approximately <b>27% chance</b> of a stone free outcome after the first percutaneous nephrolithotomy."
+    } else if(percentile == 12){
+        div2.innerHTML =  "There is approximately <b>27% chance</b> of a stone free outcome after the first percutaneous nephrolithotomy."
+    } else if(percentile == 13){
+        div2.innerHTML =  "There is approximately <b>27% chance</b> of a stone free outcome after the first percutaneous nephrolithotomy."
+    }
 
     output.append(div1);
     output.append(div2);

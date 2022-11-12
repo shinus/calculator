@@ -100,23 +100,17 @@ function getExact() {
     var aheight = Number(height.value)
     var aweight = Number(weight.value)
 
-
-  var cal =  calcBmi(aheight, aweight);
-
-  
 }
 
 
 
 
-// function showResult() {
-//     calcBmi()
-
-//     console.log(calcBmi(), "worked");
+function showResult() {
+ 
 
 
-// }
+}
 
-// calcBtn.addEventListener("click", showResult);
+calcBtn.addEventListener("click", showResult);
 
 

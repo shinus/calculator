@@ -73,13 +73,23 @@ var unitsForCm = [
   
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
+
+    var percentile = result;
+
+    var error = percentile * 0.127;
+    var error1 = error.toFixed(2);
+    var inchError = (error1*0.061).toFixed(2);
+    
+    if(percentile >= 0.1) {
+      div1.innerHTML ='The actual volume may vary by<br> ±' + error1 +'cm³ ('+ inchError +' in³)';
+    }
   
     output.innerHTML = "volume " + "  "  + result.toFixed(0) + "ml";
     // if(result1 >= 0.1){
-    div1.innerHTML =
-      "<b>The actual volume may vary by ± "+  +"cm³ ("+  + "in³) </b>";
+
+     
     // }
-      var percentile = result;
+
 
     
     output.append(div1);

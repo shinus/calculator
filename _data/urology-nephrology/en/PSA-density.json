@@ -102,15 +102,6 @@
                 "dateTimePicker": false
             },
             {
-                "labelName": "Prostate volume",
-                "labelId": "Prostate volume__id",
-                "inputBox": "text",
-                "inputId": "volume_input_Id",
-                "dropDown": "cm³",
-                "dropDownId": "volume_dd_Id",
-                "dateTimePicker": false
-            },
-            {
                 "labelName": "PSA",
                 "labelId": "PSA__id",
                 "inputBox": "text",
