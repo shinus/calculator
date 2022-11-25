@@ -1,0 +1,117 @@
+{
+    "H1": "Allowable Blood Loss Calculator online",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Allowable Blood Loss Calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/hematology-calculator/allowable-blood-loss.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "Age/sex category",
+            "labelId": "Age/sex category__id",
+            "inputId": "Age/sex category_input_Id",
+            "dropDown": "adult female",
+            "dropDownId": "category_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Weight",
+            "labelId": "Weight__id",
+            "inputBox": "text",
+            "inputId": "Weight_input_Id",
+            "dropDown": "lb",
+            "dropDownId": "Weight_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Initial hemoglobin of the patient",
+            "labelId": "Initial hemoglobin of the patient__id",
+            "inputBox": "text",
+            "inputId": "patient_input_Id",
+            "dropDownId": "patient_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Lowest acceptable hemoglobin",
+            "labelId": "Lowest acceptable hemoglobin__id",
+            "inputBox": "text",
+            "inputId": "hemoglobin_input_Id",
+            "dropDownId": "Lowest acceptable hemoglobin_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

@@ -1,5 +1,3 @@
-// const { re } = require("mathjs");
-
 
 
 var pre = getElement("pre_input_Id");

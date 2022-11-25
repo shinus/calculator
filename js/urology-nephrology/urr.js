@@ -2,7 +2,6 @@ var pre = getElement("level_input_Id")
 var dd_pre = getElement("level_dd_Id");
 var post = getElement("Postlevel_input_Id");
 var dd_post = getElement("Postlevel_dd_Id");
-
 var output = getElement("result-section");
 var calcBtn = getElement("calculate_btn");
 
