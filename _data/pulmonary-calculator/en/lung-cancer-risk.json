@@ -1,0 +1,158 @@
+{
+    "H1": "Lung Cancer Risk Calculator online",
+    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
+    "TITLE": "Lung Cancer Risk Calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "baby-percentile ",
+                        "url": "/baby-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/pulmonary-calculator/lung-cancer-risk.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Sex",
+                "labelId": "Sex__id",
+                "inputId": "Sex_input_Id",
+                "dropDown": "Male",
+                "dropDownId": "Sex_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Age",
+                "labelId": "Age__id",
+                "inputBox": "text",
+                "inputId": "Age_input_Id",
+                "dropDownId": "Age_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Weight",
+                "labelId": "Weight__id",
+                "inputBox": "text",
+                "inputId": "Weight_input_Id",
+                "dropDown": "lb",
+                "dropDownId": "Weight_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Height",
+                "labelId": "Height__id",
+                "inputBox": "text",
+                "inputId": "Height_input_Id",
+                "dropDown": "ftin",
+                "dropDownId": "Height_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Smoking years",
+                "labelId": "Smoking years__id",
+                "inputBox": "text",
+                "inputId": "Smoking_input_Id",
+                "dropDownId": "Smoking years_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Cigarettes per day (2 - 35)",
+                "labelId": "Cigarettes per day (2 - 35)__id",
+                "inputBox": "text",
+                "inputId": "Cigarettes_input_Id",
+                "dropDownId": "Cigarettes per day (2 - 35)_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Years since quitting (0 - 46)",
+                "labelId": "Years since quitting (0 - 46)__id",
+                "inputBox": "text",
+                "inputId": "quitting_input_Id",
+                "dropDownId": "Years since quitting (0 - 46)_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Hours per day in smoke-filled rooms (0 - 24)",
+                "labelId": "Hours per day in smoke-filled rooms (0 - 24)__id",
+                "inputBox": "text",
+                "inputId": "Hours_input_Id",
+                "dropDownId": "Hours per day in smoke-filled rooms (0 - 24)_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Do you cough daily during periods of the year?",
+                "labelId": "Do you cough daily during periods of the year?__id",
+                "inputId": "Do you cough daily during periods of the year?_input_Id",
+                "dropDown": "No",
+                "dropDownId": "cough_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

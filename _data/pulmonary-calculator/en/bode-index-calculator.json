@@ -1,0 +1,116 @@
+{
+    "H1": "BODE Index Calculator online",
+    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
+    "TITLE": "BODE Index Calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "baby-percentile ",
+                        "url": "/baby-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/pulmonary-calculator/bode-index-calculator.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "FEV1 (% predicted)",
+            "labelId": "FEV1 (% predicted)__id",
+            "inputId": "FEV1 (% predicted)_input_Id",
+            "dropDown": "65% or more",
+            "dropDownId": "FEV1_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "6-min walk distance",
+            "labelId": "6-min walk distance__id",
+            "inputId": "6-min walk distance_input_Id",
+            "dropDown": "350 m (383 yds) or more",
+            "dropDownId": "distance_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "BMI",
+            "labelId": "BMI__id",
+            "inputId": "BMI_input_Id",
+            "dropDown": ">21",
+            "dropDownId": "BMI_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "mMRC Dyspnea Scale",
+            "labelId": "mMRC Dyspnea Scale__id",
+            "inputId": "mMRC Dyspnea Scale_input_Id",
+            "dropDown": "0 or 1 point",
+            "dropDownId": "Scale_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

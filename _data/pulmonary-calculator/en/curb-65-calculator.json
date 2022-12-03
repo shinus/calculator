@@ -1,0 +1,133 @@
+{
+    "H1": "CURB-65 Calculator online",
+    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
+    "TITLE": "CURB-65 Calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "baby-percentile ",
+                        "url": "/baby-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/pulmonary-calculator/curb-65-calcualtor.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Confusion",
+                "labelId": "Confusion__id",
+                "inputId": "Confusion_input_Id",
+                "dropDown": "Yes",
+                "dropDownId": "Confusion_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Blood Urea Nitrogen",
+                "labelId": "Blood Urea Nitrogen__id",
+                "inputBox": "text",
+                "inputId": "Nitrogen_input_Id",
+                "dropDown": "mg/dl",
+                "dropDownId": "Nitrogen_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Respiratory Rate",
+                "labelId": "Respiratory Rate__id",
+                "inputBox": "text",
+                "inputId": "Rate_input_Id",
+                "dropDownId": "Respiratory Rate_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Systolic Blood Pressure",
+                "labelId": "Systolic Blood Pressure__id",
+                "inputBox": "text",
+                "inputId": "Systolic_input_Id",
+                "dropDownId": "Systolic Blood Pressure_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Diastolic Blood Pressure",
+                "labelId": "Diastolic Blood Pressure__id",
+                "inputBox": "text",
+                "inputId": "Diastolic_input_Id",
+                "dropDownId": "Diastolic_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Age",
+                "labelId": "Age__id",
+                "inputBox": "text",
+                "inputId": "Age_input_Id",
+                "dropDownId": "Age_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

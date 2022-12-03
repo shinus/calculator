@@ -1,0 +1,244 @@
+{
+    "H1": "PSI Calculator - Rapid Shallow Breathing Index online",
+    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
+    "TITLE": "PSI Calculator - Rapid Shallow Breathing Index - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "baby-percentile ",
+                        "url": "/baby-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/pulmonary-calculator/psi-calculator.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "Age",
+            "labelId": "Age__id",
+            "inputBox": "text",
+            "inputId": "Age_input_Id",
+            "dropDownId": "Age_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Sex",
+            "labelId": "Sex__id",
+            "inputId": "Sex_input_Id",
+            "dropDown": "Male",
+            "dropDownId": "Sex_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Nursing home resident?",
+            "labelId": "Nursing home resident?__id",
+            "inputId": "Nursing home resident?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "resident?_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "History of renal disease",
+            "labelId": "History of renal disease__id",
+            "inputId": "History of renal disease_input_Id",
+            "dropDown": "No",
+            "dropDownId": "disease_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Celebrovascular disease",
+            "labelId": "Celebrovascular disease__id",
+            "inputId": "Celebrovascular disease_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Celebrovascular_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Liver disease",
+            "labelId": "Liver disease__id",
+            "inputId": "Liver disease_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Liver_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Neoplasm",
+            "labelId": "Neoplasm__id",
+            "inputId": "Neoplasm_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Neoplasm_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "CHF",
+            "labelId": "CHF__id",
+            "inputId": "CHF_input_Id",
+            "dropDown": "No",
+            "dropDownId": "CHF_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Altered mental status",
+            "labelId": "Altered mental status__id",
+            "inputId": "Altered mental status_input_Id",
+            "dropDown": "No",
+            "dropDownId": "status_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Pleural effusion",
+            "labelId": "Pleural effusion__id",
+            "inputId": "Pleural effusion_input_Id",
+            "dropDown": "No",
+            "dropDownId": "effusion_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Respiratory rate ≥ 30 breaths/min",
+            "labelId": "Respiratory rate ≥ 30 breaths/min__id",
+            "inputId": "Respiratory rate ≥ 30 breaths/min_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Respiratory_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Pulse ≥ 125 BPM",
+            "labelId": "Pulse ≥ 125 BPM__id",
+            "inputId": "Pulse ≥ 125 BPM_input_Id",
+            "dropDown": "No",
+            "dropDownId": "BPM_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Systolic BP < 90 mmHg",
+            "labelId": "Systolic BP < 90 mmHg__id",
+            "inputId": "Systolic BP < 90 mmHg_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Systolic_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Temperature < 95°F or > 103.8°F",
+            "labelId": "Temperature < 95°F or > 103.8°F__id",
+            "inputId": "Temperature < 95°F or > 103.8°F_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Temperature_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "BUN ≥ 30 mg/dL (11 mmol/L)",
+            "labelId": "BUN ≥ 30 mg/dL (11 mmol/L)__id",
+            "inputId": "BUN ≥ 30 mg/dL (11 mmol/L)_input_Id",
+            "dropDown": "No",
+            "dropDownId": "BUN_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Hematocrit < 30%",
+            "labelId": "Hematocrit < 30%__id",
+            "inputId": "Hematocrit < 30%_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Hematocrit_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Sodium < 130 mmol/L",
+            "labelId": "Sodium < 130 mmol/L__id",
+            "inputId": "Sodium < 130 mmol/L_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Sodium_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Glucose ≥ 250 mg/dL (14 mmol/L)",
+            "labelId": "Glucose ≥ 250 mg/dL (14 mmol/L)__id",
+            "inputId": "Glucose ≥ 250 mg/dL (14 mmol/L)_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Glucose_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "pH < 7.35",
+            "labelId": "pH < 7.35__id",
+            "inputId": "pH < 7.35_input_Id",
+            "dropDown": "No",
+            "dropDownId": "pH_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "pO₂ < 60 mmHg (8 kPa)",
+            "labelId": "pO₂ < 60 mmHg (8 kPa)__id",
+            "inputId": "pO₂ < 60 mmHg (8 kPa)_input_Id",
+            "dropDown": "No",
+            "dropDownId": "pO_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

@@ -74,22 +74,8 @@ function showResult() {
         result.toFixed(2) + " " + "mg/dL";
 
     var percentile = hello;
-    console.log(percentile,"percentile");
-    if (unit == 0) {
-        console.log('unit');
+    if (unit == 1) {
         div2.innerHTML = '➡ <b>For people <i>with</i> diabetes:</b>';
-        // if (percentile < 6.5) {
-        //     console.log('less then 6.5');
-        //     div3.innerHTML = '✅ Your HbA1c level is <b>below</b> the diabetes target - good job!';
-        // }
-        // else if (percentile = 6.5 && percentile < 7) {
-            
-        //     div3.innerHTML = '✅ Your HbA1c is on a good level.';
-        // }
-        // else if (percentile > 7) {
-        //     console.log('great then 7');
-        //     div3.innerHTML = '❗ Your HbA1c level is too high.';
-        // }
         if (percentile < 6.5) {
             div3.innerHTML = '✅ Your HbA1c level is <b>below</b> the diabetes target - good job!';
         } else if (percentile = 6.5 && percentile < 7) {
@@ -99,8 +85,7 @@ function showResult() {
         }
     }
 
-    if (unit == 1) {
-        console.log('unit-2');
+    if (unit == 0) {
         div2.innerHTML = '➡ <b>For people <i>without</i> diabetes:</b>';
         if (percentile < 5.7) {
             console.log('goeshere');

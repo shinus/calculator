@@ -1,0 +1,148 @@
+{
+    "H1": "Revised Geneva Score Calculator for Pulmonary Embolism - Rapid Shallow Breathing Index online",
+    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
+    "TITLE": "Revised Geneva Score Calculator for Pulmonary Embolism - Rapid Shallow Breathing Index - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "baby-percentile ",
+                        "url": "/baby-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/pulmonary-calculator/revised-score-calculator.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "Age > 65 years?",
+            "labelId": "Age > 65 years?__id",
+            "inputId": "Age > 65 years?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "years_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Surgery or bone fracture within the last month?",
+            "labelId": "Surgery or bone fracture within the last month?__id",
+            "inputId": "Surgery or bone fracture within the last month?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "month_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Active malignant condition?",
+            "labelId": "Active malignant condition?__id",
+            "inputId": "Active malignant condition?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "condition_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "History of DVT or PE?",
+            "labelId": "History of DVT or PE?__id",
+            "inputId": "History of DVT or PE?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "History_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Heart rate",
+            "labelId": "Heart rate__id",
+            "inputId": "Heart rate_input_Id",
+            "dropDown": "<75/min",
+            "dropDownId": "Heart_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Unilateral lower limb pain?",
+            "labelId": "Unilateral lower limb pain?__id",
+            "inputId": "Unilateral lower limb pain?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "pain_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Unilateral leg edema or pain on deep palpation?",
+            "labelId": "Unilateral leg edema or pain on deep palpation?__id",
+            "inputId": "Unilateral leg edema or pain on deep palpation?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "palpation_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Hematoptysis?",
+            "labelId": "Hematoptysis?__id",
+            "inputId": "Hematoptysis?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Hematoptysis?_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}
