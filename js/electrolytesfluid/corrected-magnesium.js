@@ -1,55 +1,59 @@
-var cal = getElement("calcium_input_Id");
-var cal_dd = getElement("calcium_dd_Id");
-var albu = getElement("Albumin_input_Id");
-var albu_dd = getElement("Albumin_dd_Id");
+var mag = getElement("magnesium_input_Id");
+var mag_dd = getElement("magnesium_dd_Id");
+var albu = getElement("albumin_input_Id");
+var albu_dd = getElement("albumin_dd_Id");
 var calcBtn = getElement("calculate_btn");
 
 const getScript = document.currentScript;
 const permaLink = getScript.dataset.permalink;
 
 var queryParams = [
-  { name: "calcium", values: cal },
-  { name: "calciumUnit", values: cal_dd },
+  { name: "magnesium", values: mag },
+  { name: "magnesiumUnit", values: mag_dd },
   { name: "albumin", values: albu },
   { name: "albuminUnit", values: albu_dd },
 ];
 
 var caUnit = [
     {
-        name: "mg/dL",
+        name: "mEq/dL",
         value: 0,
     },
     {
         name: "mmol/L",
         value: 1,
     },
+    {
+        name: "mg/dL",
+        value: 1,
+    },
 ];
 
 var alUnit = [
     {
-        name: "g/dL",
+        name: "g/L",
         value: 0,
     },
     {
-        name: "g/L",
+        name: "g/dL",
         value: 1,
     },
 ];
 
 function init() {
-    createDropDown(caUnit, cal_dd)
+    createDropDown(caUnit, mag_dd)
     createDropDown(alUnit, albu_dd)
 }
 
 init()
 
 function getExact() {
-    var calcium = Number(cal.value);
+    var magnesium = Number(mag.value);
     var albumin = Number(albu.value);
 
     var result = 0;
 
-    result = 0.8 * (4 - albumin) + calcium;
+    result = magnesium + 0.005 * (40 - albumin);
 
     console.log(result);
     return math.bignumber(result)
@@ -66,13 +70,13 @@ function showResult() {
     output.innerHTML = "";
     var percentile = result;
 
-   div1.innerHTML = "Corrected calcium   " + "\xa0\xa0\xa0 <b> " + result.toFixed(2) + " mg/dL </b>";
+   div1.innerHTML = "Corrected magnesium   " + "\xa0\xa0\xa0 <b> " + result.toFixed(2) + " mEq/L </b>";
    if(percentile <= 0) {
-       div2.innerHTML = "<p style=color:red>" + "Serum calcium should be greater than zero." + "</p>";
+     div2.innerHTML = "<p style=color:red>" + "This value has to be greater than 0." + "</p>";
    } else {
        div2.innerHTML = ""
    }
-
+ 
     output.append(div1);
     output.append(div2);
 }

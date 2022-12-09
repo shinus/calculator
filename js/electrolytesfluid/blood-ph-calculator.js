@@ -56,6 +56,7 @@ function showResult() {
 
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
 
     output.innerHTML = "";
     var percentile = result;
@@ -63,13 +64,16 @@ function showResult() {
    div1.innerHTML = "Arterial blood pH   " + "\xa0\xa0\xa0 <b> " + result.toFixed(2) + " </b>";
 
    if(percentile >= 7) {
-       div2.innerHTML = "This arterial blood pH indicates alkalosis.";
+       div2.innerHTML = "This arterial blood pH indicates <b> alkalosis. </b>";
    } else {
-       div2.innerHTML = "This arterial blood pH indicates acidosis."
+       div2.innerHTML = "This arterial blood pH indicates <b> acidosis. </b>"
    }
+
+   div3.innerHTML = "In this case, values in mEq/L are equal to those in mmol/L, and those in mmHg are equal to those in torr. If your results are in mmol/L or in mmHg, type in these values."
 
     output.append(div1);
     output.append(div2);
+    output.append(div3);
 }
 
 calcBtn.addEventListener("click", showResult);

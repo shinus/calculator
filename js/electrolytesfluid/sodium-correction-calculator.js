@@ -1,25 +1,41 @@
-var NA = getElement("Na_input_Id");
-var CL = getElement("Cl_input_Id");
-var HCO = getElement("HCO_input_Id");
+var sodi = getElement("sodium_input_Id");
+var gluc = getElement("glucose_input_Id");
+var gluc_dd = getElement("glucose_dd_Id");
 var calcBtn = getElement("calculate_btn");
 
 const getScript = document.currentScript;
 const permaLink = getScript.dataset.permalink;
 
 var queryParams = [
-  { name: "NA", values: NA },
-  { name: "CL", values: CL },
-  { name: "HCO", values: HCO },
+  { name: "Sodium", values: sodi },
+  { name: "glucose", values: gluc },
+  { name: "glucoseUnit", values: gluc_dd },
 ];
 
+var alUnit = [
+    {
+        name: "mg/dL",
+        value: 0,
+    },
+    {
+        name: "mmol/L",
+        value: 1,
+    },
+];
+
+function init() {
+    createDropDown(alUnit, gluc_dd)
+}
+
+init()
+
 function getExact() {
-    var na = Number(NA.value);
-    var cl = Number(CL.value);
-    var hco = Number(HCO.value);
+    var sodium = Number(sodi.value);
+    var glucose = Number(gluc.value);
 
     var result = 0;
 
-    result = (na - (cl + hco));
+    result = sodium + 0.024 * (glucose - 100);
 
     console.log(result);
     return math.bignumber(result)
@@ -34,9 +50,9 @@ function showResult() {
     var div2 = document.createElement("div");
 
     output.innerHTML = "";
+    var percentile = result;
 
-    div1.innerHTML = "Anion gap   " + "\xa0\xa0\xa0 <b> " + result.toFixed(0) + " mEq/L </b>";
-    div2.innerHTML = "In this case, the values in mEq/L are equal to those in mmol/L. If your results are in mmol/L, type in these values."
+   div1.innerHTML = "Corrected sodium   " + "\xa0\xa0\xa0 <b> " + result.toFixed(2) + " mEq/L </b>";
 
     output.append(div1);
     output.append(div2);

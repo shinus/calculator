@@ -1,55 +1,49 @@
-var cal = getElement("calcium_input_Id");
-var cal_dd = getElement("calcium_dd_Id");
-var albu = getElement("Albumin_input_Id");
-var albu_dd = getElement("Albumin_dd_Id");
+var hco = getElement("HCO_input_Id");
+var hco_dd = getElement("HCO_dd_Id");
 var calcBtn = getElement("calculate_btn");
 
 const getScript = document.currentScript;
 const permaLink = getScript.dataset.permalink;
 
 var queryParams = [
-  { name: "calcium", values: cal },
-  { name: "calciumUnit", values: cal_dd },
-  { name: "albumin", values: albu },
-  { name: "albuminUnit", values: albu_dd },
+  { name: "HCO", values: hco },
+  { name: "HCOUnit", values: hco_dd },
 ];
 
 var caUnit = [
     {
-        name: "mg/dL",
+        name: "mmol/L",
         value: 0,
     },
     {
-        name: "mmol/L",
+        name: "mEq/L",
         value: 1,
     },
 ];
 
-var alUnit = [
+var pUnit = [
     {
-        name: "g/dL",
+        name: "kPa",
         value: 0,
     },
     {
-        name: "g/L",
+        name: "hPa",
         value: 1,
     },
 ];
 
 function init() {
-    createDropDown(caUnit, cal_dd)
-    createDropDown(alUnit, albu_dd)
+    createDropDown(caUnit, hco_dd)
 }
 
 init()
 
 function getExact() {
-    var calcium = Number(cal.value);
-    var albumin = Number(albu.value);
+    var HCO = Number(hco.value);
 
     var result = 0;
 
-    result = 0.8 * (4 - albumin) + calcium;
+    result = (1.5 * HCO) + 8 ;
 
     console.log(result);
     return math.bignumber(result)
@@ -66,12 +60,7 @@ function showResult() {
     output.innerHTML = "";
     var percentile = result;
 
-   div1.innerHTML = "Corrected calcium   " + "\xa0\xa0\xa0 <b> " + result.toFixed(2) + " mg/dL </b>";
-   if(percentile <= 0) {
-       div2.innerHTML = "<p style=color:red>" + "Serum calcium should be greater than zero." + "</p>";
-   } else {
-       div2.innerHTML = ""
-   }
+   div1.innerHTML = "pCO₂   " + "\xa0\xa0\xa0 <b> " + result.toFixed(2) + " mmHg </b>";
 
     output.append(div1);
     output.append(div2);
