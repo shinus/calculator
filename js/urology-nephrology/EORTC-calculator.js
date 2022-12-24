@@ -1,5 +1,3 @@
-
-
 var tumor = getElement("tumors_dd_Id");
 var diameter = getElement("diameter_dd_Id");
 var rate = getElement("rate_dd_Id");
@@ -23,7 +21,7 @@ var queryParams = [
 ];
 
 var recupt = {
-    "0": { y1: "15%", y5: '31%' },
+    "0":  { y1: "15%", y5: '31%' },
     "1-4": { y1: '24%', y5: '46%' },
     "5-9": { y1: '38%', y5: '62%' },
     "10-17": { y1: '61%', y5: '78%' },
@@ -56,9 +54,7 @@ var tumorUnits = [
         value: JSON.stringify({ rec: 6, pro: 3 }),
     }
 ];
-// if (dotDivide.select == 2) {
-//     reftavle.tumor['2-7'].re
-// }
+ 
 var diaUnits = [
     {
         name: "select",
@@ -160,14 +156,6 @@ function init() {
 init();
 
 
-
-
-// for (const cal of calc) {
-//     cal.addEventListener('change', (e) => {
-
-
-//     })
-// }
 function calca() {
     var recurrencePt = 0
     var progressionPt = 0
@@ -222,17 +210,18 @@ function calca() {
         if (progressionPt == 0) {
             Pyear1 = progpt['0'].y1
             Pyear2 = progpt['0'].y5
-        } else if (progressionPt > 0 && progressionPt <= 4) {
+        } else if (progressionPt > 0 && progressionPt <= 6) {
             Pyear1 = progpt["2-6"].y1
             Pyear2 = progpt["2-6"].y5
-        } else if (progressionPt >= 5 && progressionPt <= 9) {
+        } else if (progressionPt >= 7 && progressionPt <= 13) {
             Pyear1 = progpt["7-13"].y1
             Pyear2 = progpt["7-13"].y5
-        } else if (progressionPt >= 10 && progressionPt <= 17) {
+        } else if (progressionPt >= 14 && progressionPt <= 23) {
             Pyear1 = progpt["14-23"].y1
             Pyear2 = progpt["14-23"].y5
         }
 
+        console.log(progressionPt, Pyear1, Pyear2);
  
         return { recurrencePt, progressionPt, Ryear1, Ryear2, Pyear1, Pyear2 };
     }

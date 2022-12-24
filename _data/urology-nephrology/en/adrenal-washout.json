@@ -1,12 +1,14 @@
 {
-    "H1": "adrenal washout calculator online",
-    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "adrenal washout calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "The Accurate Adrenal Washout Calculator",
+    "H2": "Get The Absolute & Relative Value From Adrenal Washout Calculator",
+    "TITLE": "Adrenal Washout-100% Accurate Calculator",
+    "META": "Calculate the absolute and relative density value of adrenal nodules/lesions with a 100% accurate Adrenal Washout Calculator to diagnose adrenal adenoma.",
+    "img": "/assets/images/urology.webp",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
     "color": "#3287B2",
-    "keyword": "adjusted weight",
+    "keyword": "Adrenal Washout Calculator",
     "megaMenu": {
         "nav-link-name": "Tools",
         "dropdown": [
@@ -14,13 +16,43 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "baby-percentile ",
-                        "url": "/baby-percentile",
+                        "name": "FENa Calculator",
+                        "url": "/fena-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile",
-                        "url": "/birthweight-percentile-calculator",
+                        "name": "Albumin Creatinine Calculator",
+                        "url": "/albumin-creatinine-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Bladder Volume Calculator",
+                        "url": "/bladder-volume-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "BUN Creatinine Calculator",
+                        "url": "/bun-creatinine-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Creatinine Clearance Calculator",
+                        "url": "/creatinine-clearance-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "kt-v Calculator",
+                        "url": "/kt-v-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "feurea Calculator",
+                        "url": "/feurea-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Kidney Failure Calculator",
+                        "url": "/kidney-failure-calculator",
                         "hover": "blue"
                     }
                 ]

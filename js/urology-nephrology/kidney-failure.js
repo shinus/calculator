@@ -291,81 +291,81 @@ function showResult() {
 
   if( percentile < -41) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 90%"
-  } else if(percentile = -41 ) {
+  } else if(percentile == -41 ) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 89.0%"
-  } else if(percentile = -40 ) {
+  } else if(percentile == -40 ) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 86.9%"
-  } else if(percentile = -39 ) {
+  } else if(percentile == -39 ) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 84.1%"
-  } else if(percentile =  -38 ) {
+  } else if(percentile ==  -38 ) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 81.0%"
-  } else if(percentile = -37 ) {
+  } else if(percentile == -37 ) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 81.0%"
-  } else if(percentile = -36 ) {
+  } else if(percentile == -36 ) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 74.4%"
-  } else if(percentile = -35 ) {
+  } else if(percentile == -35 ) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 70.9%"
-  } else if(percentile = -34 ) {
+  } else if(percentile == -34 ) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 67.3%"
-  } else if(percentile = -33) {
+  } else if(percentile == -33) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 63.6%"
-  } else if(percentile = -32) {
+  } else if(percentile ==-32) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 59.9%"
-  } else if(percentile = -31) {
+  } else if(percentile == -31) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 59.3%"
-  } else if(percentile = -30) {
+  } else if(percentile == -30) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 52.8%"
-  } else if(percentile = -29) {
+  } else if(percentile == -29) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 49.3%"
-  } else if(percentile = -28) {
+  } else if(percentile == -28) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 45.9%"
-  } else if(percentile = -27) {
+  } else if(percentile == -27) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 42.7%"
-  } else if(percentile = -26) {
+  } else if(percentile == -26) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 39.6%"
-  } else if(percentile = -25) {
+  } else if(percentile == -25) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 36.6%"
-  } else if(percentile = -24) {
+  } else if(percentile == -24) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 33.8%"
-  } else if(percentile = -23) {
+  } else if(percentile == -23) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 31.2%"
-  } else if(percentile = -22) {
+  } else if(percentile == -22) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 28.7%"
-  } else if(percentile = -21) {
+  } else if(percentile == -21) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 26.4%"
-  } else if(percentile = -20) {
+  } else if(percentile == -20) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 24.2%"
-  } else if(percentile = -19) {
+  } else if(percentile == -19) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 22.2%"
-  } else if(percentile = -18) {
+  } else if(percentile == -18) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 20.3%"
-  } else if(percentile = -17) {
+  } else if(percentile == -17) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 18.6%"
-  } else if(percentile = -16) {
+  } else if(percentile == -16) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 17.0%"
-  } else if(percentile = -15) {
+  } else if(percentile == -15) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 15.5%"
-  } else if(percentile = -14) {
+  } else if(percentile == -14) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 14.1%"
-  } else if(percentile = -13) {
+  } else if(percentile == -13) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 12.9%"
-  } else if(percentile = -12) {
+  } else if(percentile == -12) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 11.7%"
-  } else if(percentile = -11) {
+  } else if(percentile == -11) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 10.7%"
-  } else if(percentile = -10) {
+  } else if(percentile == -10) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 9.7%"
-  } else if(percentile = -9) {
+  } else if(percentile == -9) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 8.%"
-  } else if(percentile = -8) {
+  } else if(percentile == -8) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 8.0%"
-  } else if(percentile = -7) {
+  } else if(percentile == -7) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 7.%"
-  } else if(percentile = -6) {
+  } else if(percentile == -6) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 6.6%"
-  } else if(percentile = -5) {
+  } else if(percentile == -5) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 6.0%"
-  } else if(percentile = -4) {
+  } else if(percentile == -4) {
     div2.innerHTML = "Probability of kidney failure at 5 years: 5.5%"
   } else if(percentile >= -3) {
     div2.innerHTML = "Probability of kidney failure at 5 years: <5.0%"

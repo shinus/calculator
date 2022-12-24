@@ -26,7 +26,7 @@ function getExact() {
   var result = 0;
 
 
-  result = (aurine / aserum) / (uso / sos)
+  result = ((150 * aurine) / (150 *  aserum)) / (uso / sos)
 
   console.log(result);
   return math.bignumber(result);
@@ -66,7 +66,7 @@ function showResult() {
 
   var percentile = result;
 
-  if (percentile > 7 && percentile < 10) {
+  if (percentile>7 && percentile <10) {
     div2.innerHTML = 'If the patient has a normal diet, this value is <b>normal</b>.';
   }
 

@@ -1,0 +1,23 @@
+{
+    "calculatorRow": [
+        {
+            "labelName": "Ovulation date",
+            "labelId": "Ovulation date__id",
+            "inputId": "Ovulation date_input_Id",
+            "dropDownId": "Ovulation date_dd_Id",
+            "dateTimePicker": true
+        },
+        {
+            "labelName": "First day of period ",
+            "labelId": "First day of period __id",
+            "inputId": "First day of period _input_Id",
+            "dropDownId": "First day of period _dd_Id",
+            "dateTimePicker": true
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}

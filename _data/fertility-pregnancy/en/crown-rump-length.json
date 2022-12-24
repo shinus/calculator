@@ -1,14 +1,14 @@
 {
-    "H1": "Kt/V Calculator-Dialysis Session Efficacy",
-    "H2": "Get the Dialysis Treatment Efficacy with Given Parameters",
-    "TITLE": "Kt/V Calculator-Dialysis Session Efficacy",
-    "META": "Kt/V calculator using Daugirdas Formula helps to check the efficiency and adequacy of hemodialysis and peritoneal dialysis treatment with given parameters.",
+    "H1": "Crown-rump Length Calculator",
+    "H2": "Get The Absolute & Relative Value From Adrenal Washout Calculator",
+    "TITLE": "Crown-rump Length Calculator",
+    "META": "Calculate the absolute and relative density value of adrenal nodules/lesions with a 100% accurate Adrenal Washout Calculator to diagnose adrenal adenoma.",
     "img": "/assets/images/urology.webp",
     "imgwidth": "35px",
     "imgheight": "35px",
     "height": "300px",
     "color": "#3287B2",
-    "keyword": "Kt/V Calculator",
+    "keyword": "Adrenal Washout Calculator",
     "megaMenu": {
         "nav-link-name": "Tools",
         "dropdown": [
@@ -16,8 +16,8 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "Adrenal Washout Calculator",
-                        "url": "/adrenal-washout-calculator",
+                        "name": "FENa Calculator",
+                        "url": "/fena-calculator",
                         "hover": "blue"
                     },
                     {
@@ -41,13 +41,13 @@
                         "hover": "blue"
                     },
                     {
-                        "name": "EORTC Calculator",
-                        "url": "/EORTC-calculator",
+                        "name": "kt-v Calculator",
+                        "url": "/kt-v-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "FENa Calculator",
-                        "url": "/fena-calculator",
+                        "name": "feurea Calculator",
+                        "url": "/feurea-calculator",
                         "hover": "blue"
                     },
                     {
@@ -102,53 +102,17 @@
     ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/urology-nephrology/kt-v.js"
+        "/js/fertility-pregnancy/corwn-rump-length.js"
     ],
     "calculatorData": {
     "calculatorRow": [
         {
-            "labelName": "Pre-dialysis BUN",
-            "labelId": "Pre-dialysis BUN__id",
+            "labelName": "Crown rump length",
+            "labelId": "Crown rump length__id",
             "inputBox": "text",
-            "inputId": "PreBUN_input_Id",
-            "dropDown": "mg/dl",
-            "dropDownId": "PreBUN_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Post-dialysis BUN",
-            "labelId": "Post-dialysis BUN__id",
-            "inputBox": "text",
-            "inputId": "PostBUN_input_Id",
-            "dropDown": "mg/dl",
-            "dropDownId": "PostBUN_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Duration of dialysis",
-            "labelId": "Duration of dialysis__id",
-            "inputBox": "text",
-            "inputId": "dialysis_input_Id",
-            "dropDown": "hrs",
-            "dropDownId": "dialysis_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Volume of removed ultrafiltrate ",
-            "labelId": "Volume of removed ultrafiltrate __id",
-            "inputBox": "text",
-            "inputId": "ultrafiltrate_input_Id",
-            "dropDown": "liters",
-            "dropDownId": "ultrafiltrate_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Post-dialysis weight",
-            "labelId": "Post-dialysis weight__id",
-            "inputBox": "text",
-            "inputId": "weight_input_Id",
-            "dropDown": "lb",
-            "dropDownId": "weight_dd_Id",
+            "inputId": "length_input_Id",
+            "dropDown": "mm",
+            "dropDownId": "length_dd_Id",
             "dateTimePicker": false
         }
     ],

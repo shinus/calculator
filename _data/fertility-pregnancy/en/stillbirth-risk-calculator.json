@@ -1,0 +1,214 @@
+{
+    "H1": "Stillbirth Risk Calculator",
+    "H2": "Get The Absolute & Relative Value From Adrenal Washout Calculator",
+    "TITLE": "Stillbirth Risk Calculator",
+    "META": "Calculate the absolute and relative density value of adrenal nodules/lesions with a 100% accurate Adrenal Washout Calculator to diagnose adrenal adenoma.",
+    "img": "/assets/images/urology.webp",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "Adrenal Washout Calculator",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "FENa Calculator",
+                        "url": "/fena-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Albumin Creatinine Calculator",
+                        "url": "/albumin-creatinine-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Bladder Volume Calculator",
+                        "url": "/bladder-volume-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "BUN Creatinine Calculator",
+                        "url": "/bun-creatinine-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Creatinine Clearance Calculator",
+                        "url": "/creatinine-clearance-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "kt-v Calculator",
+                        "url": "/kt-v-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "feurea Calculator",
+                        "url": "/feurea-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Kidney Failure Calculator",
+                        "url": "/kidney-failure-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/fertility-pregnancy/stillbirth-risk-calculator.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "Age",
+            "labelId": "Age__id",
+            "inputBox": "text",
+            "inputId": "Age_input_Id",
+            "dropDownId": "Age_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Height",
+            "labelId": "Height__id",
+            "inputBox": "text",
+            "inputId": "Height_input_Id",
+            "dropDown": "ft",
+            "dropDownId": "Height_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Pre-pregnancy weight",
+            "labelId": "Pre-pregnancy weight__id",
+            "inputBox": "text",
+            "inputId": "weight_input_Id",
+            "dropDown": "lb",
+            "dropDownId": "weight_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Ethnicity",
+            "labelId": "Ethnicity__id",
+            "inputId": "Ethnicity_input_Id",
+            "dropDown": "Non-Hispanic white",
+            "dropDownId": "Ethnicity_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Previous pregnancies",
+            "labelId": "Previous pregnancies__id",
+            "inputId": "Previous pregnancies_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Previous_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Assisted Reproductive Technology (ART)",
+            "labelId": "Assisted Reproductive Technology (ART)__id",
+            "inputId": "Assisted Reproductive Technology (ART)_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Assisted_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Diabetes",
+            "labelId": "Diabetes__id",
+            "inputId": "Diabetes_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Diabetes_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Hypertension",
+            "labelId": "Hypertension__id",
+            "inputId": "Hypertension_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Hypertension_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Systemic Lupus Erythematosus",
+            "labelId": "Systemic Lupus Erythematosus__id",
+            "inputId": "Systemic Lupus Erythematosus_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Systemic_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Anti-phospholipid syndrome",
+            "labelId": "Anti-phospholipid syndrome__id",
+            "inputId": "Anti-phospholipid syndrome_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Anti_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Alcohol use during pregnancy",
+            "labelId": "Alcohol use during pregnancy__id",
+            "inputId": "Alcohol use during pregnancy_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Alcohol_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Smoking during pregnancy ",
+            "labelId": "Smoking during pregnancy __id",
+            "inputId": "Smoking during pregnancy _input_Id",
+            "dropDown": "No",
+            "dropDownId": "Smoking_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

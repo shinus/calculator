@@ -1,0 +1,350 @@
+{
+    "H1": "VTE Risk Score Calculator in Pregnancy",
+    "H2": "Get The Absolute & Relative Value From Adrenal Washout Calculator",
+    "TITLE": "VTE Risk Score Calculator in Pregnancy",
+    "META": "Calculate the absolute and relative density value of adrenal nodules/lesions with a 100% accurate Adrenal Washout Calculator to diagnose adrenal adenoma.",
+    "img": "/assets/images/urology.webp",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "Adrenal Washout Calculator",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "FENa Calculator",
+                        "url": "/fena-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Albumin Creatinine Calculator",
+                        "url": "/albumin-creatinine-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Bladder Volume Calculator",
+                        "url": "/bladder-volume-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "BUN Creatinine Calculator",
+                        "url": "/bun-creatinine-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Creatinine Clearance Calculator",
+                        "url": "/creatinine-clearance-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "kt-v Calculator",
+                        "url": "/kt-v-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "feurea Calculator",
+                        "url": "/feurea-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Kidney Failure Calculator",
+                        "url": "/kidney-failure-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/fertility-pregnancy/vte-risk-score.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "I",
+            "labelId": "I__id",
+            "inputId": "I_input_Id",
+            "dropDown": "am pregnant 🤰",
+            "dropDownId": "I_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Height",
+            "labelId": "Height__id",
+            "inputBox": "text",
+            "inputId": "Height_input_Id",
+            "dropDown": "ft",
+            "dropDownId": "Height_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Weight",
+            "labelId": "Weight__id",
+            "inputBox": "text",
+            "inputId": "Weight_input_Id",
+            "dropDown": "lb",
+            "dropDownId": "Weight_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Age ≥ 35 years",
+            "labelId": "Age ≥ 35 years__id",
+            "inputId": "Age ≥ 35 years_input_Id",
+            "dropDown": "No",
+            "dropDownId": "years_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Previous VTE",
+            "labelId": "Previous VTE__id",
+            "inputId": "Previous VTE_input_Id",
+            "dropDown": "No",
+            "dropDownId": "VTE_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Previous VTE provoked by major surgery",
+            "labelId": "Previous VTE provoked by major surgery__id",
+            "inputId": "Previous VTE provoked by major surgery_input_Id",
+            "dropDown": "No",
+            "dropDownId": "surgery_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "High-risk thrombophilia",
+            "labelId": "High-risk thrombophilia__id",
+            "inputId": "High-risk thrombophilia_input_Id",
+            "dropDown": "No",
+            "dropDownId": "thrombophilia_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Comorbidity",
+            "labelId": "Comorbidity__id",
+            "inputId": "Comorbidity_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Comorbidity_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Family history of unprovoked/estrogen related VTE in first-degree relative",
+            "labelId": "Family history of unprovoked/estrogen related VTE in first-degree relative__id",
+            "inputId": "Family history of unprovoked/estrogen related VTE in first-degree relative_input_Id",
+            "dropDown": "No",
+            "dropDownId": "relative_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Low-risk thrombophilia",
+            "labelId": "Low-risk thrombophilia__id",
+            "inputId": "Low-risk thrombophilia_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Low-risk_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Parity ≥ 3 🧒",
+            "labelId": "Parity ≥ 3 🧒__id",
+            "inputId": "Parity ≥ 3 🧒_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Parity_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Smoker 🚬",
+            "labelId": "Smoker 🚬__id",
+            "inputId": "Smoker 🚬_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Smoker_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Gross varicose veins",
+            "labelId": "Gross varicose veins__id",
+            "inputId": "Gross varicose veins_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Gross_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Pre-eclampsia in current pregnancy",
+            "labelId": "Pre-eclampsia in current pregnancy__id",
+            "inputId": "Pre-eclampsia in current pregnancy_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Pre-eclampsia_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "ART/IVF 💉",
+            "labelId": "ART/IVF 💉__id",
+            "inputId": "ART/IVF 💉_input_Id",
+            "dropDown": "No",
+            "dropDownId": "ART/IVF_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Multiple pregnancy 👶👶👶",
+            "labelId": "Multiple pregnancy 👶👶👶__id",
+            "inputId": "Multiple pregnancy 👶👶👶_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Multiple_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Cesarean section in labor",
+            "labelId": "Cesarean section in labor__id",
+            "inputId": "Cesarean section in labor_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Cesarean_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Elective cesarean section",
+            "labelId": "Elective cesarean section__id",
+            "inputId": "Elective cesarean section_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Elective_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Mid-cavity or rotational operative delivery",
+            "labelId": "Mid-cavity or rotational operative delivery__id",
+            "inputId": "Mid-cavity or rotational operative delivery_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Mid-cavity_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Prolonged labor (>24 hours)",
+            "labelId": "Prolonged labor (>24 hours)__id",
+            "inputId": "Prolonged labor (>24 hours)_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Prolonged_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "PPH (> 1 litre/transfusion) 💉",
+            "labelId": "PPH (> 1 litre/transfusion) 💉__id",
+            "inputId": "PPH (> 1 litre/transfusion) 💉_input_Id",
+            "dropDown": "No",
+            "dropDownId": "PPH_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Preterm birth in current pregnancy",
+            "labelId": "Preterm birth in current pregnancy__id",
+            "inputId": "Preterm birth in current pregnancy_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Preterm_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Stillbirth in current pregnancy",
+            "labelId": "Stillbirth in current pregnancy__id",
+            "inputId": "Stillbirth in current pregnancy_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Stillbirth_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Any surgical procedure in pregnancy or puerperium",
+            "labelId": "Any surgical procedure in pregnancy or puerperium__id",
+            "inputId": "Any surgical procedure in pregnancy or puerperium_input_Id",
+            "dropDown": "No",
+            "dropDownId": "puerperium_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Current systemic infection 😷",
+            "labelId": "Current systemic infection 😷__id",
+            "inputId": "Current systemic infection 😷_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Current_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Hyperemesis",
+            "labelId": "Hyperemesis__id",
+            "inputId": "Hyperemesis_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Hyperemesis_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "OHSS (first trimester only)",
+            "labelId": "OHSS (first trimester only)__id",
+            "inputId": "OHSS (first trimester only)_input_Id",
+            "dropDown": "No",
+            "dropDownId": "OHSS_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Current systemic infection 😷",
+            "labelId": "Current systemic infection 😷__id",
+            "inputId": "Current systemic infection 😷_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Current_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Immobility, dehydration",
+            "labelId": "Immobility, dehydration__id",
+            "inputId": "Immobility, dehydration_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Immobility_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}
