@@ -1,11 +1,13 @@
 {
-    "H1": "4T Score Calculator online",
-    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
-    "TITLE": "4T Score Calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "4ts score online Calculator",
+    "H2": "Click on the '4ts score' button after filling in all required data",
+    "TITLE": "4ts score - Get your 4ts score instantly with our calculator",
+    "META": "Calculate your 4ts score quickly and easily with our online calculator. Just enter your information and get your score instantly.",
+    "img": "/assets/images/hematology.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#f0d50a",
     "keyword": "adjusted weight",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -65,14 +67,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-      ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/hematology-calculator/4t-score-calculator.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "Platelet count fall ",

@@ -104,8 +104,8 @@ var weUnit = [
 
 var ageUnit = [
     {
-       name: "No",
-       value: 0
+        name: "No",
+        value: 0
     },
     {
         name: "Yes",
@@ -186,13 +186,13 @@ function getExact() {
     var s = Number(getSelectedValue(ohss));
     var t = Number(getSelectedValue(current));
     var u = Number(getSelectedValue(imobility));
-    
+
 
     var result, result2 = 0;
 
     result = d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u;
 
-    result2 = b + c ;
+    result2 = b + c;
 
     console.log(result);
     return [result, result2];
@@ -215,9 +215,27 @@ function showResult() {
 
     var percentile = result;
     var percentile2 = result2;
-    div1.innerHTML = "Total sperm " + "    " + result.toFixed(0) + " mln" ;
+    div1.innerHTML = "The total score is " + result + " points.";
 
-    div2.innerHTML = "Functional sperm " + "  " + result2.toFixed(2) + " mln";
+
+    if (percentile >= 4) {
+        div3.innerHTML = '❗Consider thromboprophylaxis <b>from the first trimester</b>.';
+        div2.innerHTML = 'You may also be offered thromboprophylaxis later if you\'re admitted to hospital before labor.';
+    } else if (percentile === 3) {
+        div3.innerHTML = '❗Consider thromboprophylaxis <b>until hyperemesis is resolved</b>.';
+        div2.innerHTML = 'You may also be offered thromboprophylaxis later if you\'re admitted to hospital before labor.';
+    } else {
+        div3.innerHTML = '❗Consider thromboprophylaxis <b>from week 28</b> of pregnancy.';
+        div2.innerHTML = 'You may also be offered thromboprophylaxis later if you\'re admitted to hospital before labor.';
+    }
+
+
+
+    if (percentile >= 2) {
+        div2.innerHTML = '❗Consider thromboprophylaxis <b>for at least 10 days after delivery</b> and if <b>hospitalised for ≥ 3 days</b> or <b>readmitted</b> within the puerperium. The prophylaxis may be prolonged for up to 6 weeks in high-risk patients';
+    } else {
+        div2.innerHTML = '❗Consider thromboprophylaxis if <b>hospitalised ≥ 3 days</b> or <b>readmitted</b> within the puerperium.';
+    }
 
     output.append(div1);
     output.append(div2);

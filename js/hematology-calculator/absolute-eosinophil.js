@@ -11,6 +11,16 @@ var queryParams = [
     { name: "eosinophils", values: eosinophils },
 ]
 
+function init() {
+  var url = window.location.href;
+  if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+  }
+}
+
+init()
+
 function getExact() {
     var wbc = Number(blood.value)
     var eos = Number(eosinophils.value)
@@ -20,7 +30,7 @@ function getExact() {
     result = wbc * eos / 100;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -60,10 +70,3 @@ eosinophils.addEventListener("input", validateAge)
 calcBtn.addEventListener("click", showResult);
 
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

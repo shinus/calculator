@@ -13,6 +13,16 @@ var queryParams = [
     { name: "absoluteCount", values: absolute },
 ]
 
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
+init()
+
 function getExact() {
     var hemtocrit = Number(hema.value)
     var reticulocyte = Number(retic.value)
@@ -23,7 +33,7 @@ function getExact() {
     result = reticulocyte * hemtocrit / count;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -63,10 +73,3 @@ function showResult() {
 calcBtn.addEventListener("click", showResult);
 
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

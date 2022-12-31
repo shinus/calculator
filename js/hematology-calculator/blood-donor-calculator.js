@@ -74,6 +74,11 @@ function init() {
     createDropDown(wantU, want);
     createDropDown(bloodU, blood);
     createDropDown(typeU, type);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -184,11 +189,4 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 
+ 

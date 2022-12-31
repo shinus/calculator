@@ -38,6 +38,11 @@ function init() {
     createDropDown(countUnit, weight_dd);
     createDropDown(timeUnit, volume_dd);
     createDropDown(timeUnit, dose_dd);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -86,10 +91,10 @@ function showResult() {
 
     output.innerHTML = " ";
     div1.innerHTML = "Total plasma dose  " + "  " + result.toFixed(0) + "  " + "  ml";
-    div2.innerHTML = "Units needed  " + "  " + result2.toFixed(0) ;
+    div2.innerHTML = "Units needed  " + "  " + result2.toFixed(2) ;
 
     
-      div3.innerHTML =  "The patient needs <b> " + percentile  +  " mL </b> of fresh frozen plasma. Get <b>" + percentile2  +  "  units </b>."
+      div3.innerHTML =  "The patient needs <b> " + percentile  +  " mL </b> of fresh frozen plasma. Get <b>" + percentile2.toFixed(2)  +  "  units </b>."
 
     output.append(div1);
     output.append(div2);
@@ -99,12 +104,3 @@ function showResult() {
 volume.addEventListener("input", validateAge)
 calcBtn.addEventListener("click", showResult);
 
-
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 

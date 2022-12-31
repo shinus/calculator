@@ -73,7 +73,12 @@ var weiUnit = [
 
 function init() {
     createDropDown(catUnit, Category)
-    createDropDown(weiUnit, weight_dd)
+    createDropDown(weiUnit, weight_dd);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 } 
 
 init()
@@ -107,7 +112,7 @@ function getExact() {
     // console.log(we);
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -131,10 +136,4 @@ calcBtn.addEventListener("click", showResult);
 initial.addEventListener("input", validateAge);
 
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 
+ 

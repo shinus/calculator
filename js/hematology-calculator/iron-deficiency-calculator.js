@@ -61,6 +61,11 @@ function init() {
     createDropDown(weightUnit, weight_dd)
     createDropDown(mmUNit, hemoglobin_dd)
     createDropDown(mmUNit, target_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -120,11 +125,3 @@ function showResult() {
 
 target.addEventListener("input", validateAge)
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 

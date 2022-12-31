@@ -13,6 +13,14 @@ var queryParams = [
     { name: "bands", values: band },
 ]
 
+function init() {
+  var url = window.location.href;
+  if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+  }
+}
+
 function getExact() {
     var wbc = Number(blood.value)
     var segs = Number(neutro.value)
@@ -23,7 +31,7 @@ function getExact() {
     result = wbc * (segs + bands) / 100;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -58,10 +66,3 @@ function showResult() {
 calcBtn.addEventListener("click", showResult);
 
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 

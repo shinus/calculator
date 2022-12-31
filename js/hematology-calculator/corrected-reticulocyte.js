@@ -11,6 +11,14 @@ var queryParams = [
     { name: "reticulocyte", values: retic },
 ]
 
+function init() {
+  var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
 function getExact() {
     var hemtocrit = Number(hema.value)
     var reticulocyte = Number(retic.value)
@@ -20,7 +28,7 @@ function getExact() {
     result = (hemtocrit / 45) * (reticulocyte / 2.5 );
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 }; 
 
 function validateAge() {
@@ -75,10 +83,3 @@ retic.addEventListener("input", validateAge2)
 calcBtn.addEventListener("click", showResult);
 
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

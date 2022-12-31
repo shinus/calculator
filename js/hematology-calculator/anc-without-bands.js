@@ -45,6 +45,11 @@ function init() {
     row3.style.display = 'none'
     row4.style.display = 'none'
     row5.style.display = 'none'
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -202,10 +207,3 @@ calcBtn.addEventListener("click", showResult);
 neut.addEventListener("input", validateAge);
 
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 

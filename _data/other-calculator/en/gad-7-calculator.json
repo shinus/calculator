@@ -1,0 +1,143 @@
+{
+    "H1": "GAD-7 Calculator online",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "GAD-7 Calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/other-calculator/gad-7-calculator.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Over the last 2 weeks, how often have you been bothered by the following problems?"
+            },
+            {
+                "labelName": "Feeling nervous, anxious or on edge",
+                "labelId": "Feeling nervous, anxious or on edge__id",
+                "inputId": "Feeling nervous, anxious or on edge_input_Id",
+                "dropDown": "select",
+                "dropDownId": "nervous_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Not being able to stop or control worrying",
+                "labelId": "Not being able to stop or control worrying__id",
+                "inputId": "Not being able to stop or control worrying_input_Id",
+                "dropDown": "select",
+                "dropDownId": "Not_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Worrying too much about different things",
+                "labelId": "Worrying too much about different things__id",
+                "inputId": "Worrying too much about different things_input_Id",
+                "dropDown": "select",
+                "dropDownId": "Worrying_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Trouble relaxing",
+                "labelId": "Trouble relaxing__id",
+                "inputId": "Trouble relaxing_input_Id",
+                "dropDown": "select",
+                "dropDownId": "Trouble_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Being so restless that it is hard to sit still",
+                "labelId": "Being so restless that it is hard to sit still__id",
+                "inputId": "Being so restless that it is hard to sit still_input_Id",
+                "dropDown": "select",
+                "dropDownId": "Being_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Becoming easily annoyed or irritable",
+                "labelId": "Becoming easily annoyed or irritable__id",
+                "inputId": "Becoming easily annoyed or irritable_input_Id",
+                "dropDown": "select",
+                "dropDownId": "Becoming_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Feeling afraid as if something awful might happen",
+                "labelId": "Feeling afraid as if something awful might happen__id",
+                "inputId": "Feeling afraid as if something awful might happen_input_Id",
+                "dropDown": "select",
+                "dropDownId": "Feeling_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

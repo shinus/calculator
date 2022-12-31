@@ -1,11 +1,13 @@
 {
-    "H1": "ANC Calculator Without Bands - Absolute Neutrophil Count online",
-    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
-    "TITLE": "ANC Calculator Without Bands - Absolute Neutrophil Count - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "Online ANC without band Calculator Without Bands ",
+    "H2": "Click on the 'ANC without band' button for getting results",
+    "TITLE": "ANC without bands - An easy way to measure neutrophils without bands",
+    "META": "Evaluate your neutrophil levels with our ANC without bands. Get your results in just a few minutes and learn how to improve your health.",
+    "img": "/assets/images/hematology.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#f0d50a",
     "keyword": "adjusted weight",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -65,14 +67,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/hematology-calculator/anc-without-bands.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "WBC count",

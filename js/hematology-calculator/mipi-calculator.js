@@ -43,7 +43,12 @@ var levelUNit = [
 
 function init() {
     createDropDown(ecogUNit, ecog)
-    createDropDown(levelUNit, level)
+    createDropDown(levelUNit, level);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -68,18 +73,18 @@ function getExact() {
     var ecg = Number(getSelectedValue(ecog))
     var ser = Number(serum.value)
     var ldd = Number(ldh.value)
-    var blue = Number(math.log10(blood.value))
+    var blue = Number(Math.log10(blood.value))
     var lev = Number(getSelectedValue(level))
     
     
 
     var result = 0;
     let a = ser / ldd
-    let b = blue * math.pow(10, 3)
+    let b = blue * Math.pow(10, 3)
     if(ecg == 0){
-        result = (0.03535 * Nage) + (0.6978) + (1.367 * math.log10(a)) + (0.9393 * math.log10(b));
+        result = (0.03535 * Nage) + (0.6978) + (1.367 * Math.log10(a)) + (0.9393 * Math.log10(b));
     } else {
-        result = (0.03535 * Nage) + (1.367 * math.log10(a)) + ( 0.9393 * math.log10(b)) ;
+        result = (0.03535 * Nage) + (1.367 * Math.log10(a)) + ( 0.9393 * Math.log10(b)) ;
     }
   
     console.log(a, b);
@@ -108,11 +113,3 @@ ldh.addEventListener('input', () => {validateAge("calculator-row-4","hematologyE
 blood.addEventListener('input', () => {validateAge("calculator-row-5","rbctError", "The White Blood Count is too high - please change.",Number(blood.value) > 399)})
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 

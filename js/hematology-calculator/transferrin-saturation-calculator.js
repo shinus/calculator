@@ -40,7 +40,12 @@ var mmUNit = [
 
 function init() {
     createDropDown(mmUNit, serumIron_dd)
-    createDropDown(mmUNit, total_dd)
+    createDropDown(mmUNit, total_dd);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -70,7 +75,7 @@ function getExact() {
     result = serum / totals * 100;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -92,11 +97,4 @@ function showResult() {
 
 total.addEventListener("input", validateAge)
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 
+ 

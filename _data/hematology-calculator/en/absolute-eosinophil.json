@@ -1,11 +1,13 @@
 {
-    "H1": "Absolute Eosinophil Count Calculator online",
-    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
-    "TITLE": "Absolute Eosinophil Count Calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "Absolute Eosinophil Count online Calculator",
+    "H2": "Click on the 'Eosinophil Count' button for getting results",
+    "TITLE": "Eosinophil count - Get accurate result with this online calculator",
+    "META": "Our eosinophil count calculator makes it easy to quickly determine your eosinophil levels. Get your results instantly.",
+    "img": "/assets/images/hematology.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#f0d50a",
     "keyword": "adjusted weight",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -65,14 +67,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/hematology-calculator/absolute-eosinophil.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
         "calculatorRow": [
             {
                 "labelName": "White blood cells (WBC)",

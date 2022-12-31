@@ -11,6 +11,14 @@ var queryParams = [
     { name: "hemglobin", values: hemoglo },
 ];
 
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
 function getExact() {
     var hematocrit = Number(hema.value)
     var hemoglobin = Number(hemoglo.value)
@@ -21,7 +29,7 @@ function getExact() {
     result = hematocrit / hemoglobin ;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -42,11 +50,4 @@ function showResult() {
 };
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 
+ 

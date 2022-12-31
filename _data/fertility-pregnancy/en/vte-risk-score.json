@@ -237,62 +237,6 @@
             "dateTimePicker": false
         },
         {
-            "labelName": "Cesarean section in labor",
-            "labelId": "Cesarean section in labor__id",
-            "inputId": "Cesarean section in labor_input_Id",
-            "dropDown": "No",
-            "dropDownId": "Cesarean_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Elective cesarean section",
-            "labelId": "Elective cesarean section__id",
-            "inputId": "Elective cesarean section_input_Id",
-            "dropDown": "No",
-            "dropDownId": "Elective_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Mid-cavity or rotational operative delivery",
-            "labelId": "Mid-cavity or rotational operative delivery__id",
-            "inputId": "Mid-cavity or rotational operative delivery_input_Id",
-            "dropDown": "No",
-            "dropDownId": "Mid-cavity_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Prolonged labor (>24 hours)",
-            "labelId": "Prolonged labor (>24 hours)__id",
-            "inputId": "Prolonged labor (>24 hours)_input_Id",
-            "dropDown": "No",
-            "dropDownId": "Prolonged_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "PPH (> 1 litre/transfusion) 💉",
-            "labelId": "PPH (> 1 litre/transfusion) 💉__id",
-            "inputId": "PPH (> 1 litre/transfusion) 💉_input_Id",
-            "dropDown": "No",
-            "dropDownId": "PPH_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Preterm birth in current pregnancy",
-            "labelId": "Preterm birth in current pregnancy__id",
-            "inputId": "Preterm birth in current pregnancy_input_Id",
-            "dropDown": "No",
-            "dropDownId": "Preterm_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Stillbirth in current pregnancy",
-            "labelId": "Stillbirth in current pregnancy__id",
-            "inputId": "Stillbirth in current pregnancy_input_Id",
-            "dropDown": "No",
-            "dropDownId": "Stillbirth_dd_Id",
-            "dateTimePicker": false
-        },
-        {
             "labelName": "Any surgical procedure in pregnancy or puerperium",
             "labelId": "Any surgical procedure in pregnancy or puerperium__id",
             "inputId": "Any surgical procedure in pregnancy or puerperium_input_Id",
@@ -322,14 +266,6 @@
             "inputId": "OHSS (first trimester only)_input_Id",
             "dropDown": "No",
             "dropDownId": "OHSS_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Current systemic infection 😷",
-            "labelId": "Current systemic infection 😷__id",
-            "inputId": "Current systemic infection 😷_input_Id",
-            "dropDown": "No",
-            "dropDownId": "Current_dd_Id",
             "dateTimePicker": false
         },
         {

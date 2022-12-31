@@ -1,0 +1,166 @@
+{
+    "H1": "BIMS Calculator",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "BIMS Calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/other-calculator/bims-calculator.js"
+    ],
+    "calculatorData": {
+        "calculatorRow": [
+            {
+                "labelName": "Basic instructions for the BIMS:"
+            },
+            {
+                "labelName": "It would be best to conduct the interview in a quiet, private setting. Ensure you introduce the test to the resident and that the resident does not have a hearing problem. If the resident has a hearing impairment, offer alternative modes of communication, such as writing or cue cards"
+            },
+            {
+                "labelName": "Part I – Repetition of three words"
+            },
+            {
+                "labelName": "Inform the resident that you will say three words and that they need to remember the words and repeat them. Say the three words, e.g., sock, blue, and bed. Ask the resident to reproduce the three words and note the number after the first attempt:"
+            },
+            {
+                "labelId": "Feeling nervous, anxious or on edge__id",
+                "inputId": "Feeling nervous, anxious or on edge_input_Id",
+                "dropDown": "All words repeated",
+                "dropDownId": "all_dd_id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Part II – Temporal orientation"
+            },
+            {
+                "labelName": "A. Ask the resident what year it is right now and report their answer:"
+            },
+            {
+                "labelId": "Not being able to stop or control worrying__id",
+                "inputId": "Not being able to stop or control worrying_input_Id",
+                "dropDown": "correct",
+                "dropDownId": "Not_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "B. Ask the resident what month we are in at the moment and report their answer:"
+            },
+            {
+                "labelId": "Worrying too much about different things__id",
+                "inputId": "Worrying too much about different things_input_Id",
+                "dropDown": "Accurate within 5 days",
+                "dropDownId": "Worrying_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "C. Ask the resident what day of the week it is today and report their response:"
+            },
+            {
+                "labelId": "Trouble relaxing__id",
+                "inputId": "Trouble relaxing_input_Id",
+                "dropDown": "corect",
+                "dropDownId": "Trouble_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Part III – Recall"
+            },
+            {
+                "labelName": "Tell the resident that you are going back to the earlier question and ask them to say the words that they were asked to repeat. If they are unable to remember a word, provide cues such as “something to wear”, ”a color”, “a piece of furniture.”"
+            },
+            {
+                "labelName": "A. Able to recall “sock”?",
+                "labelId": "Being so restless that it is hard to sit still__id",
+                "inputId": "Being so restless that it is hard to sit still_input_Id",
+                "dropDown": "Yes, no cue required",
+                "dropDownId": "Being_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "B. Able to recall “blue”?",
+                "labelId": "Becoming easily annoyed or irritable__id",
+                "inputId": "Becoming easily annoyed or irritable_input_Id",
+                "dropDown": "Yes, no cue required",
+                "dropDownId": "Becoming_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "C. Able to recall “bed”?",
+                "labelId": "Feeling afraid as if something awful might happen__id",
+                "inputId": "Feeling afraid as if something awful might happen_input_Id",
+                "dropDown": "Yes, no cue required",
+                "dropDownId": "Feeling_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

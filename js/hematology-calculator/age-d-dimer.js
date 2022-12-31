@@ -23,7 +23,12 @@ var dimerUnit = [
 ];
 
 function init() {
-    createDropDown(dimerUnit, dimer)
+    createDropDown(dimerUnit, dimer);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -52,7 +57,7 @@ function getExact() {
     result = Nage * dimer_d;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -66,7 +71,7 @@ function showResult() {
     var percentile = result;
 
     output.innerHTML = " ";
-    div1.innerHTML = "D-dimer cutoff value  " + "  " + "0." + math.ceil(result) + " " + " µg/mL";
+    div1.innerHTML = "D-dimer cutoff value  " + "  " + "0." + Math.ceil(result) + " " + " µg/mL";
 
     div2.innerHTML = 'Check your D-dimer level lab test result. <br><br>If they are lower than the calculated cutoff value, and there are no alarming clinical symptoms,<br> you can rule out the diagnosis of pulmonary embolism and deep vein thrombosis. ';
 
@@ -78,10 +83,4 @@ age.addEventListener("input", validateAge)
 calcBtn.addEventListener("click", showResult);
 
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 
+ 

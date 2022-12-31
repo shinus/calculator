@@ -94,7 +94,12 @@ var head2 = [
 
 function init() {
     createDropDown(mUnit, mother)
-    createDropDown(mUnit, father)
+    createDropDown(mUnit, father);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -598,12 +603,5 @@ function showResult() {
 calcBtn.addEventListener("click", showResult);
 
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};
 
 

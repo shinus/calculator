@@ -27,7 +27,12 @@ var mmUNit = [
 ];
 
 function init() {
-    createDropDown(mmUNit, gender)
+    createDropDown(mmUNit, gender);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -197,10 +202,4 @@ rbc.addEventListener('input', () => {validateAge("calculator-row-4","rbctError",
 
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 
+ 

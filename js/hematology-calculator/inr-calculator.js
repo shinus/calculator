@@ -13,6 +13,14 @@ var queryParams = [
     { name: "ISI", values: isi },
 ];
 
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
 function getExact() {
     var pat = Number(patient.value)
     var cat = Number(control.value)
@@ -21,10 +29,10 @@ function getExact() {
 
     var abc = pat / cat;
 
-    var result = math.pow(abc, is)
+    var result = Math.pow(abc, is)
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -56,11 +64,4 @@ function showResult() {
 };
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-}; 
+ 

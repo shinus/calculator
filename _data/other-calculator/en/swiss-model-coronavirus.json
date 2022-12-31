@@ -1,0 +1,139 @@
+{
+    "H1": "Coronavirus Protection - Swiss Cheese Model",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Coronavirus Protection - Swiss Cheese Model - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+      ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/other-calculator/swiss-model-coronavirus.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "This calculator imitates a contact between two people (one is you) and is based on the swiss cheese model for coronavirus, adapted by Doctor Ian M. Mackay, who portrays the fight against COVID-19 as a pile of cheese slices."
+        },
+        {
+            "labelName": "The more slices (ways of protection) you have, the less chance of the holes coinciding and the safer you are.",
+            "img": "data:images/webp;swiss"
+        },
+        {
+            "labelName": "Do you wear a mask?",
+            "labelId": "Do you wear a mask?__id",
+            "inputId": "Do you wear a mask?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "mask_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Do you wash your hands often, ⩾  10 times a day?",
+            "labelId": "Do you wash your hands often, ⩾  10 times a day?__id",
+            "inputId": "Do you wash your hands often, ⩾  10 times a day?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "wash_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Do you wear an eye protection?",
+            "labelId": "Do you wear an eye protection?__id",
+            "inputId": "Do you wear an eye protection?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "protection_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Do they wear a mask?",
+            "labelId": "Do they wear a mask?__id",
+            "inputId": "Do they wear a mask?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "they_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Do they wash their hands often, ⩾  10 times a day?",
+            "labelId": "Do they wash their hands often, ⩾  10 times a day?__id",
+            "inputId": "Do they wash their hands often, ⩾  10 times a day?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "hands_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Distance kept",
+            "labelId": "Distance kept__id",
+            "inputId": "Distance kept_input_Id",
+            "dropDown": "⩽ 6 ft (1.8m)",
+            "dropDownId": "Distance_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

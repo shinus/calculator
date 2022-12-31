@@ -59,6 +59,11 @@ function init() {
     createDropDown(nadirUnit, nadir);
     createDropDown(thromboUnit, thrombosis);
     createDropDown(otherUnit, other);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -76,7 +81,7 @@ function getExact() {
     result = plate + time + nad + thro + oth;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -106,12 +111,3 @@ function showResult() {
 };
 
 calcBtn.addEventListener("click", showResult);
-
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

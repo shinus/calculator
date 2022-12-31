@@ -44,6 +44,11 @@ function init() {
     createDropDown(timeUnit, fibrin);
     createDropDown(nadirUnit, pro);
     createDropDown(thromboUnit, level);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -60,7 +65,7 @@ function getExact() {
     result = plate + fib + pros + leve;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -88,12 +93,3 @@ function showResult() {
 };
 
 calcBtn.addEventListener("click", showResult);
-
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

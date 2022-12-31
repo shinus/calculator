@@ -49,6 +49,11 @@ function init() {
     createDropDown(nadirUnit, site);
     createDropDown(thromboUnit, ldh);
     createDropDown(statUnit, stst);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -66,7 +71,7 @@ function getExact() {
     result = Nage + staging + siting + ldhs + stat;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -112,11 +117,3 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

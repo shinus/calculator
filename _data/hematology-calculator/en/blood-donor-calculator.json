@@ -1,11 +1,13 @@
 {
-    "H1": "Blood donor Calculator online",
-    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
-    "TITLE": "Blood donor Calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "Blood Donor online Calculator",
+    "H2": "Click on the 'blood donor' button for getting results",
+    "TITLE": "Blood donor - Calculate your blood donor eligibility now ",
+    "META": "Evaluate your eligibility to donate blood with our calculator. Get your results in just a few minutes and learn how to become a blood donor.",
+    "img": "/assets/images/hematology.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#f0d50a",
     "keyword": "adjusted weight",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -65,14 +67,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/hematology-calculator/blood-donor-calculator.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "I want to...",
