@@ -39,6 +39,11 @@ var alUnit = [
 function init() {
     createDropDown(caUnit, cal_dd)
     createDropDown(alUnit, albu_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
 }
 
 init()
@@ -52,7 +57,7 @@ function getExact() {
     result = 0.8 * (4 - albumin) + calcium;
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -79,10 +84,3 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

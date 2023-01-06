@@ -43,6 +43,11 @@ var alUnit = [
 function init() {
     createDropDown(caUnit, mag_dd)
     createDropDown(alUnit, albu_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
 }
 
 init()
@@ -56,7 +61,7 @@ function getExact() {
     result = magnesium + 0.005 * (40 - albumin);
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -82,11 +87,3 @@ function showResult() {
 }
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

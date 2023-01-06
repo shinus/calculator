@@ -1,3 +1,5 @@
+
+
 var body = getElement("Body_input_Id");
 var body_dd = getElement("Body_dd_Id");
 var ambient = getElement("Ambient_input_Id");
@@ -37,28 +39,34 @@ function init() {
 
 init();
 
-function convert() {
-    var ab = Number(body.value)
-    var ac = Number(ambient.value)
-    var bb, amb = 0
+function con() {
+    var bo = Number(body.value)
+    var am = Number(ambient.value)
+    var acc, abb = 0;
 
-      bb =   (ab - 32) * (5/9);
-      amb = (ac - 32) * (5/9);
+    acc = (bo * 9/5) + 32
+    abb = (am * 9/5) + 32
 
-      return [bb, amb]
+    return [acc, abb]
 }
 
 
 function getExact() {
-    var bb = Number(convert())
-    var amb = Number(convert())
+    var acc = Number(con())
+    var abb = Number(con())
 
+    if( abb >= 32) {
+        abb = 0.75
+    } else if( abb < 32) {
+        abb = 1.5
+    }
+    console.log(typeof acc, typeof abb);
     var result = 0;
-    console.log(typeof bb ,typeof amb);
+    // console.log(typeof bb ,typeof amb);
 
-    result = (98.6 - bb) / amb;
+    result = (98.6 - acc) / abb;
 
-    console.log(result);
+    console.log(typeof result);
     return math.bignumber(result);
 
 };

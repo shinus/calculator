@@ -25,6 +25,11 @@ var alUnit = [
 
 function init() {
     createDropDown(alUnit, trigger_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
 }
 
 init()
@@ -45,7 +50,7 @@ function getExact() {
     result = sodium + a ;
 
     console.log(result, result2);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -67,10 +72,3 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

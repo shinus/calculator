@@ -33,6 +33,11 @@ var caUnit = [
 
 function init() {
     createDropDown(caUnit, carbon_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
 }
 
 init()
@@ -43,10 +48,10 @@ function getExact() {
 
     var result = 0;
 
-    result = 6.1 + math.log10(bicarbonate / (0.0308 * dioxide));
+    result = 6.1 + Math.log10(bicarbonate / (0.0308 * dioxide));
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -77,11 +82,3 @@ function showResult() {
 }
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

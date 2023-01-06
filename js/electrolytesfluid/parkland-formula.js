@@ -164,6 +164,11 @@ function init() {
     createDropDown(armUnit, arm)
     createDropDown(legUnit, leg)
     createDropDown(groinUnit, groin)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -244,11 +249,3 @@ function showResult() {
 }
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

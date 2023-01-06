@@ -12,6 +12,16 @@ var queryParams = [
   { name: "CL", values: CL },
 ];
 
+function init() {
+  var url = window.location.href;
+  if (url.includes("?")) {
+    setParamValues(queryParams);
+    showResult();
+  }
+}
+
+init()
+
 function getExact() {
     var na = Number(NA.value);
     var k = Number(K.value);
@@ -22,7 +32,7 @@ function getExact() {
     result = na + k - cl;
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -45,10 +55,3 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

@@ -71,6 +71,11 @@ function init() {
   createDropDown(heUnit, heig_dd)
   createDropDown(weUnit, weig_dd)
   createDropDown(gUnit, gender)
+  var url = window.location.href;
+  if (url.includes("?")) {
+    setParamValues(queryParams);
+    showResult();
+  }
 }
 
   init()
@@ -122,10 +127,3 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

@@ -1,0 +1,261 @@
+{
+    "H1": "Finnegan Score Calculator",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Finnegan Score Calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/addiction-calculator/finnegan-score-calculator.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "Central nervous system disturbances"
+        },
+        {
+            "labelName": "Cry",
+            "labelId": "Cry__id",
+            "inputId": "Cry_input_Id",
+            "dropDown": "Normal",
+            "dropDownId": "Cry_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Sleep",
+            "labelId": "Sleep__id",
+            "inputId": "Sleep_input_Id",
+            "dropDown": "Normal",
+            "dropDownId": "Sleep_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Moro reflex",
+            "labelId": "Moro reflex__id",
+            "inputId": "Moro reflex_input_Id",
+            "dropDown": "Normal",
+            "dropDownId": "reflex_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Tremors",
+            "labelId": "Tremors__id",
+            "inputId": "Tremors_input_Id",
+            "dropDown": "None",
+            "dropDownId": "Tremors_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Increased muscle tone",
+            "labelId": "Increased muscle tone__id",
+            "inputId": "Increased muscle tone_input_Id",
+            "dropDown": "No",
+            "dropDownId": "muscle_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Excoriation",
+            "labelId": "Excoriation__id",
+            "inputId": "Excoriation_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Excoriation_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Myoclonic jerks",
+            "labelId": "Myoclonic jerks__id",
+            "inputId": "Myoclonic jerks_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Myoclonic_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Generalized convulsions",
+            "labelId": "Generalized convulsions__id",
+            "inputId": "Generalized convulsions_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Generalized_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Metabolic, vasomotor, and respiratory disturbances"
+        },
+        {
+            "labelName": "Sweating",
+            "labelId": "Sweating__id",
+            "inputId": "Sweating_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Sweating_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Body temperature",
+            "labelId": "Body temperature__id",
+            "inputId": "Body temperature_input_Id",
+            "dropDown": "Normal (up to 37.2°C/99°F)",
+            "dropDownId": "Body_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Frequent yawning",
+            "labelId": "Frequent yawning__id",
+            "inputId": "Frequent yawning_input_Id",
+            "dropDown": "No",
+            "dropDownId": "yawning_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Mottling",
+            "labelId": "Mottling__id",
+            "inputId": "Mottling_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Mottling_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Nasal stuffiness",
+            "labelId": "Nasal stuffiness__id",
+            "inputId": "Nasal stuffiness_input_Id",
+            "dropDown": "No",
+            "dropDownId": "stuffiness_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Sneezing",
+            "labelId": "Sneezing__id",
+            "inputId": "Sneezing_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Sneezing_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Nasal flaring",
+            "labelId": "Nasal flaring__id",
+            "inputId": "Nasal flaring_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Nasal_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Respiratory rate",
+            "labelId": "Respiratory rate__id",
+            "inputId": "Respiratory rate_input_Id",
+            "dropDown": "Normal (40-60 breaths/minute)",
+            "dropDownId": "Respiratory_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Gastrointestinal disturbances"
+        },
+        {
+            "labelName": "Excessive sucking",
+            "labelId": "Excessive sucking__id",
+            "inputId": "Excessive sucking_input_Id",
+            "dropDown": "No",
+            "dropDownId": "sucking_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Poor feeding",
+            "labelId": "Poor feeding__id",
+            "inputId": "Poor feeding_input_Id",
+            "dropDown": "No",
+            "dropDownId": "feeding_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Regurgitation",
+            "labelId": "Regurgitation__id",
+            "inputId": "Regurgitation_input_Id",
+            "dropDown": "None",
+            "dropDownId": "Regurgitation_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Projectile vomiting",
+            "labelId": "Projectile vomiting__id",
+            "inputId": "Projectile vomiting_input_Id",
+            "dropDown": "No",
+            "dropDownId": "vomiting_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Stools",
+            "labelId": "Stools__id",
+            "inputId": "Stools_input_Id",
+            "dropDown": "Normal",
+            "dropDownId": "Stools_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

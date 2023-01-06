@@ -63,6 +63,11 @@ var alUnit = [
 function init() {
     createDropDown(caUnit, weight_dd)
     createDropDown(alUnit, category)
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
 }
 
 init()
@@ -81,7 +86,7 @@ function getExact() {
     result = TBW * ((lev / desired) - 1) / 100;
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -103,10 +108,3 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

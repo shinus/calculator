@@ -120,6 +120,11 @@ function init() {
     createDropDown(coUnit, concet_dd)
     createDropDown(baUnit, volume_dd)
     createDropDown(baUnit, factor_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -189,10 +194,3 @@ weight.addEventListener('input', () => {validateAge("calculator-row-2","weightEr
 
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

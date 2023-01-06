@@ -1,12 +1,14 @@
 {
-    "H1": "Serum Osmolality Calculator online",
-    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "Serum Osmolality Calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "Free serum osmolatily online tool",
+    "H2": "Apply serum osmolatily after filling lab values",
+    "TITLE": "Serum Osmolality - Quickly determine your body's osmolality",
+    "META": "Determine your serum osmolality with confidence using our accurate and easy-to-use calculator. Just input your lab values and get your results instantly.",
+    "img": "/assets/images/fluids.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
-    "keyword": "adjusted weight",
+    "color": "#18f27a",
+    "keyword": "serum osmolatily",
     "megaMenu": {
         "nav-link-name": "Tools",
         "dropdown": [
@@ -14,13 +16,43 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "baby-percentile ",
-                        "url": "/baby-percentile",
+                        "name": "blood ph calculator",
+                        "url": "/blood-ph-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile",
-                        "url": "/birthweight-percentile-calculator",
+                        "name": "corrected calcium calculator",
+                        "url": "/corrected-calcium-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "drip rate calculator",
+                        "url": "/drip-rate-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "sodium change calculator",
+                        "url": "/sodium-change-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "total body water",
+                        "url": "/toal-body-water-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "sodium deficit calculator",
+                        "url": "/sodium-deficit-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "urine anion gap calculator",
+                        "url": "/urine-anion-gap-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "water deficit calculator",
+                        "url": "/water-deficit-calculator",
                         "hover": "blue"
                     }
                 ]
@@ -65,14 +97,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/electrolytesfluid/serum-osmolality.js"
     ],
-    "calculatorData": {   
+    "calculatorData": { 
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",  
     "calculatorRow": [
         {
             "labelName": "Na",

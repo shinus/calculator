@@ -1,0 +1,98 @@
+{
+    "H1": "Sobriety Calculator",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Sobriety Calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+      ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/addiction-calculator/sobriety-calculator.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "Sobriety date",
+            "labelId": "Sobriety date__id",
+            "inputId": "Sobriety date_input_Id",
+            "dropDownId": "Sobriety date_dd_Id",
+            "dateTimePicker": true
+        },
+        {
+            "labelName": "Current date",
+            "labelId": "Current date__id",
+            "inputId": "Current date_input_Id",
+            "dropDownId": "Current date_dd_Id",
+            "dateTimePicker": true
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

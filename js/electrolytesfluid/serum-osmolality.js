@@ -48,6 +48,11 @@ function init() {
     createDropDown(caUnit, nitro_dd)
     createDropDown(caUnit, gluc_dd)
     createDropDown(alUnit, conce_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
 }
 
 init()
@@ -88,11 +93,3 @@ function showResult() {
 }
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

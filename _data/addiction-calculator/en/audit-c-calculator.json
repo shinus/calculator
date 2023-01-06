@@ -1,7 +1,7 @@
 {
-    "H1": "Sodium Correction Rate Calculator for Hypo- and Hypernatremia online",
-    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "Sodium Correction Rate Calculator for Hypo- and Hypernatremia - By using this tool to manage your body weight",
+    "H1": "Audit-C Calculator",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Audit-C Calculator - By using this tool to manage your body weight",
     "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
     "img": "/assets/images/bscale.png",
     "height": "300px",
@@ -14,12 +14,12 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "baby-percentile ",
-                        "url": "/baby-percentile",
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile",
+                        "name": "birthweight percentile calculator",
                         "url": "/birthweight-percentile-calculator",
                         "hover": "blue"
                     }
@@ -67,60 +67,46 @@
     "FAQ": [],
     "jscdns": [
         "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
+      ],
     "jsfilepaths": [
         "/js/util.js",
-        "/js/electrolytesfluid/sodium-correction-rate.js"
+        "/js/addiction-calculator/audit-c-calculator.js"
     ],
-    "calculatorData": { 
+    "calculatorData": {
     "calculatorRow": [
         {
-            "labelName": "Age/sex category",
-            "labelId": "Age/sex category__id",
-            "inputId": "Age/sex category_input_Id",
-            "dropDown": "adult male",
-            "dropDownId": "category_dd_Id",
+            "labelName": "Sex",
+            "labelId": "Sex__id",
+            "inputId": "Sex_input_Id",
+            "dropDown": "Female",
+            "dropDownId": "Sex_dd_Id",
             "dateTimePicker": false
         },
         {
-            "labelName": "Weight",
-            "labelId": "Weight__id",
-            "inputBox": "text",
-            "inputId": "Weight_input_Id",
-            "dropDown": "lb",
-            "dropDownId": "Weight_dd_Id",
+            "labelName": "In the past year..."
+        },
+        {
+            "labelName": "How often did you drink alcohol?",
+            "labelId": "How often did you drink alcohol?__id",
+            "inputId": "How often did you drink alcohol?_input_Id",
+            "dropDown": "2-4 times a month",
+            "dropDownId": "alcohol_dd_Id",
             "dateTimePicker": false
         },
         {
-            "labelName": "Serum sodium",
-            "labelId": "Serum sodium__id",
-            "inputBox": "text",
-            "inputId": "Serum_input_Id",
-            "dropDownId": "Serum sodium_dd_Id",
+            "labelName": "How many drinks did you have on an avg. drinking day?",
+            "labelId": "How many drinks did you have on an avg. drinking day?__id",
+            "inputId": "How many drinks did you have on an avg. drinking day?_input_Id",
+            "dropDown": "1-2 drinks",
+            "dropDownId": "drinking_dd_Id",
             "dateTimePicker": false
         },
         {
-            "labelName": "Fluid sodium",
-            "labelId": "Fluid sodium__id",
-            "inputId": "Fluid sodium_input_Id",
-            "dropDown": "0.9% NaCl (154 mmol/L)",
-            "dropDownId": "Fluid_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Fluid potassium",
-            "labelId": "Fluid potassium__id",
-            "inputBox": "text",
-            "inputId": "potassium_input_Id",
-            "dropDownId": "Fluid potassium_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Aimed serum sodium change per hour",
-            "labelId": "Aimed serum sodium change per hour__id",
-            "inputBox": "text",
-            "inputId": "Aimed_input_Id",
-            "dropDownId": "Aimed serum sodium change per hour_dd_Id",
+            "labelName": "How often did you have 6 or more drinks at once?",
+            "labelId": "How often did you have 6 or more drinks at once?__id",
+            "inputId": "How often did you have 6 or more drinks at once?_input_Id",
+            "dropDown": "Never",
+            "dropDownId": "once_dd_Id",
             "dateTimePicker": false
         }
     ],

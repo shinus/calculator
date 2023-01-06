@@ -60,6 +60,11 @@ function init() {
     createDropDown(caUnit, volume_dd)
     createDropDown(alUnit, time_dd)
     createDropDown(caUnit, factor_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
 }
 
 init()
@@ -74,7 +79,7 @@ function getExact() {
     result = (vol * fact) / (tim);
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -96,10 +101,3 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

@@ -1,12 +1,14 @@
 {
-    "H1": "Arterial Blood pH Calculator online",
-    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "Arterial Blood pH Calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "Free arterial blood ph online tool",
+    "H2": "Apply arterial blood ph after filling lab values",
+    "TITLE": "Arterial blood ph - A powerful tool for managing acidosis or alkalosis",
+    "META": "Monitor your arterial blood pH with ease using our advanced online calculator. Simply input your lab values and get accurate results in seconds.",
+    "img": "/assets/images/fluids.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
-    "keyword": "adjusted weight",
+    "color": "#18f27a",
+    "keyword": "arterial blood ph",
     "megaMenu": {
         "nav-link-name": "Tools",
         "dropdown": [
@@ -14,13 +16,43 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "baby-percentile ",
-                        "url": "/baby-percentile",
+                        "name": "anion gap calculator",
+                        "url": "/anion-gap-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile",
-                        "url": "/birthweight-percentile-calculator",
+                        "name": "corrected calcium calculator",
+                        "url": "/corrected-calcium-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "drip rate calculator",
+                        "url": "/drip-rate-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "parkland formula",
+                        "url": "/parkland-formula-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "serum osmolality",
+                        "url": "/serum-osmolality-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "sodium deficit calculator",
+                        "url": "/sodium-deficit-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "urine anion gap calculator",
+                        "url": "/urine-anion-gap-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "water deficit calculator",
+                        "url": "/water-deficit-calculator",
                         "hover": "blue"
                     }
                 ]
@@ -65,14 +97,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/electrolytesfluid/blood-ph-calculator.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "Bicarbonate (HCO₃)",

@@ -1,0 +1,181 @@
+{
+    "H1": "Audit Score Calculator",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Audit Score Calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+      ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/addiction-calculator/audit-test-calculator.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "Sex",
+            "labelId": "Sex__id",
+            "inputId": "Sex_input_Id",
+            "dropDown": "Female",
+            "dropDownId": "Sex_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "During the last year..."
+        },
+        {
+            "labelName": "How often have you drank?",
+            "labelId": "How often have you drank?__id",
+            "inputId": "How often have you drank?_input_Id",
+            "dropDown": "Monthly or less",
+            "dropDownId": "drank_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "How many drinks have you had on average?",
+            "labelId": "How many drinks have you had on average?__id",
+            "inputId": "How many drinks have you had on average?_input_Id",
+            "dropDown": "3-4 drinks",
+            "dropDownId": "average_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "How many times have you had 6 or more drinks?",
+            "labelId": "How many times have you had 6 or more drinks?__id",
+            "inputId": "How many times have you had 6 or more drinks?_input_Id",
+            "dropDown": "Never",
+            "dropDownId": "drinks_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "During the last year, how often have you..."
+        },
+        {
+            "labelName": "Not been able to stop drinking?",
+            "labelId": "Not been able to stop drinking?__id",
+            "inputId": "Not been able to stop drinking?_input_Id",
+            "dropDown": "Never",
+            "dropDownId": "drinking_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Failed to do something expected of you the next day?",
+            "labelId": "Failed to do something expected of you the next day?__id",
+            "inputId": "Failed to do something expected of you the next day?_input_Id",
+            "dropDown": "Never",
+            "dropDownId": "day_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Needed a drink first thing in the morning?",
+            "labelId": "Needed a drink first thing in the morning?__id",
+            "inputId": "Needed a drink first thing in the morning?_input_Id",
+            "dropDown": "Never",
+            "dropDownId": "morning_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Felt guilt or remorse after drinking?",
+            "labelId": "Felt guilt or remorse after drinking?__id",
+            "inputId": "Felt guilt or remorse after drinking?_input_Id",
+            "dropDown": "Never",
+            "dropDownId": "after_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Not been able to remember things from the last night?",
+            "labelId": "Not been able to remember things from the last night?__id",
+            "inputId": "Not been able to remember things from the last night?_input_Id",
+            "dropDown": "Never",
+            "dropDownId": "night_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "In general (not only the past year), has someone..."
+        },
+        {
+            "labelName": "Or you been injured as a result of your drinking?",
+            "labelId": "Or you been injured as a result of your drinking?__id",
+            "inputId": "Or you been injured as a result of your drinking?_input_Id",
+            "dropDown": "Never",
+            "dropDownId": "injured_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Suggested that you drink less?",
+            "labelId": "Suggested that you drink less?__id",
+            "inputId": "Suggested that you drink less?_input_Id",
+            "dropDown": "Never",
+            "dropDownId": "less_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

@@ -1,12 +1,14 @@
 {
-    "H1": "Corrected Magnesium Calculator online",
-    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "Corrected Magnesium Calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "Free corrected mg online tool",
+    "H2": "Apply corrected mg after filling lab values",
+    "TITLE": "Corrected mg - The reliable way to assess your magnesiu status",
+    "META": "Need to determine your corrected magnesium levels? Our calculator uses advanced algorithms to quickly and accurately determine your magnesium values.",
+    "img": "/assets/images/fluids.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
-    "keyword": "adjusted weight",
+    "color": "#18f27a",
+    "keyword": "corrected mg",
     "megaMenu": {
         "nav-link-name": "Tools",
         "dropdown": [
@@ -14,13 +16,43 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "baby-percentile ",
-                        "url": "/baby-percentile",
+                        "name": "blood ph calculator",
+                        "url": "/blood-ph-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile",
-                        "url": "/birthweight-percentile-calculator",
+                        "name": "drip rate calculator",
+                        "url": "/drip-rate-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "corrected calcium calculator",
+                        "url": "/corrected-calcium-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "parkland formula",
+                        "url": "/parkland-formula-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "serum osmolality",
+                        "url": "/serum-osmolality-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "sodium deficit calculator",
+                        "url": "/sodium-deficit-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "urine anion gap calculator",
+                        "url": "/urine-anion-gap-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "water deficit calculator",
+                        "url": "/water-deficit-calculator",
                         "hover": "blue"
                     }
                 ]
@@ -65,14 +97,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/electrolytesfluid/corrected-magnesium.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "Patient's magnesium",

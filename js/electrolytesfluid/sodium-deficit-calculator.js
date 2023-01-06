@@ -65,6 +65,11 @@ var alUnit = [
 function init() {
     createDropDown(alUnit, cate)
     createDropDown(caUnit, weight_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
 }
 
 init()
@@ -96,7 +101,7 @@ function getExact() {
     result = TBW * (desi - ser) / 100;
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -119,10 +124,3 @@ function showResult() {
 weight.addEventListener('input', () => {validateAge("calculator-row-2","weightError", "Weight should be greater than 0 and less than 500 kg (1102 lb).",Number(weight.value) >= 500)})
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

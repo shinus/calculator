@@ -12,6 +12,16 @@ var queryParams = [
   { name: "HCO", values: HCO },
 ];
 
+function init() {
+  var url = window.location.href;
+  if (url.includes("?")) {
+    setParamValues(queryParams);
+    showResult();
+  }
+}
+
+init()
+
 function getExact() {
     var na = Number(NA.value);
     var cl = Number(CL.value);
@@ -22,7 +32,7 @@ function getExact() {
     result = (na - (cl + hco));
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -43,11 +53,3 @@ function showResult() {
 }
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

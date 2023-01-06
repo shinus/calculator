@@ -1,0 +1,140 @@
+{
+    "H1": "Caffeine Calculator",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Caffeine Calculator - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+      ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/addiction-calculator/caffeine-calculator.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "I had...",
+            "labelId": "I had...__id",
+            "inputId": "I had..._input_Id",
+            "dropDown": "mugs of filter coffee",
+            "dropDownId": "I_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "How many?",
+            "labelId": "How many?__id",
+            "inputBox": "text",
+            "inputId": "many?_input_Id",
+            "dropDownId": "How many?_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "I also had...",
+            "labelId": "I also had...__id",
+            "inputId": "I also had..._input_Id",
+            "dropDown": "cups of tea",
+            "dropDownId": "also_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "How many?",
+            "labelId": "How many?__id",
+            "inputBox": "text",
+            "inputId": "How_input_Id",
+            "dropDownId": "How_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "And I had...",
+            "labelId": "And I had...__id",
+            "inputId": "And I had..._input_Id",
+            "dropDown": "energy drinks",
+            "dropDownId": "had_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "How many?",
+            "labelId": "How many?__id",
+            "inputBox": "text",
+            "inputId": "many_input_Id",
+            "dropDownId": "many_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "I am...",
+            "labelId": "I am...__id",
+            "inputId": "I am..._input_Id",
+            "dropDown": "an adult",
+            "dropDownId": "am_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}
