@@ -1,5 +1,5 @@
-var duration = getElement("Duration_input_Id");
-var date = document.querySelectorAll('input[type="date"]')
+var treatment = getElement("start_input_Id");
+var duration = getElement("Duration_input_Id")
 var output = getElement("result-section");
 var calcBtn = getElement("calculate_btn");
 
@@ -7,16 +7,20 @@ const getScript = document.currentScript;
 const permaLink = getScript.dataset.permalink;
 
 var queryParams = [
+    { name: "treatment", values: treatment},
     { name: "duration", values: duration },
 ];
 
 function getExact() {
-    var a = Number(duration.value);
-    var b = date.stepUp(a)
-    console.log(b,'test');
-    var result = 0;
+    var startDate = new Date(treatment.value);
+    var b = Number(duration.value);
+    var timeDiff = Math.abs(startDate.getTime() + b + 7);
+    var result = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    // console.log(diffDays)
 
-    result = a + b + 7;
+    // var result = 0;
+
+    // result = startDate + b + 7;
 
     console.log(result);
     return result;
@@ -31,9 +35,10 @@ function showResult() {
 
     output.innerHTML = "";
 
-    var percentile = result;
-    div1.innerHTML = "Gestational age " + "    " + result.toFixed(1) + " wks";
-
+    // var percentile = result;
+    // getDate().format("dd mmm yyyy")
+    var a = Math.ceil(result / (1000 * 3600 * 24))
+    div1.innerHTML = "Ovulation " + "    " + a;
     output.append(div1);
     output.append(div2);
 

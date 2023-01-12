@@ -49,6 +49,11 @@ function init() {
     createDropDown(cmUnit, vt_dd)
     createDropDown(faUnit, lv_dd)
     createDropDown(cmUnit, lvt_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+      setParamValues(queryParams);
+      showResult();
+    }
 }
 
 init()
@@ -65,14 +70,14 @@ function getExact() {
 
     var result, result2, result3 = 0;
     
-    result = VTI * pi * math.pow(ab, 2) ;
-    result2 = LVIT * pi * math.pow(ac , 2) ;
+    result = VTI * pi * Math.pow(ab, 2) ;
+    result2 = LVIT * pi * Math.pow(ac , 2) ;
 
     result3 = result / result2;
 
 
     console.log(result, result2, result3);
-    return math.bignumber(result3)
+    return result3
 }
 
 function showResult() {
@@ -95,10 +100,3 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-      setParamValues(queryParams);
-      showResult();
-    }
-  };

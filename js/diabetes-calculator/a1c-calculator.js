@@ -21,9 +21,6 @@ var gluUnit = [
     },
 ];
 
-
-
-
 function init() {
     createDropDown(gluUnit, hemo_dd)
 

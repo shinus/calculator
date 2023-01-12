@@ -45,6 +45,11 @@ var mgUnit = [
 function init() {
     createDropDown(feUnit, confu);
     createDropDown(mgUnit, nitro_dd);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -109,7 +114,7 @@ function getExact() {
     console.log(nitros);
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -148,12 +153,4 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};
 

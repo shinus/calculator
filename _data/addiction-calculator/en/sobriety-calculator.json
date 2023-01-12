@@ -77,16 +77,16 @@
         {
             "labelName": "Sobriety date",
             "labelId": "Sobriety date__id",
-            "inputId": "Sobriety date_input_Id",
-            "dropDownId": "Sobriety date_dd_Id",
-            "dateTimePicker": true
+            "inputBox": "",
+            "inputId": "Sobriety_input_Id",
+            "inputType": "date"
         },
         {
             "labelName": "Current date",
             "labelId": "Current date__id",
-            "inputId": "Current date_input_Id",
-            "dropDownId": "Current date_dd_Id",
-            "dateTimePicker": true
+            "inputBox": "",
+            "inputId": "Current_input_Id",
+            "inputType": "date"
         }
     ],
     "ButtonValue": "Calculate",

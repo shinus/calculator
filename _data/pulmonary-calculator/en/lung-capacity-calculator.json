@@ -1,11 +1,13 @@
 {
-    "H1": "Lung Capacity Calculator online",
-    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "Lung Capacity Calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "Calculate lung Capacities online.",
+    "H2": "Enter the measured lung Volumes.",
+    "TITLE": "Lung Capacity calculator|Know Lung Capacities-stepscalculator",
+    "META": "The lung Capacity Calculator helps you determine Total Lung Capacity Vital Capacity, Functional Residual Capacity, and Inspiratory capacity by measured lung volumes.",
+    "img": "/assets/images/lungs.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#6666ff",
     "keyword": "adjusted weight",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -14,13 +16,43 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "baby-percentile ",
-                        "url": "/baby-percentile",
+                        "name": "curb 65 calculator",
+                        "url": "/curb-65-calcualtor",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile",
-                        "url": "/birthweight-percentile-calculator",
+                        "name": "lights criteria calculator",
+                        "url": "/lights-criteria-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "tidal volume calculator",
+                        "url": "/tidal-volume-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "pack year calculator",
+                        "url": "/pack-year-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "pf ratio calculator",
+                        "url": "/pf-ratio-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "qp qs calculator",
+                        "url": "/qp-qs-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "rsbi calculator",
+                        "url": "/rsbi-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "vital capacity calculator",
+                        "url": "/vital-capacity-calculator",
                         "hover": "blue"
                     }
                 ]
@@ -65,14 +97,13 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
+
     "jsfilepaths": [
         "/js/util.js",
         "/js/pulmonary-calculator/lung-capacity-calculator.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "IRV - Inspiratory Reserve Volume",

@@ -1,11 +1,13 @@
 {
-    "H1": "Qp/Qs Calculator - Rapid Shallow Breathing Index online",
-    "H2": "Enter your age, gender, and weight. Then click the \"Calculate weight\" button.",
-    "TITLE": "Qp/Qs Calculator - Rapid Shallow Breathing Index - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "QP/QS Ratio Calculator Online",
+    "H2": "Use this online tool to determine the magnitude of cardiac shunt..",
+    "TITLE": "QP/QS Ratio Calculator|Pulmonary systematic flow-stepscalculator",
+    "META": "This online QP/QS calculator tool allows you to measure the ratio of pulmonary to systematic blood flow across an intracardiac shunt which helps you quantify net shunt.",
+    "img": "/assets/images/lungs.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#6666ff",
     "keyword": "adjusted weight",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -14,13 +16,43 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "baby-percentile ",
-                        "url": "/baby-percentile",
+                        "name": "curb 65 calculator",
+                        "url": "/curb-65-calcualtor",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile",
-                        "url": "/birthweight-percentile-calculator",
+                        "name": "lights criteria calculator",
+                        "url": "/lights-criteria-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "lung capacity calculator",
+                        "url": "/lung-capacity-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "pack year calculator",
+                        "url": "/pack-year-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "pf ratio calculator",
+                        "url": "/pf-ratio-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "psi calculator",
+                        "url": "/psi-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "rsbi calculator",
+                        "url": "/rsbi-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "vital capacity calculator",
+                        "url": "/vital-capacity-calculator",
                         "hover": "blue"
                     }
                 ]
@@ -65,14 +97,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/pulmonary-calculator/qp-qs-calculator.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "RVOT",

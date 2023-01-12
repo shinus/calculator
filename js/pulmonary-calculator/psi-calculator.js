@@ -275,6 +275,11 @@ function init() {
     createDropDown(gluUnit, glucose)
     createDropDown(phUnit, ph)
     createDropDown(poUnit, po)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -307,7 +312,7 @@ function getExact() {
     result = nAge + sex + resi + dis + celebri + live + neop + chfss + stat + eff + respi + bpmss + syst + tempre + bunss + hems + soda + glu + phos + pos;
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -354,10 +359,3 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

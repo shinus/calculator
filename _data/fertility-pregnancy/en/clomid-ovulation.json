@@ -109,15 +109,18 @@
         {
             "labelName": "Treatment start",
             "labelId": "Treatment start__id",
+            "inputBox": "",
             "inputId": "start_input_Id",
-            "dropDownId": "Treatment start_dd_Id",
-            "dateTimePicker": true
+            "inputType": "date",
+            "dropDownId": "Treatment start_dd_Id"
         },
         {
             "labelName": "Duration",
             "labelId": "Duration__id",
             "inputBox": "text",
             "inputId": "Duration_input_Id",
+            "inputType": "text",
+            "unit": "days",
             "dropDownId": "Duration_dd_Id",
             "dateTimePicker": false
         }

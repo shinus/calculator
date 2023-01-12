@@ -45,6 +45,11 @@ var geUnit = [
 function init() {
     createDropDown(heUnit, height_dd)
     createDropDown(geUnit, gender)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -73,7 +78,7 @@ function getExact() {
     result = 0.1 * heigh + 4;
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -97,10 +102,3 @@ function showResult() {
 height.addEventListener("input", validateAge)
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

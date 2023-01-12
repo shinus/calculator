@@ -90,6 +90,11 @@ function init() {
     createDropDown(hisUnit, pain);
     createDropDown(palUnit, palp);
     createDropDown(moUnit, hema);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -109,7 +114,7 @@ function getExact() {
     result = year + moth + cond + hi + rate + painss + pal + hematop;
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -161,11 +166,3 @@ function showResult() {
 }
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

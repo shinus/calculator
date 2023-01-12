@@ -1,0 +1,163 @@
+{
+    "H1": "Vaccine Queue Calculator for Malaysia",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Vaccine Queue Calculator for Malaysia - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+      ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/covid-19-vaccine/vaccine-queue-malaysia.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "This calculator estimates where you are in the queue to receive a COVID vaccine in Malaysia. 💉"
+        },
+        {
+            "labelName": "It is based on the priority list released by the Malaysian government, which you can view here."
+        },
+        {
+            "labelName": "Age",
+            "labelId": "Age__id",
+            "inputBox": "text",
+            "inputId": "Age_input_Id",
+            "dropDownId": "Age_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Are you in a high-risk group with chronic diseases? ⚠️",
+            "labelId": "Are you in a high-risk group with chronic diseases? ⚠️__id",
+            "inputId": "Are you in a high-risk group with chronic diseases? ⚠️_input_Id",
+            "dropDown": "No",
+            "dropDownId": "diseases_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Medical and health personnel? 👩‍⚕️",
+            "labelId": "Medical and health personnel? 👩‍⚕️__id",
+            "inputId": "Medical and health personnel? 👩‍⚕️_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Medical_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Essential services, defence and security personnel? 👮",
+            "labelId": "Essential services, defence and security personnel? 👮__id",
+            "inputId": "Essential services, defence and security personnel? 👮_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Essential_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Teacher? 📏",
+            "labelId": "Teacher? 📏__id",
+            "inputId": "Teacher? 📏_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Teacher_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Pregnant or breastfeeding? 🤰",
+            "labelId": "Pregnant or breastfeeding? 🤰__id",
+            "inputId": "Pregnant or breastfeeding? 🤰_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Pregnant_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Vaccination rate",
+            "labelId": "Vaccination rate__id",
+            "inputId": "Vaccination rate_input_Id",
+            "dropDown": "Actual rate",
+            "dropDownId": "rate_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Vaccination time",
+            "labelId": "Vaccination time__id",
+            "inputBox": "text",
+            "inputId": "Vaccination_input_Id",
+            "dropDown": "yrs",
+            "dropDownId": "Vaccination_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Uptake",
+            "labelId": "Uptake__id",
+            "inputBox": "text",
+            "inputId": "Uptake_input_Id",
+            "dropDownId": "Uptake_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

@@ -1,0 +1,167 @@
+{
+    "H1": "Vaccine Queue Calculator for England",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Vaccine Queue Calculator for England - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+      ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/covid-19-vaccine/vaccine-queue-england.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "💉 This calculator estimates where you are in the queue to receive a COVID vaccine in England. We also have dedicated vaccine queue calculators for Scotland, Wales and Northern Ireland, as well as for the UK as a whole."
+        },
+        {
+            "labelName": "It is based on the twelve-point priority list released by the UK government, which you can view here."
+        },
+        {
+            "labelName": "About you"
+        },
+        {
+            "labelName": "Age",
+            "labelId": "Age__id",
+            "inputBox": "text",
+            "inputId": "Age_input_Id",
+            "unit": "yrs",
+            "dropDownId": "Age_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Care home resident or worker?",
+            "labelId": "Care home resident or worker?__id",
+            "inputId": "Care home resident or worker?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Care_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Pregnant? 🤰",
+            "labelId": "Pregnant? 🤰__id",
+            "inputId": "Pregnant? 🤰_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Pregnant_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Health worker? 👩‍⚕️",
+            "labelId": "Health worker? 👩‍⚕️__id",
+            "inputId": "Health worker? 👩‍⚕️_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Health_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Unpaid carer?",
+            "labelId": "Unpaid carer?__id",
+            "inputId": "Unpaid carer?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Unpaid_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "",
+            "labelId": "__id",
+            "inputId": "_input_Id",
+            "dropDown": "No",
+            "dropDownId": "a_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "",
+            "labelId": "__id",
+            "inputId": "_input_Id",
+            "dropDown": "No",
+            "dropDownId": "b_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Vaccine rate",
+            "labelId": "Vaccine rate__id",
+            "inputId": "Vaccine rate_input_Id",
+            "dropDown": "Last 7 days",
+            "dropDownId": "Vaccine_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Uptake",
+            "labelId": "Uptake__id",
+            "inputBox": "text",
+            "inputId": "Uptake_input_Id",
+            "unit": "%",
+            "dropDownId": "Uptake_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

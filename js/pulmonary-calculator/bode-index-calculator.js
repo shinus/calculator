@@ -87,6 +87,11 @@ function init() {
     createDropDown(diUnit, dist);
     createDropDown(bmUnit, bmi);
     createDropDown(scaUnit, Scale);
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -102,7 +107,7 @@ function getExact() {
     result = fevss + distss + bmiss + scaless;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -141,12 +146,4 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};
 

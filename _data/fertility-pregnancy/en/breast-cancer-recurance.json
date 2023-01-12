@@ -1,0 +1,140 @@
+{
+     "H1": "Breast Cancer Recurrence Risk Calculator",
+    "H2": "Get The Absolute & Relative Value From Adrenal Washout Calculator",
+    "TITLE": "Breast Cancer Recurrence Risk Calculator",
+    "META": "Calculate the absolute and relative density value of adrenal nodules/lesions with a 100% accurate Adrenal Washout Calculator to diagnose adrenal adenoma.",
+    "img": "/assets/images/urology.webp",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "Adrenal Washout Calculator",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "FENa Calculator",
+                        "url": "/fena-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Albumin Creatinine Calculator",
+                        "url": "/albumin-creatinine-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Bladder Volume Calculator",
+                        "url": "/bladder-volume-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "BUN Creatinine Calculator",
+                        "url": "/bun-creatinine-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Creatinine Clearance Calculator",
+                        "url": "/creatinine-clearance-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "kt-v Calculator",
+                        "url": "/kt-v-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "feurea Calculator",
+                        "url": "/feurea-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "Kidney Failure Calculator",
+                        "url": "/kidney-failure-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+    ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/fertility-pregnancy/breast-cancer-recurance.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "Grade of tumor",
+            "labelId": "Grade of tumor__id",
+            "inputId": "Grade of tumor_input_Id",
+            "dropDown": "I",
+            "dropDownId": "tumor_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Lymph nodes",
+            "labelId": "Lymph nodes__id",
+            "inputId": "Lymph nodes_input_Id",
+            "dropDown": "Negative",
+            "dropDownId": "nodes_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Lymphatic or vascular invasion",
+            "labelId": "Lymphatic or vascular invasion__id",
+            "inputId": "Lymphatic or vascular invasion_input_Id",
+            "dropDown": "None",
+            "dropDownId": "invasion_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

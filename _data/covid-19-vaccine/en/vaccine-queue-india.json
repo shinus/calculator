@@ -1,0 +1,193 @@
+{
+    "H1": "Vaccine Queue Calculator for India",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Vaccine Queue Calculator for India - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+      ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/covid-19-vaccine/vaccine-queue-india.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "This calculator estimates where you are in the queue to receive a COVID vaccine in India. 💉"
+        },  
+        {
+            "labelName": "It is based on the priority list released by the India government."
+        },
+        {
+            "labelName": "About you"
+        },
+        {
+            "labelName": "Where do you live?",
+            "labelId": "Where do you live?__id",
+            "inputId": "Where do you live?_input_Id",
+            "dropDown": "Delhi",
+            "dropDownId": "live_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "In Karnataka, it is planned to vaccine:"
+        },
+        {
+            "labelName": "• 16,00,000 of health care workers and frontline workers"
+        },
+        {
+            "labelName": "in the first phase. The actual vaccination rate in Karnataka is about 9,013 a day, what gives at least 91 vaccination centres available if we assume each of them can give up to 100 vaccines per day."
+        },
+        {
+            "labelName": "In Karnataka, the cumulative number of people vaccinated against COVID-19 has crossed 5,65,718 according to Ministry of Health and Family Welfare update on 23rd February 2021."
+        },
+        {
+            "labelName": "This figure is based on: source. If you have a more recent data about your state, please share a source with us so we can improve the calculator even more: india@omnicalculator.com."
+        },
+        {
+            "labelName": "Basing on the numbers provided by other Indian states, we can roughly estimate the remaining priority groups for the upcoming phases:"
+        },
+        {
+            "labelName": "• 1,33,91,900 of people ≥50 and <50 with comorbidities"
+        },
+        {
+            "labelName": "Note: Since there is still lack of information for Karnataka, the numbers above are only our predictions and might be imprecise."
+        },
+        {
+            "labelName": "Age",
+            "labelId": "Age__id",
+            "inputBox": "text",
+            "inputId": "Age_input_Id",
+            "unit": "yrs",
+            "dropDownId": "Age_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Are you health care worker? 👩‍⚕️",
+            "labelId": "Are you health care worker? 👩‍⚕️__id",
+            "inputId": "Are you health care worker? 👩‍⚕️_input_Id",
+            "dropDown": "No",
+            "dropDownId": "health_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Are you frontline worker?",
+            "labelId": "Are you frontline worker?__id",
+            "inputId": "Are you frontline worker?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "frontline_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Do you have any co-morbidities?",
+            "labelId": "Do you have any co-morbidities?__id",
+            "inputId": "Do you have any co-morbidities?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "co-morbidities_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Pregnant or breastfeeding? 🤰",
+            "labelId": "Pregnant or breastfeeding? 🤰__id",
+            "inputId": "Pregnant or breastfeeding? 🤰_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Pregnant_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Vaccination rate",
+            "labelId": "Vaccination rate__id",
+            "inputBox": "text",
+            "inputId": "Vaccination_input_Id",
+            "dropDown": "per day",
+            "dropDownId": "Vaccination_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Time to vaccinate everyone ",
+            "labelId": "Time to vaccinate everyone __id",
+            "inputBox": "text",
+            "inputId": "everyone_input_Id",
+            "dropDown": "yrs",
+            "dropDownId": "everyone_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Assumed uptake",
+            "labelId": "Assumed uptake__id",
+            "inputBox": "text",
+            "inputId": "uptake_input_Id",
+            "unit": "%",
+            "dropDownId": "Assumed uptake_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

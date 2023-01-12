@@ -1,0 +1,165 @@
+{
+    "H1": "Vaccine Queue Calculator for Canada",
+    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
+    "TITLE": "Vaccine Queue Calculator for Canada - By using this tool to manage your body weight",
+    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
+    "img": "/assets/images/bscale.png",
+    "height": "300px",
+    "color": "#3287B2",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": [
+                    {
+                        "name": "child-weight-calculator",
+                        "url": "/child-percentile",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "birthweight percentile calculator",
+                        "url": "/birthweight-percentile-calculator",
+                        "hover": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jscdns": [
+        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
+      ],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/covid-19-vaccine/vaccine-queue-canada.js"
+    ],
+    "calculatorData": {
+    "calculatorRow": [
+        {
+            "labelName": "This calculator estimates where you are in the queue to receive a COVID vaccine in Canada based on the approved vaccines Moderna, Pfizer-BioNTech, and AstraZeneca, assuming there are no delivery delays. 💉"
+        },
+        {
+            "labelName": "It is based on the national guidelines priority list released by the Canadian government. Each province and territory is responsible for interpreting the guidelines. Visit your provincial website for the latest updates and rollout plan specific to your province."
+        },
+        {
+            "labelName": "About you"
+        },
+        {
+            "labelName": "Age",
+            "labelId": "Age__id",
+            "inputBox": "text",
+            "inputId": "Age_input_Id",
+            "dropDownId": "Age_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Care home resident or worker?",
+            "labelId": "Care home resident or worker?__id",
+            "inputId": "Care home resident or worker?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Care_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Pregnant? 🤰",
+            "labelId": "Pregnant? 🤰__id",
+            "inputId": "Pregnant? 🤰_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Pregnant_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Health worker? 👩‍⚕️",
+            "labelId": "Health worker? 👩‍⚕️__id",
+            "inputId": "Health worker? 👩‍⚕️_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Health_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Indigenous community?",
+            "labelId": "Indigenous community?__id",
+            "inputId": "Indigenous community?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Indigenous_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Live or work in a group setting?",
+            "labelId": "Live or work in a group setting?__id",
+            "inputId": "Live or work in a group setting?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "Live_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Are you an essential worker?",
+            "labelId": "Are you an essential worker?__id",
+            "inputId": "Are you an essential worker?_input_Id",
+            "dropDown": "No",
+            "dropDownId": "worker_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Vaccination rate ",
+            "labelId": "Vaccination rate __id",
+            "inputId": "Vaccination rate _input_Id",
+            "dropDown": "Canadian government's plan",
+            "dropDownId": "Vaccination_dd_Id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Uptake",
+            "labelId": "Uptake__id",
+            "inputBox": "text",
+            "inputId": "Uptake_input_Id",
+            "dropDownId": "Uptake_dd_Id",
+            "dateTimePicker": false
+        }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calculate_btn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+}
+}

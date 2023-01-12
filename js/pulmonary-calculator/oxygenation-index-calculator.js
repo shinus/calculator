@@ -38,6 +38,11 @@ var faUnit = [
 function init() {
     createDropDown(faUnit, map_dd)
     createDropDown(faUnit, pao_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -138,10 +143,3 @@ map.addEventListener("input", validateAge2)
 fio.addEventListener("input", validateAge)
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

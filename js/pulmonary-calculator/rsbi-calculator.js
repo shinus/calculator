@@ -10,6 +10,16 @@ var queryParams = [
     { name: "tidalVolume", values: tidal },
 ];
 
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
+init()
+
 function getExact() {
     var resipo = Number(rate.value)
     var volume = Number(tidal.value)
@@ -19,7 +29,7 @@ function getExact() {
     result = resipo / volume * 1000;
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -47,11 +57,3 @@ function showResult() {
 }
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

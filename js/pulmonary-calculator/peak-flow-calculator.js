@@ -98,6 +98,11 @@ function init() {
     createDropDown(EtUnit, ethnicity)
     createDropDown(FlUnit, flow_dd)
     createDropDown(FlUnit, best_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -138,7 +143,7 @@ function getExact() {
         if (ages > 7 && ages < 18) { // other ethnicity teens OK
             return result = ((((heig - 100) * 5) + 100) / 60);
         } else if (ages > 17 && gend == 0 && ethn == 3) { //other ethnicity adult females OK
-            return mathjs.bignumber((((height_m * 3.72) + 2.24) - (age * 0.03)));
+            return Math.bignumber((((height_m * 3.72) + 2.24) - (age * 0.03)));
         } else if (ages > 17 && gend == 1 && ethn == 3) { //other ethnicity adult males OK
             return result = ((((height_m * 5.48) + 1.58) - (ages * 0.041)));
         }
@@ -189,7 +194,7 @@ function getExact() {
     console.log(ages);
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -258,11 +263,3 @@ function showResult() {
 
 age.addEventListener("input", validateAge)
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};
