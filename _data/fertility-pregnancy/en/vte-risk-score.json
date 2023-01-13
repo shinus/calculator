@@ -115,6 +115,9 @@
             "dateTimePicker": false
         },
         {
+            "labelName": "Pre-existing risk factors"
+        },
+        {
             "labelName": "Height",
             "labelId": "Height__id",
             "inputBox": "text",
@@ -213,12 +216,79 @@
             "dateTimePicker": false
         },
         {
+            "labelName": "Obstetric risk factors"
+        },
+        {
             "labelName": "Pre-eclampsia in current pregnancy",
             "labelId": "Pre-eclampsia in current pregnancy__id",
             "inputId": "Pre-eclampsia in current pregnancy_input_Id",
             "dropDown": "No",
             "dropDownId": "Pre-eclampsia_dd_Id",
             "dateTimePicker": false
+        },
+        {
+            "labelName": "Multiple pregnancy 👶👶👶",
+            "labelId": "Multiple pregnancy 👶👶👶__id",
+            "inputId": "Multiple pregnancy 👶👶👶_id",
+            "dropDown": "No",
+            "dropDownId": "Multiple_dd_id",
+            "dateTimePicker":false
+        },
+        {
+            "labelName": "Cesarean section in labor",
+            "labelId": "Cesarean section in labor__id",
+            "inputId": "Cesarean section in labor_id",
+            "dropDown": "No",
+            "dropDownId": "Cesarean_dd_id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Elective cesarean section",
+            "labelId": "Elective cesarean section__id",
+            "inputId": "Elective cesarean section_id",
+            "dropDown": "No",
+            "dropDownId": "Elective_dd_id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Mid-cavity or rotational operative delivery",
+            "labelId": "Mid-cavity or rotational operative delivery__id",
+            "inputId": "Mid-cavity_input_id",
+            "dropDown": "No",
+            "dropDownId": "Mid-cavity_dd_id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Prolonged labor (>24 hours)",
+            "labelId": "Prolonged labor (>24 hours)__id",
+            "inputId": "Prolonged labor (>24 hours)_id",
+            "dropDown": "No",
+            "dropDownId": "Prolonged_dd_id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "PPH (> 1 litre/transfusion) 💉",
+            "labelId": "PPH (> 1 litre/transfusion) 💉__id",
+            "inputId": "PPH (> 1 litre/transfusion) 💉_id",
+            "dropDown": "No",
+            "dropDownId": "PPH_dd_id",
+            "dateTimePicker": false
+        },
+        {
+            "labelName": "Preterm birth in current pregnancy",
+            "labelId": "Preterm birth in current pregnancy__id",
+            "inputId": "Preterm birth in current pregnancy_id",
+            "dropDown": "No",
+            "dropDownId": "Preterm_dd_id",
+            "dateTimePicker":false
+        },
+        {
+            "labelName": "Stillbirth in current pregnancy",
+            "labelId": "Stillbirth in current pregnancy__id",
+            "inputId": "Stillbirth in current pregnancy_id",
+            "dropDown": "No",
+            "dropDownId": "Stillbirth_dd_id",
+            "dateTimePicker":false
         },
         {
             "labelName": "ART/IVF 💉",
@@ -229,12 +299,7 @@
             "dateTimePicker": false
         },
         {
-            "labelName": "Multiple pregnancy 👶👶👶",
-            "labelId": "Multiple pregnancy 👶👶👶__id",
-            "inputId": "Multiple pregnancy 👶👶👶_input_Id",
-            "dropDown": "No",
-            "dropDownId": "Multiple_dd_Id",
-            "dateTimePicker": false
+            "labelName": "Transient risk factors"
         },
         {
             "labelName": "Any surgical procedure in pregnancy or puerperium",
@@ -242,14 +307,6 @@
             "inputId": "Any surgical procedure in pregnancy or puerperium_input_Id",
             "dropDown": "No",
             "dropDownId": "puerperium_dd_Id",
-            "dateTimePicker": false
-        },
-        {
-            "labelName": "Current systemic infection 😷",
-            "labelId": "Current systemic infection 😷__id",
-            "inputId": "Current systemic infection 😷_input_Id",
-            "dropDown": "No",
-            "dropDownId": "Current_dd_Id",
             "dateTimePicker": false
         },
         {
@@ -267,6 +324,14 @@
             "dropDown": "No",
             "dropDownId": "OHSS_dd_Id",
             "dateTimePicker": false
+        },
+        {
+            "labelName": "Current systemic infection 😷",
+            "labelId": "Current systemic infection 😷__id",
+            "inputId": "Current systemic infection 😷_id",
+            "dropDown": "No",
+            "dropDownId": "infection_dd_id",
+            "dateTimePicker":false
         },
         {
             "labelName": "Immobility, dehydration",

@@ -15,12 +15,30 @@ var smoker = getElement("Smoker_dd_Id");
 var gross = getElement("Gross_dd_Id");
 var eclampsia = getElement("Pre-eclampsia_dd_Id");
 var art = getElement("ART/IVF_dd_Id");
-var multiple = getElement("Multiple_dd_Id");
+var multiple = getElement("Multiple_dd_id");
+var Cesarean = getElement("Cesarean_dd_id");
+var elective = getElement("Elective_dd_id");
+var cavity = getElement("Mid-cavity_dd_id");
+var prolonged = getElement("Prolonged_dd_id");
+var pph = getElement("PPH_dd_id");
 var puerperium = getElement("puerperium_dd_Id");
 var hypermesis = getElement("Hyperemesis_dd_Id");
 var ohss = getElement("OHSS_dd_Id");
-var current = getElement("Current_dd_Id");
-var imobility = getElement("Immobility_dd_Id");
+var infection = getElement("infection_dd_id");
+var immobility = getElement("Immobility_dd_Id");
+var preterm = getElement("Preterm_dd_id");
+var stillbirth = getElement("Stillbirth_dd_id");
+var row18 = getElement("calculator-row-18")
+var row19 = getElement("calculator-row-19")
+var row20 = getElement("calculator-row-20")
+var row21 = getElement("calculator-row-21")
+var row22 = getElement("calculator-row-22")
+var row23 = getElement("calculator-row-23")
+var row24 = getElement("calculator-row-24")
+var row25 = getElement("calculator-row-25")
+var row26 = getElement("calculator-row-26")
+var row28 = getElement("calculator-row-28")
+var row29 = getElement("calculator-row-29")
 var output = getElement("result-section");
 var calcBtn = getElement("calculate_btn");
 
@@ -49,8 +67,7 @@ var queryParams = [
     { name: "puerperium", values: puerperium },
     { name: "Hyperemesis", values: hypermesis },
     { name: "OHSS", values: ohss },
-    { name: "Current", values: current },
-    { name: "Immobility", values: imobility },
+    { name: "Immobility", values: immobility },
 ];
 
 var iiUnit = [
@@ -135,6 +152,17 @@ var surgUnit = [
     },
 ];
 
+var ceUnit = [
+    {
+        name: "No",
+        value: 0
+    },
+    {
+        name: "Yes",
+        value: 2
+    },
+];
+
 
 function init() {
     createDropDown(iiUnit, preg)
@@ -156,16 +184,62 @@ function init() {
     createDropDown(surgUnit, puerperium);
     createDropDown(surgUnit, hypermesis);
     createDropDown(vteUnit, ohss);
-    createDropDown(ageUnit, current);
-    createDropDown(ageUnit, imobility);
+    createDropDown(ageUnit, immobility);
+    createDropDown(ceUnit, Cesarean);
+    createDropDown(ageUnit, elective);
+    createDropDown(ageUnit, cavity);
+    createDropDown(ageUnit, prolonged);
+    createDropDown(ageUnit, pph);
+    createDropDown(ageUnit, infection);
+    createDropDown(ageUnit, preterm);
+    createDropDown(ageUnit, stillbirth);
+    row18.style.display = 'none'
+    row19.style.display = 'none'
+    row20.style.display = 'none'
+    row21.style.display = 'none'
+    row22.style.display = 'none'
+    row23.style.display = 'none'
+    row24.style.display = 'none'
+    row26.style.display = 'none'
+    row25.style.display = 'block'
+    row28.style.display = 'block'
+    row29.style.display = 'block'
 }
 
 init();
 
-
+preg.addEventListener('change', (e) => {
+    console.log(e.target.value, 'adasd');
+    if (e.target.value == 0) {
+    row18.style.display = 'none'
+    row19.style.display = 'none'
+    row20.style.display = 'none'
+    row21.style.display = 'none'
+    row22.style.display = 'none'
+    row23.style.display = 'none'
+    row24.style.display = 'none'
+    row26.style.display = 'none'
+    row25.style.display = 'block'
+    row28.style.display = 'block'
+    row29.style.display = 'block'
+    }
+    if (e.target.value == 1) {
+    row18.style.display = 'block'
+    row19.style.display = 'block'
+    row20.style.display = 'block'
+    row21.style.display = 'block'
+    row22.style.display = 'block'
+    row23.style.display = 'block'
+    row24.style.display = 'block'
+    row26.style.display = 'block'
+    row25.style.display = 'none'
+    row28.style.display = 'none'
+    row29.style.display = 'none'
+    }
+})
 
 function getExact() {
-    var ab = Number(getSelectedValue(preg))
+    var a = Number(getSelectedValue(preg))
     var b = Number(height.value);
     var c = Number(weight.value);
     var d = Number(getSelectedValue(years));
@@ -184,13 +258,24 @@ function getExact() {
     var q = Number(getSelectedValue(puerperium));
     var r = Number(getSelectedValue(hypermesis));
     var s = Number(getSelectedValue(ohss));
-    var t = Number(getSelectedValue(current));
-    var u = Number(getSelectedValue(imobility));
+    var t = Number(getSelectedValue(infection));
+    var v = Number(getSelectedValue(Cesarean));
+    var w = Number(getSelectedValue(elective));
+    var x = Number(getSelectedValue(cavity));
+    var y = Number(getSelectedValue(prolonged));
+    var z = Number(getSelectedValue(pph));
+    var az = Number(getSelectedValue(immobility));
+    var azz = Number(getSelectedValue(preterm));
+    var azzz = Number(getSelectedValue(stillbirth));
 
 
     var result, result2 = 0;
-
-    result = d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u;
+    if (a == 0) {
+        result = d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s  + t + az;
+    } else  if(a == 1){
+        result = d + e + f + g + h + i + j + k + l + m + n + p + v + w + x + y + z + q + t + az + azz + azzz;
+        
+    }
 
     result2 = b + c;
 

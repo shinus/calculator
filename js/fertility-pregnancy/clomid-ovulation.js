@@ -14,33 +14,43 @@ var queryParams = [
 function getExact() {
     var startDate = new Date(treatment.value);
     var b = Number(duration.value);
-    var timeDiff = Math.abs(startDate.getTime() + b + 7);
-    var result = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    let ab = duration.value * 24 * 60 * 60 * 1000;
+    let Tdate = new Date(5)
+    var result = Math.abs(startDate.getTime() + ab + (7 * 24 * 60 * 60 * 1000));
+    console.log(new Date(result),'resolt');
     // console.log(diffDays)
-
+    
     // var result = 0;
-
+    
     // result = startDate + b + 7;
 
-    console.log(result);
     return result;
 };
 
 function showResult() {
     resultPage2(queryParams);
     var result = Number(getExact());
-
+    console.log(result,'exact');
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
+    var div3 = document.createElement("div");
+    var div4 = document.createElement("div");
+    let CalcDate = new Date(result)
+    var firstDate = new Date(result - (7 * 24 * 60 * 60 * 1000))
+    var lastDate = new Date(result + (4 * 24 * 60 * 60 * 1000));
 
     output.innerHTML = "";
 
     // var percentile = result;
     // getDate().format("dd mmm yyyy")
-    var a = Math.ceil(result / (1000 * 3600 * 24))
-    div1.innerHTML = "Ovulation " + "    " + a;
+    div1.innerHTML = "Ovulation" + "    <b>" + CalcDate.toLocaleDateString("de-DE") + "</b>" ;
+    div2.innerHTML = "👶 Your fertility window:  "
+    div3.innerHTML = "<b>" + firstDate.toLocaleDateString("de-DE") + "</b>" + " - " + "<b>" + lastDate.toLocaleDateString("de-DE") + "</b>";
+    div4.innerHTML = "Consult your doctor for more details."
     output.append(div1);
     output.append(div2);
+    output.append(div3);
+    output.append(div4);
 
 };
 
