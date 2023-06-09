@@ -6,4 +6,5 @@ fileName: caffeine-calculator
 permalink: caffeine-calculator
 tool:  caffeine calculator
 noBox: true
+nointernationalization: true
 ---

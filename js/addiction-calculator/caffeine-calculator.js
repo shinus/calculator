@@ -75,6 +75,11 @@ function init() {
     createDropDown(gluUnit, cc)
     createDropDown(gluUnit, ee)
     createDropDown(anUnit, gg)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 
 }
 
@@ -119,10 +124,3 @@ function showResult() {
 
 calcBtn.addEventListener('click', showResult)
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

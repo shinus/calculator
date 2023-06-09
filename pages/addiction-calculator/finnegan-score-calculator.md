@@ -6,4 +6,5 @@ fileName: finnegan-score-calculator
 permalink: finnegan-score-calculator
 tool:  finnegan-score calculator 
 noBox: true
+nointernationalization: true
 ---

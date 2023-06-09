@@ -70,6 +70,11 @@ function init() {
     createDropDown(coUnit, they)
     createDropDown(moUnit, hands)
     createDropDown(crUnit, distance)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -205,11 +210,3 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

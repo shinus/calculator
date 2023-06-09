@@ -138,6 +138,11 @@ function init() {
     createDropDown(beUnit, being)
     createDropDown(bcUnit, becoming)
     createDropDown(feUnit, feeling)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -157,7 +162,7 @@ function getExact() {
     result = a + b + c + d + e + f + g;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -195,9 +200,5 @@ calcBtn.addEventListener("click", showResult);
 
 
 window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
+  
 };  

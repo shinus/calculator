@@ -91,6 +91,11 @@ function init() {
     createDropDown(meUnit, subscapular_dd)
     createDropDown(meUnit, supra_dd)
     createDropDown(meUnit, ticep_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -140,7 +145,7 @@ function getExact() {
     result = (495 / abb) - 450
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -166,11 +171,3 @@ function showResult() {
 };
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

@@ -10,6 +10,16 @@ var queryParams = [
     { name: "smoking", values: smoke },
 ];
 
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
+init()
+
 function getExact() {
 
     var a = Number(cigar.value)
@@ -20,7 +30,7 @@ function getExact() {
     result = (a / 20 ) * b;
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -41,9 +51,5 @@ function showResult() {
 calcBtn.addEventListener('click', showResult)
 
 window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
+    
 };

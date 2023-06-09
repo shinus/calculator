@@ -6,4 +6,5 @@ fileName: pack-year-calculator
 permalink: pack-year-calculator
 tool:  pack year calculator
 noBox: true
+nointernationalization: true
 ---

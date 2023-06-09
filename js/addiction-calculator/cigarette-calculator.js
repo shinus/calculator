@@ -55,6 +55,11 @@ var frUnit = [
 function init() {
     createDropDown(ciUnit, cigar_dd)
     createDropDown(frUnit, time_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -107,10 +112,3 @@ function showResult() {
 
 calcBtn.addEventListener('click', showResult)
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

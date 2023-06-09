@@ -1,13 +1,13 @@
 {
-    "H1": "Sperm Analysis Calculator",
-    "H2": "Get The Absolute & Relative Value From Adrenal Washout Calculator",
-    "TITLE": "Sperm Analysis Calculator",
-    "META": "Calculate the absolute and relative density value of adrenal nodules/lesions with a 100% accurate Adrenal Washout Calculator to diagnose adrenal adenoma.",
-    "img": "/assets/images/urology.webp",
+    "H1": "Online sperm analysis calculator",
+    "H2": "Click on the sperm analysis button after putting the required data",
+    "TITLE": "Sperm analysis - A key tool for male infertility diagnosis",
+    "META": "Evaluate your sperm quality and fertility potential with our sperm analysis calculator. Easy and accurate results. It is a simple and free tool.",
+    "img": "/assets/images/fetus.png",
     "imgwidth": "35px",
     "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#f51b6b",
     "keyword": "Adrenal Washout Calculator",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -97,14 +97,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/fertility-pregnancy/sperm-analysis.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "Ejaculate volume",

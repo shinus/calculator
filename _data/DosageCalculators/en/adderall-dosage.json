@@ -1,0 +1,167 @@
+{
+  "H1": "The Adderall Dosage Calculator",
+  "H2": "Get the recommended Adderall Dosage based on age.",
+  "TITLE": "A Standard Calculator for Adderall Dosage",
+  "META": "The Adderall Dosage Calculator gives information about the standard dose of Adderall for the treatment of ADHD or Narcolepsy based on the age factor.",
+  "img": "/assets/images/dosage.png",
+  "imgwidth": "35px",
+  "imgheight": "35px",
+  "height": "300px",
+  "color": "#4287f5",
+  "megaMenu": {
+    "nav-link-name": "Tools",
+    "dropdown": [
+      {
+        "categoryName": "Recommended Pages",
+        "links": [
+          {
+            "name": "benadryl dosage",
+            "url": "/benadryl-dosage",
+            "hover": "blue"
+          },
+          {
+            "name": "aleve dosage",
+            "url": "/aleve-dosage",
+            "hover": "blue"
+          },
+          {
+            "name": "dosage calculator",
+            "url": "/dosage",
+            "hover": "blue"
+          },
+          {
+            "name": "fish-oil ",
+            "url": "/fish-oil",
+            "hover": "blue"
+          },
+          {
+            "name": "gabapentin-dosage",
+            "url": "/gabapentin-dosage",
+            "hover": "blue"
+          },
+          {
+            "name": "hydroxychloroquine-dose",
+            "url": "/hydroxychloroquine-dose",
+            "hover": "blue"
+          },
+          {
+            "name": "ivig-dose",
+            "url": "/ivig-dose",
+            "hover": "blue"
+          },
+          {
+            "name": "lidocaine-dose",
+            "url": "/lidocaine-dose",
+            "hover": "blue"
+          }
+        ]
+      }
+    ]
+  },
+  "TEXTUAL_CONTENT": [
+    {
+      "priority": 1,
+      "logoUrl": "/assets/bulb.svg",
+      "header": "It's completely free.",
+      "content": "No fee or subscription is charged for using this body mass index calculator, and no registration or login is required. There are no limitations to usage. This application is free to use."
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/support.svg",
+      "header": "There are no issues with compatibility.",
+      "content": "This body mass index calculator is compatible with all browsers and OS systems. The online tool on this website is a web-based service that may be accessed from any computer or mobile device with internet access. Supported browsers include Microsoft Edge, Chrome, Safari, Firefox, and a number of other well-known ones. As a result, you can use this online tool to find the words on a desktop computer, an iPad, a tablet, or a mobile phone, depending on your preferences. You won't need to buy or install any additional software or plugins on your computer if you use our web service."
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/protect.svg",
+      "header": "Totaly safe",
+      "content": "When you use this body mass index calculator, your data is not saved or sent to any other source by the databases that store it. Utilizing this application also has the advantages of maintaining the privacy of your data and maintaining the integrity of your work. The utility secures it and removes it from the system. By guaranteeing that our product is entirely dependable and risk-free to use in any circumstance, at any time of day or night, we are able to offer comprehensive protection to all of our customers."
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/easy.svg",
+      "header": "Simple to operate",
+      "content": "This body mass index calculator is very user-friendly tools. There is no need to choose where to start because everything is in one location. Additionally, free of advertisements, our online tool offers a better user experience. You can look up words in the letter to complete the online application as instructed. Each person can use these tools because of their simplicity in design."
+    },
+    {
+      "priority": 1,
+      "logoUrl": "/assets/cloud.svg",
+      "header": "Use without login",
+      "content": "You can use the  body mass index calculator for nothing and without providing us with any private information, such as your password or email address. We offer unfettered service. The online tool is saved locally in your internet browser, so there is no need to download software or sign up for a service."
+    }
+  ],
+  "HOW_TO_CONTENT": {
+    "logoImageUrl": "/assets/pdf.svg",
+    "heading": "",
+    "steps": []
+  },
+  "FAQ": [
+    {
+      "question": "How do I calculate my BMI?",
+      "answer": "The Body Mass Index is a simple calculation using a person's height and weight. The formula is BMI = kg/m2 where kg is a person's weight in kilograms and m2 is their height in meters squared."
+    },
+    {
+      "question": "What is a healthy BMI for a woman?",
+      "answer": "A healthy BMI for women falls between 18.5 and 24.9."
+    },
+    {
+      "question": "How do you calculate BMI manually?",
+      "answer": "With the metric system, the formula for BMI is weight in kilograms divided by height in meters squared."
+    },
+    {
+      "question": "How do you calculate BMI in India?",
+      "answer": "To calculate your BMI, you need to divide your weight in kilograms by your height in meters squared."
+    },
+    {
+      "question": "What is BMI in India?",
+      "answer": "The Body Mass Index (BMI) measures the weight status of your body in relation to fat."
+    }
+  ],
+  "jsfilepaths": [
+    "http://code.jquery.com/ui/1.11.0/jquery-ui.js",
+    "/js/util.js",
+    "/js/DosageCalculators/adderall-dosage.js"
+  ],
+  "calculatorData": {
+    "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
+    "calculatorRow": [
+      {
+        "labelName": "Age",
+        "labelId": "Age__id",
+        "inputBox": "text",
+        "inputId": "inputAge",
+        "unit": "years",
+        "dateTimePicker": false
+      },
+      {
+        "labelName": "Indication",
+        "labelId": "Indication__id",
+        "inputId": "Indication_input_Id",
+        "dropDown": "ADHD",
+        "dropDownId": "dd_indication",
+        "dateTimePicker": false
+      },
+      {
+        "labelName": "Custom dose",
+        "labelId": "Indicatio",
+        "inputBox": "",
+        "inputId": "inputCustom",
+        "unit": "mg/day",
+        "dateTimePicker": false
+      },
+      {
+        "labelName": "Tablet strength",
+        "labelId": "Tablet strength__id",
+        "inputId": "Tablet strength_input_Id",
+        "dropDown": "5 mg",
+        "dropDownId": "dd_strength",
+        "dateTimePicker": false
+      }
+    ],
+    "ButtonValue": "Calculate",
+    "ButtonId": "calcBtn",
+    "ButtonType": "submit",
+    "resultDiv": "true",
+    "resultDisplay": "none"
+  }
+}

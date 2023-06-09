@@ -10,6 +10,16 @@ var queryParams = [
     { name: "cu", values: cu },
 ];
 
+function init() {
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
+}
+
+init()
+
 
 function getExact() {
 console.log(so,'sososo');
@@ -21,11 +31,11 @@ var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
    
 
     // console.log(result);
-    return math.bignumber(diffDays)
+    return diffDays
 }
 
 function showResult() {
-    // resultPage2(queryParams);
+    resultPage2(queryParams);
     var diffDays = Number(getExact());
    
 
@@ -47,9 +57,5 @@ function showResult() {
 calcBtn.addEventListener('click', showResult)
 
 window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
+    
 };

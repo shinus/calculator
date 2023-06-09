@@ -6,4 +6,5 @@ fileName: ciwa-calculator
 permalink: ciwa-calculator
 tool:  ciwa calculator 
 noBox: true
+nointernationalization: true
 ---

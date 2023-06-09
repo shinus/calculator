@@ -242,6 +242,11 @@ function init() {
     createDropDown(rgUnit, regurgitation)
     createDropDown(myUnit, vimiting)
     createDropDown(stUnit, stools)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -275,7 +280,7 @@ function getExact() {
     result = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + s + t + u;
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -300,11 +305,3 @@ function showResult() {
 };
 
 calcBtn.addEventListener('click', showResult)
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

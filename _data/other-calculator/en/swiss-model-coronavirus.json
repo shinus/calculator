@@ -1,11 +1,13 @@
 {
-    "H1": "Coronavirus Protection - Swiss Cheese Model",
-    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
-    "TITLE": "Coronavirus Protection - Swiss Cheese Model - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "Coronavirus Protection Guide to Stay Safe",
+    "H2": "Learn about the Latest COVID-19 Guidance and Protect Yourself with Our Coronavirus Protection Tips.",
+    "TITLE": "Protect Yourself from COVID-19 with Our Tips",
+    "META": "Our coronavirus protection guide provides tips on how to protect yourself and others from COVID-19. Learn about the latest guidance from healthcare professionals.",
+    "img": "/assets/images/healthcare.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#5bcdf0",
     "keyword": "adjusted weight",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -14,13 +16,43 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "child-weight-calculator",
-                        "url": "/child-percentile",
+                        "name": "alderete score calculator",
+                        "url": "/aldrete-score-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile calculator",
-                        "url": "/birthweight-percentile-calculator",
+                        "name": "alzheimers life calculator",
+                        "url": "/alzheimers-life-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "bims caluclator",
+                        "url": "/bims-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "dudit caluclator",
+                        "url": "/dudit-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "epds calculator",
+                        "url": "/epds-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "gad 7 calculator",
+                        "url": "/gad-7-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "happiness calculator",
+                        "url": "/happiness-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "mme calculator",
+                        "url": "/mme-calculator",
                         "hover": "blue"
                     }
                 ]
@@ -65,14 +97,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-      ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/other-calculator/swiss-model-coronavirus.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "This calculator imitates a contact between two people (one is you) and is based on the swiss cheese model for coronavirus, adapted by Doctor Ian M. Mackay, who portrays the fight against COVID-19 as a pile of cheese slices."

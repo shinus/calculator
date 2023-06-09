@@ -124,6 +124,11 @@ function init() {
     createDropDown(neUnit, i)
     createDropDown(NoUnit, j)
     createDropDown(NoUnit, k)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -148,7 +153,7 @@ function getExact() {
     result = aa + bb + cc + dd + ee + ff + gg + hh + ii + jj + kk;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -187,10 +192,3 @@ function showResult() {
 calcBtn.addEventListener("click", showResult);
 
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

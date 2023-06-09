@@ -6,4 +6,5 @@ fileName: did-calculator
 permalink: drug-calculator
 tool:  dud calculator 
 noBox: true
+nointernationalization: true
 ---

@@ -6,4 +6,5 @@ fileName: nicotine-dependence
 permalink: nicotine-dependence-calculator
 tool:  nicotine dependence
 noBox: true
+nointernationalization: true
 ---

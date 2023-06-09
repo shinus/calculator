@@ -6,4 +6,5 @@ fileName: bims-calculator
 permalink: bims-calculator
 tool:  bims calculator 
 noBox: true
+nointernationalization: true
 ---

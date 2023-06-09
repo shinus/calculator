@@ -78,6 +78,11 @@ var gdUnit = [
 function init() {
     createDropDown(opUnit, opioid)
     createDropDown(gdUnit, dose_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -193,11 +198,3 @@ function showResult() {
 };
 
 calcBtn.addEventListener("click", showResult);
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

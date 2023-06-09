@@ -2,9 +2,9 @@ var calcBtn = getElement("calcBtn");
 var output = getElement("result-section");
 var unitsForCm = [
   { name: "cm", value: 1 },
-  { name: "m", value: 100 },
   { name: "inches", value: 2.54 },
   { name: "feet", value: 30.48 },
+  { name: "m", value: 100 },
 ];
 
 var unitsForM = [

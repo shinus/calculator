@@ -6,4 +6,5 @@ fileName: happiness-calculator
 permalink: happiness-calculator
 tool:  happiness calculator 
 noBox: true
+nointernationalization: true
 ---

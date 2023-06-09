@@ -98,6 +98,11 @@ function init() {
     createDropDown(brUnit, beath)
     createDropDown(crUnit, circulation)
     createDropDown(colUnit, colors)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -115,7 +120,7 @@ function getExact() {
     result = a + b + c + d + e;
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -143,11 +148,3 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

@@ -29,6 +29,11 @@ var gdUnit = [
 function init() {
     createDropDown(gdUnit, albumin_dd)
     createDropDown(gdUnit, proteins_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -43,7 +48,7 @@ function getExact() {
     result = albu / (pro - albu);
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -117,11 +122,3 @@ albumin.addEventListener("input", validateAge);
 proteins.addEventListener("input", validateAge2);
 calcBtn.addEventListener("click", showResult);
 
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

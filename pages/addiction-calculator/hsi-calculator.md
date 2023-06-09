@@ -6,4 +6,5 @@ fileName: hsi-calculator
 permalink: hsi-calculator
 tool:  hsi calculator
 noBox: true
+nointernationalization: true
 ---

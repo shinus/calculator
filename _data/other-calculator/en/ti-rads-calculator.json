@@ -1,11 +1,13 @@
 {
-    "H1": "TI-RADS Calculator online",
-    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
-    "TITLE": "TI-RADS Calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "TI-RADS Calculator for Assessing Thyroid Nodules",
+    "H2": "Guide Patient Care Decisions and Ensure Appropriate Follow-Up with Our TI-RADS Calculator",
+    "TITLE": "Assess Thyroid Nodules with Our TI-RADS Calculator",
+    "META": "Our TI-RADS calculator helps healthcare professionals assess thyroid nodules for malignancy risk. Use our calculator to guide patient care decisions and ensure appropriate follow-up",
+    "img": "/assets/images/healthcare.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#5bcdf0",
     "keyword": "adjusted weight",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -14,13 +16,43 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "child-weight-calculator",
-                        "url": "/child-percentile",
+                        "name": "alderete score calculator",
+                        "url": "/aldrete-score-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile calculator",
-                        "url": "/birthweight-percentile-calculator",
+                        "name": "alzheimers life calculator",
+                        "url": "/alzheimers-life-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "bims caluclator",
+                        "url": "/bims-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "dudit caluclator",
+                        "url": "/dudit-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "epds calculator",
+                        "url": "/epds-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "gad 7 calculator",
+                        "url": "/gad-7-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "happiness calculator",
+                        "url": "/happiness-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "mme calculator",
+                        "url": "/mme-calculator",
                         "hover": "blue"
                     }
                 ]
@@ -65,14 +97,13 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-      ],
+
     "jsfilepaths": [
         "/js/util.js",
         "/js/other-calculator/ti-rads-calculator.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "Composition",

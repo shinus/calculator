@@ -104,6 +104,11 @@ function init() {
     createDropDown(drUnit, alcohol)
     createDropDown(driUnit, drinking)
     createDropDown(onUnit, once)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 
 }
 
@@ -120,7 +125,7 @@ function getExact() {
     result = al + dr + on;
 
     console.log(result);
-    return math.bignumber(result)
+    return result
 }
 
 function showResult() {
@@ -167,10 +172,3 @@ function showResult() {
 
 calcBtn.addEventListener('click', showResult)
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

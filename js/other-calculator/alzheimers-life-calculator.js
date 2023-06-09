@@ -42,6 +42,11 @@ var neUnit = [
 
 function init() {
     createDropDown(neUnit, alzheimer)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -108,11 +113,4 @@ function showResult() {
 
 calcBtn.addEventListener("click", showResult);
 
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};  
+  

@@ -1,11 +1,13 @@
 {
-    "H1": "GAD-7 Calculator online",
-    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
-    "TITLE": "GAD-7 Calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "GAD-7 Calculator for Assessing Anxiety",
+    "H2": "Evaluate Symptoms and Determine Treatment with Our GAD-7 Calculator for Healthcare Professionals.",
+    "TITLE": "Assess Anxiety with Our GAD-7 Calculator",
+    "META": "Our GAD-7 calculator helps healthcare professionals assess anxiety in patients. Use our calculator to evaluate symptoms and determine the need for treatment.",
+    "img": "/assets/images/healthcare.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#5bcdf0",
     "keyword": "adjusted weight",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -14,13 +16,38 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "child-weight-calculator",
-                        "url": "/child-percentile",
+                        "name": "nnt calculator",
+                        "url": "/nnt-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile calculator",
-                        "url": "/birthweight-percentile-calculator",
+                        "name": "skinfold calculator",
+                        "url": "/skinfold-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "snap score calculator",
+                        "url": "/snap-score-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "swiss model coronavirus",
+                        "url": "swiss-model-coronavirus-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "ti-rads calculator",
+                        "url": "/ti-rads-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "time death calculator",
+                        "url": "/time-death-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "albumin globumin ratio calculator",
+                        "url": "/albumin-globumin-ratio-calculator",
                         "hover": "blue"
                     }
                 ]
@@ -65,14 +92,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/other-calculator/gad-7-calculator.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
         "calculatorRow": [
             {
                 "labelName": "Over the last 2 weeks, how often have you been bothered by the following problems?"

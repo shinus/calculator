@@ -6,4 +6,5 @@ fileName: cage-quesionnaire
 permalink: cage-quesionnaire-calculator
 tool:  cage quesionnaire
 noBox: true
+nointernationalization: true
 ---

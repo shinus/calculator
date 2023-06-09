@@ -6,4 +6,5 @@ fileName: nnt-calculator
 permalink: nnt-calculator
 tool:  nnt calculator 
 noBox: true
+nointernationalization: true
 ---

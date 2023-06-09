@@ -1,0 +1,100 @@
+{
+    "H1": "Degrees Minutes Seconds Calculator",
+    "H2": "Evaluate Symptoms and Determine Treatment with Our GAD-7 Calculator for Healthcare Professionals.",
+    "TITLE": "Assess Anxiety with Our GAD-7 Calculator",
+    "META": "Our GAD-7 calculator helps healthcare professionals assess anxiety in patients. Use our calculator to evaluate symptoms and determine the need for treatment.",
+    "img": "/assets/images/healthcare.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#5bcdf0",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": []
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/earth-measurements/degrees-calculator.js"
+    ],
+    "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
+        "calculatorRow": [
+            {
+                "labelName": "",
+                "labelId": "I have the coordinates in..__id",
+                "inputBox": "text",
+                "inputId": "degree_input_Id",
+                "dropDownId": "coordinates_dd_Id",
+                "unit": "deg",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": " ",
+                "labelId": "Do the coordinates have letters?__id",
+                "inputBox": "text",
+                "inputId": "minute_input_Id",
+                "dropDownId": "letters_dd_Id",
+                "unit": "arcmin",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": " ",
+                "labelId": "Worrying too much about different things__id",
+                "inputBox": "text",
+                "inputId": "second_input_Id",
+                "dropDownId": "Worrying_dd_Id",
+                "unit": "arcsec",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

@@ -1,11 +1,13 @@
 {
-    "H1": "Skinfold Body Fat Calculator",
-    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
-    "TITLE": "Skinfold Body Fat Calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "Skinfold Body Fat Calculator for Measuring Body Fat Percentage",
+    "H2": "Track Changes in Body Composition and Improve Overall Health with Our Skinfold Body Fat Calculator.",
+    "TITLE": "Measure Body Fat Percentage with Our Skinfold Calculator",
+    "META": "Our skinfold body fat calculator helps individuals determine their body fat percentage. Use our calculator to track changes in body composition and improve overall health.",
+    "img": "/assets/images/healthcare.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#5bcdf0",
     "keyword": "adjusted weight",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -14,13 +16,43 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "child-weight-calculator",
-                        "url": "/child-percentile",
+                        "name": "alderete score calculator",
+                        "url": "/aldrete-score-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "birthweight percentile calculator",
-                        "url": "/birthweight-percentile-calculator",
+                        "name": "alzheimers life calculator",
+                        "url": "/alzheimers-life-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "bims caluclator",
+                        "url": "/bims-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "dudit caluclator",
+                        "url": "/dudit-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "epds calculator",
+                        "url": "/epds-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "gad 7 calculator",
+                        "url": "/gad-7-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "happiness calculator",
+                        "url": "/happiness-calculator",
+                        "hover": "blue"
+                    },
+                    {
+                        "name": "mme calculator",
+                        "url": "/mme-calculator",
                         "hover": "blue"
                     }
                 ]
@@ -65,14 +97,13 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
+
     "jsfilepaths": [
         "/js/util.js",
         "/js/other-calculator/skinfold-calculator.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "Gender",

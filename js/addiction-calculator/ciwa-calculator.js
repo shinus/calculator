@@ -375,6 +375,11 @@ function init() {
     createDropDown(viUnit, visual)
     createDropDown(heUnit, head)
     createDropDown(orUnit, Oriented)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init()
@@ -438,10 +443,3 @@ function showResult() {
 
 calcBtn.addEventListener('click', showResult)
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

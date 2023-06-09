@@ -1,11 +1,13 @@
 {
-    "H1": "CAGE Questionnaire Calculator",
-    "H2": "Enter your gestational age, and weight. Then click the \"Calculate \" button.",
-    "TITLE": "CAGE Questionnaire Calculator - By using this tool to manage your body weight",
-    "META": "Get started on a healthier lifestyle today by finding your adjusted body weight with our adjusted weight calculator",
-    "img": "/assets/images/bscale.png",
+    "H1": "Free online CAGE Questionnaire calculator",
+    "H2": "Give the required data and click on CAGE questionnaire button",
+    "TITLE": "Cage Questionnaire - Assess your drinking habits with this tool",
+    "META": "Get a better understanding of your alcohol addiction with our cage questionnaire calculator. Take the test and start taking control of your addiction today.",
+    "img": "/assets/images/addiction.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#4287f5",
     "keyword": "adjusted weight",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -65,14 +67,13 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-      ],
+   
     "jsfilepaths": [
         "/js/util.js",
         "/js/addiction-calculator/cage-quessionnaire.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "Have you ever..."

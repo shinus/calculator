@@ -1,0 +1,84 @@
+{
+    "H1": "binary to hex converter",
+    "H2": "Determine Patient Recovery with Our Easy-to-Use Aldrete Score Calculator",
+    "TITLE": "Calculate Your Aldrete Score with this Free Tool",
+    "META": "Use our Aldrete score calculator to assess a patient's recovery from anesthesia after surgery. Our calculator makes it easy to determine a patient's readiness to be discharged",
+    "img": "/assets/images/healthcare.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#5bcdf0",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": []
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/numeral-converters/binary-to-hex.js"
+    ],
+    "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
+        "calculatorRow": [
+            {
+                "labelName": "You can write a binary number with no more than 16 digits. You don't have to input leading zeros."
+            },
+            {
+                "labelName": "Binary",
+                "labelId": "Decimal__id",
+                "inputBox": "text",
+                "inputId": "Binary_input_id",
+                "dropDownId": "decimal_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

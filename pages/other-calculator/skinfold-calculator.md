@@ -6,4 +6,5 @@ fileName: skinfold-calculator
 permalink: skinfold-calculator
 tool:  skinfold calculator 
 noBox: true
+nointernationalization: true
 ---

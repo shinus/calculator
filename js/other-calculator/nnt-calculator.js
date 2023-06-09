@@ -31,6 +31,11 @@ var gdUnit = [
 function init() {
     createDropDown(gdUnit, outcom)
     row2.style.display = 'none'
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -74,7 +79,7 @@ function getExact() {
     console.log(ab,ac);
 
     console.log(result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -138,10 +143,3 @@ function showResult() {
 experimental.addEventListener("input", validateAge)
 calcBtn.addEventListener("click", showResult);
 
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

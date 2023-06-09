@@ -35,6 +35,11 @@ var gdUnit = [
 function init() {
     createDropDown(gdUnit, body_dd)
     createDropDown(gdUnit, ambient_dd)
+    var url = window.location.href;
+    if (url.includes("?")) {
+        setParamValues(queryParams);
+        showResult();
+    }
 }
 
 init();
@@ -67,7 +72,7 @@ function getExact() {
     result = (98.6 - acc) / abb;
 
     console.log(typeof result);
-    return math.bignumber(result);
+    return result;
 
 };
 
@@ -90,12 +95,3 @@ function showResult() {
 };
 
 calcBtn.addEventListener("click", showResult);
-
-
-window.onload = function () {
-    var url = window.location.href;
-    if (url.includes("?")) {
-        setParamValues(queryParams);
-        showResult();
-    }
-};

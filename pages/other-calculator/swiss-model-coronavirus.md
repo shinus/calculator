@@ -6,4 +6,5 @@ fileName: swiss-model-coronavirus
 permalink: swiss-model-coronavirus-calculator
 tool:  swiss model coronavirus
 noBox: true
+nointernationalization: true
 ---

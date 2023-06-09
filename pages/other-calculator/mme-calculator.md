@@ -6,4 +6,5 @@ fileName: mme-calculator
 permalink: mme-calculator
 tool:  mme calculator 
 noBox: true
+nointernationalization: true
 ---

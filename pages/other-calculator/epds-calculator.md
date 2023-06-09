@@ -6,4 +6,5 @@ fileName: epds-calculator
 permalink: epds-calculator
 tool:  epds calculator 
 noBox: true
+nointernationalization: true
 ---

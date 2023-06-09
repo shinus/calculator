@@ -6,4 +6,5 @@ fileName: dudit-calculator
 permalink: dudit-calculator
 tool:  dudit calculator 
 noBox: true
+nointernationalization: true
 ---

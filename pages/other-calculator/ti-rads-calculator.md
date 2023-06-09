@@ -6,4 +6,5 @@ fileName: ti-rads-calculator
 permalink: ti-rads-calculator
 tool:  ti rads
 noBox: true
+nointernationalization: true
 ---

@@ -1,0 +1,177 @@
+{
+    "H1": "Coordinates Converter",
+    "H2": "Evaluate Symptoms and Determine Treatment with Our GAD-7 Calculator for Healthcare Professionals.",
+    "TITLE": "Assess Anxiety with Our GAD-7 Calculator",
+    "META": "Our GAD-7 calculator helps healthcare professionals assess anxiety in patients. Use our calculator to evaluate symptoms and determine the need for treatment.",
+    "img": "/assets/images/healthcare.png",
+    "imgwidth": "35px",
+    "imgheight": "35px",
+    "height": "300px",
+    "color": "#5bcdf0",
+    "keyword": "adjusted weight",
+    "megaMenu": {
+        "nav-link-name": "Tools",
+        "dropdown": [
+            {
+                "categoryName": "Recommended Pages",
+                "links": []
+            }
+        ]
+    },
+    "TEXTUAL_CONTENT": [
+        {
+            "priority": 1,
+            "logoUrl": "/assets/bulb.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/support.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/protect.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/easy.svg",
+            "header": "",
+            "content": ""
+        },
+        {
+            "priority": 1,
+            "logoUrl": "/assets/cloud.svg",
+            "header": "",
+            "content": ""
+        }
+    ],
+    "HOW_TO_CONTENT": {
+        "logoImageUrl": "/assets/pdf.svg",
+        "heading": "",
+        "steps": []
+    },
+    "FAQ": [],
+    "jsfilepaths": [
+        "/js/util.js",
+        "/js/earth-measurements/coordinates-converter.js"
+    ],
+    "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
+        "calculatorRow": [
+            {
+                "labelName": "Coordinates formats:"
+            },
+            {
+                "labelName": "DD - decimal degrees"
+            },
+            {
+                "labelName": "DMS - degrees with minutes and decimal seconds"
+            },
+            {
+                "labelName": "DDM - degrees with decimal minutes"  
+            },
+            {
+                "labelName": "I have the coordinates in..",
+                "labelId": "I have the coordinates in..__id",
+                "inputId": "I have the coordinates in.._input_Id",
+                "dropDown": "select",
+                "dropDownId": "coordinates_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Do the coordinates have letters?",
+                "labelId": "Do the coordinates have letters?__id",
+                "inputId": "Do the coordinates have letters?_input_Id",
+                "dropDown": "select",
+                "dropDownId": "letters_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Latitude"
+            },
+            {
+                "labelName": "",
+                "labelId": "Worrying too much about different things__id",
+                "inputBox": "",
+                "inputId": "things_input_Id",
+                "dropDownId": "Worrying_dd_Id",
+                "unit": "°",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "",
+                "labelId": "Worrying too much about different things__id",
+                "inputBox": "",
+                "inputId": "la2_input_Id",
+                "dropDownId": "Worrying_dd_Id",
+                "unit": "'",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "",
+                "labelId": "Worrying too much about different things__id",
+                "inputBox": "",
+                "inputId": "la3_input_Id",
+                "dropDownId": "Worrying_dd_Id",
+                "unit": " " ,
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "",
+                "labelId": "Trouble relaxing__id",
+                "inputId": "Trouble relaxing_input_Id",
+                "dropDown": "N (North)",
+                "dropDownId": "north_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "Longitude"
+            },
+            {
+                "labelName": "",
+                "labelId": "Being so restless that it is hard to sit still__id",
+                "inputBox": "",
+                "inputId": "still_input_Id",
+                "unit": "°",
+                "dropDownId": "Being_dd_Id",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "",
+                "labelId": "Being so restless that it is hard to sit still__id",
+                "inputBox": "",
+                "inputId": "lo2_input_Id",
+                "dropDownId": "Being_dd_Id",
+                "unit": "'",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "",
+                "labelId": "Being so restless that it is hard to sit still__id",
+                "inputBox": "",
+                "inputId": "lo3_input_Id",
+                "dropDownId": "Being_dd_Id",
+                "unit": " ",
+                "dateTimePicker": false
+            },
+            {
+                "labelName": "",
+                "labelId": "Becoming easily annoyed or irritable__id",
+                "inputId": "Becoming easily annoyed or irritable_input_Id",
+                "dropDown": "E (East)",
+                "dropDownId": "east_dd_Id",
+                "dateTimePicker": false
+            }
+        ],
+        "ButtonValue": "Calculate",
+        "ButtonId": "calculate_btn",
+        "ButtonType": "submit",
+        "resultDiv": "true",
+        "resultDisplay": "none"
+    }
+}

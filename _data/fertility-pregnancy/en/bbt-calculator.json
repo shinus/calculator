@@ -1,13 +1,13 @@
 {
-    "H1": "BBT Calculator | Basal Body Temperature",
-    "H2": "Get The Absolute & Relative Value From Adrenal Washout Calculator",
-    "TITLE": "BBT Calculator | Basal Body Temperature",
-    "META": "Calculate the absolute and relative density value of adrenal nodules/lesions with a 100% accurate Adrenal Washout Calculator to diagnose adrenal adenoma.",
-    "img": "/assets/images/urology.webp",
+    "H1": "Online bbt calculator",
+    "H2": "Click on the bbt button after putting the required data",
+    "TITLE": "Track Your Ovulation with Our BBT Calculator",
+    "META": "Get a better understanding of your fertility with our bbt calculator. Simply input your daily temperature and track your cycle.  It is a simple and free tool.",
+    "img": "/assets/images/fetus.png",
     "imgwidth": "35px",
     "imgheight": "35px",
     "height": "300px",
-    "color": "#3287B2",
+    "color": "#f51b6b",
     "keyword": "Adrenal Washout Calculator",
     "megaMenu": {
         "nav-link-name": "Tools",
@@ -16,43 +16,43 @@
                 "categoryName": "Recommended Pages",
                 "links": [
                     {
-                        "name": "FENa Calculator",
-                        "url": "/fena-calculator",
+                        "name": "bishop score Calculator",
+                        "url": "/bishop-score-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "Albumin Creatinine Calculator",
-                        "url": "/albumin-creatinine-calculator",
+                        "name": "crown rump length Calculator",
+                        "url": "/crown-rump-length-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "Bladder Volume Calculator",
-                        "url": "/bladder-volume-calculator",
+                        "name": "estradiol ratio Calculator",
+                        "url": "/estradiol-ratio-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "BUN Creatinine Calculator",
-                        "url": "/bun-creatinine-calculator",
+                        "name": "mean sac diameter Calculator",
+                        "url": "/mean-sac-diameter-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "Creatinine Clearance Calculator",
-                        "url": "/creatinine-clearance-calculator",
+                        "name": "pearl index Calculator",
+                        "url": "/pearl-index-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "kt-v Calculator",
-                        "url": "/kt-v-calculator",
+                        "name": "progesterone ratio Calculator",
+                        "url": "/prgesterone-ratio-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "feurea Calculator",
-                        "url": "/feurea-calculator",
+                        "name": "sperm analysis Calculator",
+                        "url": "/sperm-analysis-calculator",
                         "hover": "blue"
                     },
                     {
-                        "name": "Kidney Failure Calculator",
-                        "url": "/kidney-failure-calculator",
+                        "name": "vte risk score Calculator",
+                        "url": "/vte-risk-score-calculator",
                         "hover": "blue"
                     }
                 ]
@@ -97,14 +97,12 @@
         "steps": []
     },
     "FAQ": [],
-    "jscdns": [
-        "<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.min.js></script>"
-    ],
     "jsfilepaths": [
         "/js/util.js",
         "/js/fertility-pregnancy/bbt-calculator.js"
     ],
     "calculatorData": {
+        "calculatorWarning": "❗ This tool shouldn't be used as a substitute for clinical knowledge and/or consultation with a medical specialist. Always consult your doctor.",
     "calculatorRow": [
         {
             "labelName": "Usual temperature check",
